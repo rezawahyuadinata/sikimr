@@ -1,0 +1,35 @@
+[15-Jul-2021 10:31:19 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 10:31:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 22:56:50 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 22:56:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 22:59:18 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 22:59:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:20 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:28 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:31 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:41 Asia/Jakarta] PHP Warning:  require(/var/www/html/e-profile/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/html/e-profile/artisan on line 18
+[15-Jul-2021 23:05:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '/var/www/html/e-profile/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php80/root/usr/share/pear') in /var/www/html/e-profile/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/e-profile/artisan on line 18

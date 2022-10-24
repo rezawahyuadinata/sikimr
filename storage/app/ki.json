@@ -1,0 +1,855 @@
+{
+    "perizinan": {
+        "nama": "Perizinan",
+        "folder": true,
+        "aktif": true,
+        "ikon":"fa fa-users",
+        "menu": {
+            "perizinan": {
+                "nama": "Perizinan",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "perizinan.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.destroy",
+                        "policy": "destroy"
+                    },
+                    "job": {
+                        "nama": "Job",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "perizinan.job",
+                        "policy": "job"
+                    }
+                }
+            },
+            "permohonan-izin": {
+                "nama": "Permohonan Izin",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "permohonan-izin.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.destroy",
+                        "policy": "destroy"
+                    },
+                    "job": {
+                        "nama": "Job",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "permohonan-izin.job",
+                        "policy": "job"
+                    }
+                }
+            }
+        }
+    },
+    "pengaduan": {
+        "nama": "Pengaduan",
+        "folder": true,
+        "aktif": true,
+        "ikon":"fa fa-warning ",
+        "menu": {
+            "surat": {
+                "nama": "Surat Pengaduan",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "surat.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.destroy",
+                        "policy": "destroy"
+                    },
+                    "create_detail": {
+                        "nama": "Tambah Detail Pengaduan",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "surat.create_detail",
+                        "policy": "create_detail"
+                    },
+                    "store_detail": {
+                        "nama": "Simpan Detail Pengaduan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "surat.store_detail",
+                        "policy": "store_detail"
+                    },
+                    "update_detail": {
+                        "nama": "Ubah Detail Pengaduan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "surat.update_detail",
+                        "policy": "update_detail"
+                    },
+                    "get_data": {
+                        "nama": "Data Detail Pengaduan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "surat.get_data",
+                        "policy": "get_data"
+                    },
+                    "delete_data": {
+                        "nama": "Hapus Detail Pengaduan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "surat.delete_data",
+                        "policy": "delete_data"
+                    },
+                    "get_satker": {
+                        "nama": "satker",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "surat.get_satker",
+                        "policy": "get_satker"
+                    },
+                    "get_ppk": {
+                        "nama": "ppk",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "surat.get_ppk",
+                        "policy": "get_ppk"
+                    }
+                }
+            }
+        }
+    },
+    "Pemantauan": {
+        "nama": "PBJ",
+        "folder": true,
+        "aktif": true,
+        "ikon":"fa fa-line-chart",
+        "menu": {
+            "pemantauan_pbj": {
+                "nama": "Pemantauan Pengadaan Barang dan Jasa",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "pemantauan_pbj.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_pbj.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_pbj.read",
+                        "policy": "read"
+                    },
+                    "total": {
+                        "nama": "Total",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_pbj.total",
+                        "policy": "total"
+                    },
+                    "job": {
+                        "nama": "Job",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_pbj.job",
+                        "policy": "job"
+                    }
+                }
+            },
+            "pemantauan_durasi_pbj": {
+                "nama": "Pemantauan Durasi Pengadaan Barang dan Jasa",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "pemantauan_durasi_pbj.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_durasi_pbj.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_durasi_pbj.read",
+                        "policy": "read"
+                    },
+                    "job": {
+                        "nama": "Job",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_durasi_pbj.job",
+                        "policy": "job"
+                    }
+                }
+            },
+            "hps": {
+                "nama": "Pemantauan Nilai Kontrak < 80% HPS",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "hps.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hps.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hps.read",
+                        "policy": "read"
+                    },
+                    "job": {
+                        "nama": "Job",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hps.job",
+                        "policy": "job"
+                    }
+                }
+            },
+            "kemajuan": {
+                "nama": "Kemajuan Tender UPT",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "kemajuan.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kemajuan.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kemajuan.read",
+                        "policy": "read"
+                    },
+                    "job": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kemajuan.job",
+                        "policy": "job"
+                    }
+                }
+            },
+            "persiapan_lelang": {
+                "nama": "Kelengkapan Dokumen per Paket",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "persiapan_lelang.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "persiapan_lelang.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "persiapan_lelang.read",
+                        "policy": "read"
+                    }
+                }
+            }
+        }
+    },
+    "laporan": {
+        "nama": "Pemantauan",
+        "folder": true,
+        "aktif": true,
+        "ikon":"fa fa-search",
+        "menu": {
+            "pemeriksaan_bpk": {
+                "nama": "Pemeriksaan BPK per LHP",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "pemeriksaan_bpk.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_bpk.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_bpk.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_bpk.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_bpk.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_bpk.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_bpk.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "pemeriksaan_upt_bpk": {
+                "nama": "Pemeriksaan BPK per UPT",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "pemeriksaan_upt_bpk.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_upt_bpk.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_upt_bpk.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_upt_bpk.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_upt_bpk.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_upt_bpk.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemeriksaan_upt_bpk.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "pemantauan_bpk": {
+                "nama": "Tindak Lanjut Temuan BPK",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "pemantauan_bpk.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_bpk.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_bpk.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_bpk.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_bpk.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_bpk.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan_bpk.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "profile": {
+                "nama": "Progres Keuangan dan Fisik",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "profile.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "profile.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "profile.read",
+                        "policy": "read"
+                    },
+                    "job": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "profile.job",
+                        "policy": "job"
+                    }
+                }
+            },
+            "sid": {
+                "nama": "Perencanaan SID",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "sid.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sid.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sid.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sid.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sid.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sid.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sid.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "pengadaan_tanah": {
+                "nama": "Pengadaan Tanah",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "pengadaan_tanah.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengadaan_tanah.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengadaan_tanah.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengadaan_tanah.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengadaan_tanah.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengadaan_tanah.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengadaan_tanah.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "op_kontraktual": {
+                "nama": "OP Kontraktual",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "op_kontraktual.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_kontraktual.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_kontraktual.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_kontraktual.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_kontraktual.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_kontraktual.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_kontraktual.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "op_swakelola": {
+                "nama": "OP Swakelola",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "op_swakelola.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_swakelola.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_swakelola.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_swakelola.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_swakelola.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_swakelola.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "op_swakelola.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "tp_op": {
+                "nama": "TP OP",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "tp_op.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tp_op.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tp_op.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tp_op.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tp_op.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tp_op.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tp_op.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            }
+        }
+    }
+}

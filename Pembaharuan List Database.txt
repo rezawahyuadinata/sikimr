@@ -1,0 +1,4 @@
+*List Tambahan dalam database*
+//mohon diisi jika ada tambahan
+users= kode_ppk varchar 2 nullable
+tbl_komitmen_mr = kode_ppk varchar 2 nullable

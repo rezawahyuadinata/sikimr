@@ -1,0 +1,360 @@
+Perizinan Status Monev
+Chart dimunculkan angkanya (OK)
+Tanggal dimulai 1 November (OK)
+Koma dihapus di chart (OK)
+Dashboard data perizinan yang terlambat saja (OK)
+
+Table Perizinan 
+SK Menteri diganti "Batas WAktu Penerbitan Izin" (OK)
+Nama perusahaan diganti Pemohon (OK)
+
+Perizinan SK Menteri diganti jadi perizinan (OK)
+
+Data Perizinan Table dan Bawahnya Kanan Kiri (OK)
+
+Table Perizinan dan Bawahnya hanya tampil Batas Waktu Terakhir dan Terlambat Saja (OK)
+
+Batas Waktu Proses Verif -> Batas Waktu Proses Pemberian Izin (OK)
+
+Chart Jumlah Perizinan berdasarkan jenis hanya 2 (OK)
+- Penggunaan
+- Pengusahaan
+
+Bar Chart Perizinan Vertikal diberi Pemohon yang Horizontal diberi UPT (OK)
+
+Perizinan Status Monev ganti judul Status Monitoring dan Evaluasi Perizinan (OK)
+
+Daftar Permohonan Izin akan hilang jika sudah berada di perizinan
+
+=======> OK
+Table Perizinan (OK)
+Nomor Surat -> Nomor Surat Izin
+tanggal_surat -> Tanggal Terbit
+volume_yang_diizinkan -> ditanyain satuannya apa ke developernya
+nama_pemohon -> Nama Pemohon
+nama_perusahaan -> Perusahaan Pemohon
+Jenis Permohonan -> Cuman 2 aja
+status Monev -> Status Monitoring dan Evaluasi
+
+
+Table Perizinan Action (OK)
+Tgl Monev -> Tanggal Monev
+Status Monev taruh atas
+Jika status Monev sudah
+Muncul Pilihan Sesuai Izin / Tidak Sesuai Izin
+Tambah Textbox Keterangan
+Pengaduan Ada / Tidak jika ada muncul tombol Masukkan Data Pengaduan
+
+
+Permohonan Perizinan
+Jika Kategori Status Selesai tidak perlu diambil <======= Kurang ini
+SK Menteri dan Kategori Status Dihapus
+Semua Tujuan Dihapus
+Smber Air - kurang U
+Jenis Permohonan 2 saja
+Alamat Pemohon Dihapus
+Perihal dihapus
+Tanggal Surat -> Tanggal Surat Permohonan
+Nomor Surat -> Nomor Surat Permohonan
+Nomor Registrasi -> Nomor Registrasi Permohonan Izin
+Tanggal Backup Dihapus
+
+Nama Perusahaan di dashboard data perizinan Tetep (OK)
+Table data perizinan ditambah fiel nomor registrasi permohonan izin (OK)
+Minta ke Developer Perizinan Tambah Waktu Upload 
+Perizinan yang ditolak bagaimana?
+
+Batas Waktu Proses Verifikasi dan Penetapan Pemberian Izin -> Status Pemberian Izin (OK)
+Filter Data Table Perizinan Dashboard dan Grafik Bawahnya (OK)
+
+Table Data Perizinan Tambah Field Sumber Air (OK)
+Dashboard Jumlah Perizinan Berdasarkan Jenis Perizinan ganti jumlah perizinan (OK)
+Tambah Label Vertikal dan Horizontal (OK)
+Semua Dashboard data perizinan filter UPT (OK)
+
+Perizinan
+Tanggal dibagi 2 asli dan Tanggal Permohonan Surat (OK)
+Volume yang diizinkan pake titik koma (OK)
+
+======================
+
+Dashboard
+Status Pemberian Ijin Angkanya belum muncul (OK)
+
+==================> OK
+Jumlah Perizinan Atas Sendiri
+Status Pemberian Izin
+Data Perizinan ganti nama mjd Progres Perijinan
+Monev Perizinan
+
+Data Perizinan Kolom Perizinan -> Batas Waktu Penerbitan Izin *) (OK)
+Data Perizinan tambah note : *) apabila tidak sesuai, harap update pada “tabel permohonan perizinan (link) (OK)
+
+Jumlah Perizinan
+Penggunaan SDA Belum Berizin (OK)
+Pengusahaan SDA Belum Berizin (OK)
+
+Perizinan
+Bisa Tambah Data (OK)
+tambah upload dokumen hasil monev hanya pdf dan max size (OK)
+Ditambah Field Status Perizinan (Masih berlaku / Sudah Habis), dan Masa Berlaku Masa Berlaku 5 tahun dari tanggal terbit (OK)
+Masih Berlaku sampai dengan tanggal / Sudah Habis (OK)
+
+Tambah Tabel Join Perizinan (OK)
+Realisasi Volume Pengambilan 
+- Tahun
+- Bulan
+- Volume Realisasi
+- Satuan Lt/detik
+
+Daftar Permohonan Izin (OK)
+Edit Tanggal Surat (OK)
+Jumlah Volume yang dimohonkan (liter/detik) input manual (OK)
+Tambah field status permohonan perizinan (Hapus: Langsung Hapus data / ditolak / proses) (OK)
+
+
+Table Pemantauan Durasi (OK)
+Tanggal Pengumuman Lelang (OK)
+Tanggal Realisasi Kontrak -> Tanggal Tanda Tangan Kontrak (OK)
+
+Tambah kolom nama uker kerja (OK)
+filter unit kerja (OK)
+tambah kolom UPT (OK)
+filter UPT (OK)
+
+Dashboard
+PEMANTAUAN DURASI TERKONTRAK (OK)
+PEMANTAUAN NILAI KONTRAK < 80% HPS (OK)
+Status Paket yang Belum Lelang tambah data detail paketnya  (OK)
+Pengaduan tidak muncul => Belum DIbikin
+
+TABLE PEMANTAUAN HPS -> PEMANTAUAN NILAI KONTRAK < 80% HPS (OK)
+Tanggal Backup 1 Dihapus (OK)
+Kode Status DB dihapus (OK)
+kode proggram - kode komponen dihapus (OK)
+kode LS dihapus (OK)
+Kode Pengadaan - Kode Jenis diubah jadi uraian (OK)
+Kode Jenis Kontraktor -> Nama Penyedia (OK)
+Tgl Rencana Lelang dihapus (OK)
+RMP, SBSN, PHLN -> Sumber Dana (Rp) 
+Status SIPBJ dihapus (OK)
+
+UFIS, PFIS, Persentase itu apa? (OK)
+Persentase -> Persentase HPS -> Warna sesuai Pie Chart (OK)
+
+Tambah kolom nama uker kerja (OK)
+filter unit kerja (OK)
+tambah kolom UPT (OK)
+filter UPT (OK)
+
+Progress Keuangan dan Fisik Jumlah Satkernya masih salah (OK)
+
+Tambah PPK
+Tambah Paket Pekerjaan
+
+=================
+
+Dashboard
+Belum Lelang taruh proses Lelang
+
+HPS
+decimal belakang koma di rupiah dihapus
+hp format rupiah
+total sumber daya
+UFIS, PFIS, Persentase itu apa? 
+Keterangan
+UKER dan UPT harus muncul
+Kolom RMP PHLN SBSN dipisah
+total sumber dana
+
+Tambah filter Sesuai Chart
+
+
+Pemantauan Progress
+Filter 0%
+Tampilkan - Tidak
+
+Urutan
+UKER
+UPT
+SATKER
+
+tbl_api_kontrak tambah keterangan (varchar)
+
+=================
+Perizinan
+Semua tambah filter UPT; ada row kosong di dropdown list (OK)
+•	Judul: “Perizinan Status Monev”  “Status Monitoring dan Evaluasi Perizinan” (OK)
+•	Grafik pie belum terintegrasi dengan Tabel Perizinan (Sudah itu ada filter tanggal suratnya)
+o	Realisasi volume pengambilan (bulanan), satuan: (Sudah by action)
+•	Tombol (+) belum bisa diakses: tempat untuk masukin data bulanan (disiapkan minimal untuk 5 tahun) (Sudah tapi belum upload ke server)
+•	Volume Realisasi (liter/detik)  Rata-rata Volume Realisasi (liter/detik): (OK)
+Rata Rata Realisasi dihitung dari hasil rata" dari tanda (+) yang paling kanan (kolom data yang tidak diisi tidak dihitung rata-rata)  (OK)
+•	Edit dropdown list di “symbol edit”: ada yang kurang, yaitu: Pengusahaan  Pengusahaan SDA; Penggunaan  Penggunaan SDA (OK)
+•	Judul field "sesuai izin" diganti "Status Realisasi" --> dropdown list: Sesuai Izin atau Tidak Sesuai Izin (OK)
+•	tabel perizinan bisa tolong ditambahin filter waktu awal, waktu akhir dan UPT (OK)
+•	Tanggal dan Status masih kosong (Server Belum Update)
+•	tabel perizinan dan tabel permohonan perizinan bisa tolong ditambahin filter waktu awal, waktu akhir dan UPT  (OK)
+dan tabel permohonan perizinan bisa tolong ditambahin filter waktu awal, waktu akhir dan UPT (OK)
+•	Tambah field “Tanggal Pengajuan Permohonan Izin” (default sama dengan tanggal surat tapi bisa diisi manual) (OK)
+•	Field “Masa Berlaku” bisa diedit (OK)
+
+
+=====
+Dasjhboard Pengaduan
+BBWS pengaduan -> tbl_pengaduan -> bbws (OK)
+Grafik KNN -> Grafik Bidang Pengaduan -> table pengaduan_kategori (OK)
+bar tbl_pengaduan_kategori (OK)
+
+0: BTL
+1: Proses
+2: Selesai
+
+
+=====
+Dashboard Pemantauan BPK
+1. grafik status siptl : diambil dari tbl_pematauan_bpk kolom status_sipt (grouping : Tuntas / Belum Tuntas)
+2. grafik status verifikasi itjen dari tbl_pematauan_bpk kolom status_verifikasi (grouping : Memadai / Belum Memadai / Belum Tindak Lanjut)
+3. grafik presentasi dari status verifikasi itjen
+
+==== 3 Januari 2022 ====
+•	Undefined  Jenis Perizinan Belum Diketahui (Done, error di DB)
+•	Jumlah Perizinan pada Grafik (50) tidak sama dengan Jumlah Perizinan pada Grafik Monev (56) (Done)
+•	Field “Tanggal Tanggal Pengajuan Permohonan Izin”: dihapus (Done) 
+•	Perizinan Realisasi: Tahun dan Bulan tidak sinkron (Pilih Bulannya Saja ga masalah)
+•	Perizinan Realisasi: Volume Diinginkan  Volume yang Diizinkan (liter/detik) (Done)
+•	Jenis Permohonan masih kosong (Done, Kesalahan DB)
+•	Apabila ada pengaduan, bisa hyperlink ke pengaduannya (Tidak Bisa, karena nambah Modul) (Sementara langsung ke menu)
+•	Tambah field “Tanggal Pengajuan Permohonan Izin” (default sama dengan tanggal surat tapi bisa diisi manual) (done)
+•	Tanggal dan Status masih kosong (Tanggal Ada, Status memang harus diisi) (Done)
+
+==== 17 Januari 2022 ====
+Dashboard Historis Pengadaan Barang dan Jasa 
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+- Diatas tabel beri keterangan “History Pengadaan Barang dan Jasa diambil berdasarkan data e-monitoring tanggal terakhir per bulan pukul 16.00 WIB” (OK)
+
+Dashboard Kemajuan Pelaksanaan Lelang
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+- Diatas tabel beri keterangan “History Pengadaan Barang dan Jasa diambil berdasarkan data e-monitoring tanggal terakhir per bulan pukul 16.00 WIB” (OK)
+
+Dashboard Proses Tender Mingguan
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+
+Dashboard Durasi
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+
+Dashboard Nilai Kontrak
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun
+
+Dashboard Progres Keuangan dan Progress Fisik
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+
+Pemantauan Progress Fisik dan Keuangan
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+- update data untuk mengupdate data dari emon (OK) 
+- Deviasi keuangan 0% ganti progress keuangan 0% (OK)
+- Deviasi fisik 0% ganti progress fisik 0% (OK)
+- Deviasi Keuangan dicek Lagi (OK)
+- Data satker dicek harusnya 235 Satker (OK)
+- PDF dihapus tinggal excel saja (OK)
+- Dikasih tau kalo mau download excel harus pilih all dulu (OK)
+- Perbaiki redaksi nama kolom dan text center (OK)
+
+Pemantauan Pengadaan Barang dan Jasa 
+- update data untuk mengupdate data dari emon (OK)
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+- PDF dihapus tinggal excel saja (OK)
+- Beri Kolom No. (OK)
+- Judul Kolom center (OK)
+- Tambahkan baris jumlah pada setiap kolom (OK)
+- Belum bisa dicek kebenaran data karena jumlah per kolom belum ada (OK)
+
+Pemantauan Durasi Pengadaan Barang dan Jasa
+- update data untuk mengupdate data dari emon (OK)
+- Filter AU ga perlu (OK)
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+- Beri Kolom No. sehingga tidak diketahui jumlah paketnya (OK)
+- Perbaiki redaksi nama kolom dan text center (OK)
+- kode satker dihapus (OK)
+- sumber dana dihapus (OK)
+- filter syc myc dicek (OK)
+
+Pemantauan Nilai Kontrak < 80%
+- update data untuk mengupdate data dari emon (OK)
+- Tambah Pilihan Tahun (OK)
+- Jika Tahun dipilih tanggal muncul hanya sesuai tahun (OK)
+- Penyesuaian Tabel (OK)
+- Perbaiki urutan dan kolom yang muncul (text    center) (OK)
+- Pengecekan data filter (ga paham ngecek dit irwa dll)
+
+Kemajuan proses tender mingguan
+- Ga bisa dicek loading terus (OK)
+
+Pemantauan paket belum lelang
+- Tabel ini belum ada 
+
+Dashboard banding
+- Dicek Datanya Lagi (Tidak bisa lihat emon)
+
+==== Revisi 26 Januari 2022 ====
+Dashboard
+- Perizinan 
+- - Progres Perizinan tambah Tanggal Pengajuan Permohonan Izin (OK)
+
+Perizinan
+- Perizinan Realisasi
+- - Pada Tabel Perizinan Realisasi“Volume yang Diizinkan (liter/detik) dan Rata-Rata Realisasi” diberi berikan separator ribuan (contoh: 907.200,00) (OK)
+- Permohonan Izin
+- - Tambah Batas Waktu (OK)
+- - Tujuan Pengusahaan SDA (ok)
+
+===== 27 Januari =====
+
+Dashboard
+- Ada "<" dihapus (OK)
+- tahun filter berdasarkan kolom tahun (OK)
+
+Komitmen MR 
+- yg 7 tp op
+Dashboard
+5. Dashboard MR
+6. Dashboard MR Detail
+Ubah collation sesuai dengan user (OK)
+
+7. tambah thang api kontrak (OK)
+
+- Perizinan
+- - bisa edit hanya upr2 (OK)
+- - Warna Status Perizinan dibedakan (OK)
+- - Balai Terlambat terbanyak 10 besar dibawah perizinan (OK)
+- - tambah jenis permohonan dan Kedua Tujuan (OK)
+- - Tabel Tambah Volume Bulan drop down (OK)
+
+
+- HPS
+- - Nilai Kontrak tambah setelah hps (OK)
+- - 70-80 filter belum muncul (OK)
+
+
+- BPK
+- - membuat rekap per UPT (format dan view sudah ada) (OK)
+- - membuat rekap per laporan LHP (OK)
+- - Tambah Input UKER/UPT -> Satker Parent Child (OK)
+- - Tambah juga di tabel (OK)
+- - Import excel 
+- - Dashboard Persentase -> Persentase Status Verifikasi itjen
+
+pbj
+- rmp dll dihapus (OK)
+
+10 Feb
+- Per Pemantauan banding belum pake standar tanggal (OK)

@@ -1,0 +1,245 @@
+//mengambil data grafik dan menampilkan ke dalam tabel
+    -html
+        <div class="col-sm-12">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Progres Fisik</h3>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="box-body">
+                                <canvas id="progress-fisik-chart" style="max-height: 300px; width:100%"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="status_progress_fisik">Tahun Anggaran</label>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5">
+                                    <div class='input-group date' id='datetimepicker-tahun-status_progress_fisik'>
+                                        <input type='text' id="tahun-status_progress_fisik" class="form-control"
+                                            value="{{ now()->format('Y') }}" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-12 form-hide">
+                                    <select name="status_progress_fisik" id="status_progress_fisik"
+                                        class="form-control select2">
+                                        @foreach ($data->tgl_backup_profile as $tgl)
+                                            <option value="{{ $tgl->tanggal_backup }}">{{ $tgl->tanggal_backup }}
+                                            </option>
+                                        @endforeach
+                                    </select>
+                                    {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <table style="width: 100%">
+                                        <tr class="text-bold">
+                                            <td rowspan="2" class="text-center">Nilai Deviasi</td>
+                                            <td colspan="2" class="text-center">Keuangan</td>
+                                        </tr>
+                                        <tr class="text-bold">
+                                            <td class="text-center">%</td>
+                                            <td class="text-center">Jumlah Satuan Kerja</td>
+                                        </tr>
+                                        <tr class="text-white" style="background-color: #00cc00">
+                                            <td>Dev > 10%</td>
+                                            <td class="text-center data-deviasi-fisik-persentase">%</td>
+                                            <td class="text-center data-deviasi-fisik-jumlah_satker"></td>
+                                        </tr>
+                                        <tr class="text-white" style="background-color: #6666FF">
+                                            <td>0% < Dev <=10%</td>
+                                            <td class="text-center data-deviasi-fisik-persentase">%</td>
+                                            <td class="text-center data-deviasi-fisik-jumlah_satker"></td>
+                                        </tr>
+                                        <tr class="text-white" style="background-color: #808080">
+                                            <td>-10% < Dev <=0%</td>
+                                            <td class="text-center data-deviasi-fisik-persentase">%</td>
+                                            <td class="text-center data-deviasi-fisik-jumlah_satker"></td>
+                                        </tr>
+                                        <tr class="text-white" style="background-color: #cccc00">
+                                            <td>-30% < Dev <=-10%</td>
+                                            <td class="text-center data-deviasi-fisik-persentase">%</td>
+                                            <td class="text-center data-deviasi-fisik-jumlah_satker"></td>
+                                        </tr>
+                                        <tr class="text-white" style="background-color: #ff6666">
+                                            <td>Dev <= -30%</td>
+                                            <td class="text-center data-deviasi-fisik-persentase">%</td>
+                                            <td class="text-center data-deviasi-fisik-jumlah_satker"></td>
+                                        </tr>
+                                        <tr class="text-bold">
+                                            <td>Total</td>
+                                            <td class="text-center data-deviasi-fisik-persentase-total">%</td>
+                                            <td class="text-center data-deviasi-fisik-satker-total"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    -javascript(mengambil data tanggal dari html)
+        $('#datetimepicker-tahun-status_progress_fisik').on('dp.change', function () {
+            changeViewDate("profiles", $("#tahun-status_progress_fisik").val(), '#status_progress_fisik')
+        })
+
+        setProgressFisikChart();
+        $('#status_progress_fisik').on('change', function () {
+            setProgressFisikChart();
+        })
+
+    -javascript(memproses data tanggal)
+        function setProgressFisikChart() {
+            var date = $('#status_progress_fisik').val();
+            var thang = $("#tahun-status_progress_fisik").val();
+            $.get(CURRENT_URL, {
+                date,
+                thang,
+                'function': 'chartProgressFisik'
+            }, function (res) {
+                console.log(res);
+                changeViewProgressFisikChart(res);
+                changeViewProgressFisikTable(res);
+            })
+        }
+
+    -javascript(memproses data ke dalam graph dan tabel)
+        const progressFisikChartCtx = document.getElementById('progress-fisik-chart');
+        var progressFisikChartCurrent;
+        function changeViewProgressFisikChart(data) {
+            if (progressFisikChartCurrent) {
+                progressFisikChartCurrent.destroy();
+            }
+            progressFisikChartCurrent = new Chart(progressFisikChartCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['DEV > 10%', '0% < Dev <= 10%', '-10% < Dev <= 0', '-30 < Dev <= -10%', 'Dev <= -30%'],
+                    datasets: [
+                        {
+                            label: 'Progress Pekerjaan',
+                            data: [
+                                data.dev1.persentase,
+                                data.dev2.persentase,
+                                data.dev3.persentase,
+                                data.dev4.persentase,
+                                data.dev5.persentase
+                            ],
+                            backgroundColor: [
+
+                                'rgba(0, 204, 0, 1)', //green #00cc00
+                                'rgba(102, 102, 255, 1)', //blue #6666ff
+                                'rgba(128, 128, 128, 1)', //grey #808080
+                                'rgba(204,204,0, 1)', // yellow #cccc00
+                                'rgba(255, 102, 102, 1)', //red #ff6666
+                            ],
+                        },
+                    ]
+                },
+                plugins: [ChartDataLabels],
+                options: {
+                    responsive: true,
+                    plugins: {
+                        datalabels: {
+                            formatter: (val) => (`${val}`),
+
+                        }
+                    },
+                },
+            });
+        }
+
+        function changeViewProgressFisikTable(data) {
+            $($('.data-deviasi-fisik-persentase')[0]).text(data.dev1.persentase + '%');
+            $($('.data-deviasi-fisik-jumlah_satker')[0]).text(data.dev1.jumlah_satker);
+            $($('.data-deviasi-fisik-persentase')[1]).text(data.dev2.persentase + '%');
+            $($('.data-deviasi-fisik-jumlah_satker')[1]).text(data.dev2.jumlah_satker);
+            $($('.data-deviasi-fisik-persentase')[2]).text(data.dev3.persentase + '%');
+            $($('.data-deviasi-fisik-jumlah_satker')[2]).text(data.dev3.jumlah_satker);
+            $($('.data-deviasi-fisik-persentase')[3]).text(data.dev4.persentase + '%');
+            $($('.data-deviasi-fisik-jumlah_satker')[3]).text(data.dev4.jumlah_satker);
+            $($('.data-deviasi-fisik-persentase')[4]).text(data.dev5.persentase + '%');
+            $($('.data-deviasi-fisik-jumlah_satker')[4]).text(data.dev5.jumlah_satker);
+
+            $('.data-deviasi-fisik-persentase-total').text(data.persentase_total + '%');
+            $('.data-deviasi-fisik-satker-total').text(data.satker_total);
+        }
+
+    -PHP(memproses suatu data)
+        public function chartProgressFisik(){
+            $date = request("date");
+            $thang = request("thang");
+            $deviasi_fisik = DB::table("tbl_api_profiles")
+                ->where("thang", $thang)
+                ->where("tanggal_backup", 'like', $date.'%');
+            $dev1_query = DB::table("tbl_api_profiles")
+                ->where("thang", $thang)
+                ->where("tanggal_backup", 'like', $date.'%')
+                ->where('deviasi_fisik', '>', 10);
+            $dev1_persentase = $deviasi_fisik->count() ? round(($dev1_query->count() / $deviasi_fisik->count() * 100)) : 0;
+            $dev1 = [
+                'persentase' => $dev1_persentase,
+                'jumlah_satker' => $dev1_query->count()
+            ];
+
+            $dev2_query = DB::table("tbl_api_profiles")
+                ->where("thang", $thang)
+                ->where("tanggal_backup", 'like', $date.'%')
+                ->where('deviasi_fisik', '>', 0)
+                ->where('deviasi_fisik', '<=', 10);
+            $dev2_persentase = $deviasi_fisik->count() ? round(($dev2_query->count() / $deviasi_fisik->count() * 100)) : 0;;
+            $dev2 = [
+                'persentase' => $dev2_persentase,
+                'jumlah_satker' => $dev2_query->count()
+            ];
+
+            $dev3_query = DB::table("tbl_api_profiles")
+                ->where("thang", $thang)
+                ->where("tanggal_backup", 'like', $date.'%')
+                ->where('deviasi_fisik', '>', -10)
+                ->where('deviasi_fisik', '<=', 0);
+            $dev3_persentase = $deviasi_fisik->count() ? round(($dev3_query->count() / $deviasi_fisik->count() * 100)) : 0;;
+            $dev3 = [
+                'persentase' => $dev3_persentase,
+                'jumlah_satker' => $dev3_query->count()
+            ];
+
+            $dev4_query = DB::table("tbl_api_profiles")
+                ->where("thang", $thang)
+                ->where("tanggal_backup", 'like', $date.'%')
+                ->where('deviasi_fisik', '>', -30)
+                ->where('deviasi_fisik', '<=', -10);
+            $dev4_persentase = $deviasi_fisik->count() ? round(($dev4_query->count() / $deviasi_fisik->count() * 100)) : 0;;
+            $dev4 = [
+                'persentase' => $dev4_persentase,
+                'jumlah_satker' => $dev4_query->count()
+            ];
+
+            $dev5_query = DB::table("tbl_api_profiles")
+                ->where("thang", $thang)
+                ->where("tanggal_backup", 'like', $date.'%')
+                ->where('deviasi_fisik', '<=', -30);
+            $dev5_persentase = $deviasi_fisik->count() ? round(($dev5_query->count() / $deviasi_fisik->count() * 100)) : 0;;
+            $dev5 = [
+                'persentase' => $dev5_persentase,
+                'jumlah_satker' => $dev5_query->count()
+            ];
+
+            return response()->json([
+                'dev1' => $dev1,
+                'dev2' => $dev2,
+                'dev3' => $dev3,
+                'dev4' => $dev4,
+                'dev5' => $dev5,
+                'persentase_total' => round($dev1['persentase'] + $dev2['persentase'] + $dev3['persentase'] + $dev4['persentase'] + $dev5['persentase']),
+                'satker_total' => $dev1['jumlah_satker'] + $dev2['jumlah_satker'] + $dev3['jumlah_satker'] + $dev4['jumlah_satker'] + $dev5['jumlah_satker'],
+            ]);
+        }

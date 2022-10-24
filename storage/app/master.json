@@ -1,0 +1,194 @@
+{
+    "wilayah": {
+        "nama": "Wilayah",
+        "folder": true,
+        "aktif": true,
+        "ikon":"fa fa-users",
+        "menu": {
+            "provinsi": {
+                "nama": "Provinsi",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "provinsi.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "provinsi.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "kota": {
+                "nama": "Kota",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "kota.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kota.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "kecamatan": {
+                "nama": "Kecamatan",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "kecamatan.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "kecamatan.destroy",
+                        "policy": "destroy"
+                    },
+                    "get_kota": {
+                        "nama": "Hapus",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "kecamatan.get_kota",
+                        "policy": "get_kota"
+                    }
+                }
+            }
+        }
+    }
+}

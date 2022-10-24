@@ -1,0 +1,535 @@
+<script>
+        var siptl2 = {!! json_encode($tllha) !!};
+        $('#chartSIPTLTemuanTotal').html(myChartSIPTLTemuanTotal());
+
+        function myChartSIPTLTemuanTotal() {
+
+            let myChart = document.getElementById('chartSIPTLTemuanTotal').getContext('2d');
+
+            var siptl1 = {!! json_encode($siptl->toArray()) !!};
+
+            var status = []
+            var rekom = []
+            var total = 0
+
+            siptl1.forEach(element => {
+                total = total + element.rekomendasi
+            })
+
+            siptl1.forEach(element => {
+                // console.log(element.status)
+                const persen = ((element.rekomendasi / total) * 100).toFixed(2)
+                status.push(element.status)
+                rekom.push(persen)
+            });
+
+            const PieLabelsLine = {
+                id: 'PieLabelsLine',
+                afterDraw(chart, args, options) {
+                    const {
+                        ctx,
+                        chartArea: {
+                            top,
+                            bottom,
+                            left,
+                            right,
+                            width,
+                            height
+                        }
+                    } = chart;
+
+                    chart.data.datasets.forEach((dataset, i) => {
+
+                        chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
+                            const {
+                                x,
+                                y
+                            } = datapoint.tooltipPosition();
+                            // console.log(dataset)
+                            // ctx.fillStyle = dataset.backgroundColor[index]
+                            // ctx.fillRect(x, y, 10, 10);
+
+                            //draw Line
+                            const halfwidth = width / 2;
+                            const halfheight = height / 2;
+
+                            const xLine = x >= halfwidth ? x + 20 : x - 55;
+                            const yLine = y >= halfheight ? y + 70 : y - 75;
+                            const extraLine = x >= halfwidth ? 10 : -10;
+
+                            ctx.beginPath();
+                            ctx.moveTo(x, y);
+                            ctx.lineTo(xLine, yLine);
+                            ctx.lineTo(xLine + extraLine, yLine);
+                            ctx.strokeStyle = 'black';
+                            ctx.stroke();
+
+                            //Text
+                            const textWidth = ctx.measureText(chart.data.datasets[i].data[index].width);
+                            ctx.font = '15px Arial bold';
+
+                            const textXPosition = x >= halfwidth ? 'left' : 'right';
+                            const plusFivePx = x >= halfwidth ? 5 : -5;
+                            ctx.textAlign = textXPosition;
+                            ctx.textBaseline = 'middle';
+                            ctx.fillStyle = '#ffffff';
+
+                            ctx.fillText(chart.data.datasets[i].data[index] + '%', xLine + extraLine +
+                                plusFivePx,
+                                yLine)
+
+                        })
+                    })
+                }
+            }
+
+            let chartSIPTLTemuanTotalCurrent = new Chart(myChart, {
+                type: 'pie',
+                data: {
+                    labels: [
+                        'Memadai (SS+TD)',
+                        'Belum Memadai',
+                        'Belum Tindak Lanjut'
+                    ],
+                    datasets: [{
+                        data: rekom,
+                        backgroundColor: [
+                            'rgb(45, 178, 19)',
+                            'rgb(250, 63, 25)',
+                            'rgb(37, 128, 246)'
+                        ],
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    layout: {
+                        padding: 20
+                    },
+                    plugins: {
+                        tooltip: {
+                            enabled: true
+                        },
+                        datalabels: {
+                            color: 'rgb(0, 0, 0)',
+                            align: 'center',
+                            font: {
+                                weight: 'bold',
+                                size: 15,
+                            },
+                            formatter: (value, context) => {
+                                const display = [`${value}%`]
+                                return display
+                            },
+                        },
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            },
+                            display: false,
+                            position: 'bottom',
+                            align: 'start'
+                        },
+                    },
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 1,
+                },
+                plugins: [ChartDataLabels],
+                // PieLabelsLine,
+            });
+            return chartSIPTLTemuanTotalCurrent;
+        }
+
+        $('#chartSIPTLTemuanItjen').html(myChartSIPTLTemuanItjen())
+
+        function myChartSIPTLTemuanItjen() {
+            let myChart = document.getElementById('chartSIPTLTemuanItjen').getContext('2d');
+
+            const PieLabelsLine = {
+                id: 'PieLabelsLine',
+                afterDraw(chart, args, options) {
+                    const {
+                        ctx,
+                        chartArea: {
+                            top,
+                            bottom,
+                            left,
+                            right,
+                            width,
+                            height
+                        }
+                    } = chart;
+
+
+                    chart.data.datasets.forEach((dataset, i) => {
+
+                        chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
+                            const {
+                                x,
+                                y
+                            } = datapoint.tooltipPosition();
+                            // console.log(dataset)
+                            // ctx.fillStyle = dataset.backgroundColor[index]
+                            // ctx.fillRect(x, y, 10, 10);
+
+                            //draw Line
+                            const halfwidth = width / 2;
+                            const halfheight = height / 2;
+
+                            const xLine = x >= halfwidth ? x + 20 : x - 55;
+                            const yLine = y >= halfheight ? y + 70 : y - 75;
+                            const extraLine = x >= halfwidth ? 10 : -10;
+
+                            ctx.beginPath();
+                            ctx.moveTo(x, y);
+                            ctx.lineTo(xLine, yLine);
+                            ctx.lineTo(xLine + extraLine, yLine);
+                            ctx.strokeStyle = 'black';
+                            ctx.stroke();
+
+                            //Text
+                            const textWidth = ctx.measureText(chart.data.datasets[i].data[index].width);
+                            ctx.font = '15px Arial bold';
+
+                            const textXPosition = x >= halfwidth ? 'left' : 'right';
+                            const plusFivePx = x >= halfwidth ? 5 : -5;
+                            ctx.textAlign = textXPosition;
+                            ctx.textBaseline = 'middle';
+                            ctx.fillStyle = '#ffffff';
+
+                            const persen = (chart.data.datasets[i].data[index] / siptl2[0].nilai[0]
+                                .jumlah_temuan * 100).toFixed(2)
+
+                            ctx.fillText(persen + '%', xLine + extraLine +
+                                plusFivePx,
+                                yLine)
+
+                        })
+                    })
+                }
+            }
+
+            let chartSIPTLTemuanItjenCurrent = new Chart(myChart, {
+                type: 'pie',
+                data: {
+                    labels: [
+                        'Sudah Tindak Lanjut',
+                        'Sisa',
+                    ],
+                    datasets: [{
+                        data: [siptl2[1].nilai[0].tuntas[0].jumlah_temuan, siptl2[1].nilai[0].sisa[0]
+                            .jumlah_temuan
+                        ],
+                        backgroundColor: [
+                            'rgb(37, 128, 246)',
+                            'rgb(246, 159, 27)'
+                        ],
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    layout: {
+                        padding: 20,
+                    },
+                    plugins: {
+                        tooltip: {
+                            enabled: true
+                        },
+                        datalabels: {
+                            color: 'rgb(0, 0, 0)',
+                            align: 'center',
+                            font: {
+                                weight: 'bold',
+                                size: 15,
+                            },
+                            formatter: (value, context) => {
+                                const persen = (value / siptl2[0].nilai[0]
+                                    .jumlah_temuan * 100).toFixed(2)
+                                const display = [`${persen}%`]
+                                return display
+                            },
+                        },
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            },
+                            display: false,
+                            position: 'bottom',
+                            align: 'start'
+                        },
+                    },
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 1,
+                },
+                plugins: [ChartDataLabels],
+                // PieLabelsLine,
+            });
+            return chartSIPTLTemuanItjenCurrent;
+        }
+
+        $('#chartSIPTLRekomTemuanItjen').html(myChartSIPTLRekomTemuanItjen())
+
+        function myChartSIPTLRekomTemuanItjen() {
+            let myChart = document.getElementById('chartSIPTLRekomTemuanItjen').getContext('2d');
+
+            const PieLabelsLine = {
+                id: 'PieLabelsLine',
+                afterDraw(chart, args, options) {
+                    const {
+                        ctx,
+                        chartArea: {
+                            top,
+                            bottom,
+                            left,
+                            right,
+                            width,
+                            height
+                        }
+                    } = chart;
+
+
+                    chart.data.datasets.forEach((dataset, i) => {
+
+                        chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
+                            const {
+                                x,
+                                y
+                            } = datapoint.tooltipPosition();
+                            // console.log(dataset)
+                            // ctx.fillStyle = dataset.backgroundColor[index]
+                            // ctx.fillRect(x, y, 10, 10);
+
+                            //draw Line
+                            const halfwidth = width / 1.5;
+                            const halfheight = height / 1.5;
+
+                            const xLine = x >= halfwidth ? x + 20 : x - 55;
+                            const yLine = y >= halfheight ? y + 70 : y - 75;
+                            const extraLine = x >= halfwidth ? 10 : -10;
+
+                            ctx.beginPath();
+                            ctx.moveTo(x, y);
+                            ctx.lineTo(xLine, yLine);
+                            ctx.lineTo(xLine + extraLine, yLine);
+                            ctx.strokeStyle = 'black';
+                            ctx.stroke();
+
+                            //Text
+                            const textWidth = ctx.measureText(chart.data.datasets[i].data[index].width);
+                            ctx.font = '15px Arial bold';
+
+                            const textXPosition = x >= halfwidth ? 'left' : 'right';
+                            const plusFivePx = x >= halfwidth ? 5 : -5;
+                            ctx.textAlign = textXPosition;
+                            ctx.textBaseline = 'middle';
+                            ctx.fillStyle = '#ffffff';
+
+                            const persen = (chart.data.datasets[i].data[index] / siptl2[0].nilai[0]
+                                .jumlah_rekomendasi * 100).toFixed(2)
+
+                            ctx.fillText(persen + '%', xLine + extraLine +
+                                plusFivePx,
+                                yLine)
+
+                        })
+                    })
+                }
+            }
+
+            let chartSIPTLRekomTemuanItjenCurrent = new Chart(myChart, {
+                type: 'pie',
+                data: {
+                    labels: [
+                        'Sudah Tindak Lanjut',
+                        'Sisa',
+                    ],
+                    datasets: [{
+                        data: [siptl2[1].nilai[0].tuntas[0].jumlah_rekomendasi, siptl2[1].nilai[0].sisa[
+                                0]
+                            .jumlah_rekomendasi
+                        ],
+                        backgroundColor: [
+                            'rgb(37, 128, 246)',
+                            'rgb(246, 159, 27)'
+                        ],
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    layout: {
+                        padding: 20
+                    },
+                    plugins: {
+                        tooltip: {
+                            enabled: true
+                        },
+                        datalabels: {
+                            color: 'rgb(0, 0, 0)',
+                            align: 'center',
+                            font: {
+                                weight: 'bold',
+                                size: 15,
+                            },
+                            formatter: (value, context) => {
+                                const persen = (value / siptl2[0].nilai[0]
+                                    .jumlah_rekomendasi * 100).toFixed(2)
+                                const display = [`${persen}%`]
+                                return display
+                            },
+                        },
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            },
+                            display: false,
+                            position: 'bottom',
+                            align: 'start'
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 1,
+                },
+                plugins: [ChartDataLabels],
+                // PieLabelsLine,
+            });
+            return chartSIPTLRekomTemuanItjenCurrent;
+        }
+
+        $('#chartSIPTLTemuanItjenRP').html(myChartSIPTLTemuanItjenRP())
+
+        function myChartSIPTLTemuanItjenRP() {
+            let myChart = document.getElementById('chartSIPTLTemuanItjenRP').getContext('2d');
+
+
+            let formatter = new Intl.NumberFormat("id-ID", {
+                style: "currency",
+                currency: "IDR",
+                notation: 'compact',
+                minimumFractionDigits: 3,
+            });
+
+            const PieLabelsLine = {
+                id: 'PieLabelsLine',
+                afterDraw(chart, args, options) {
+                    const {
+                        ctx,
+                        chartArea: {
+                            top,
+                            bottom,
+                            left,
+                            right,
+                            width,
+                            height
+                        }
+                    } = chart;
+
+
+                    chart.data.datasets.forEach((dataset, i) => {
+
+                        chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
+                            const {
+                                x,
+                                y
+                            } = datapoint.tooltipPosition();
+                            // console.log(dataset)
+                            // ctx.fillStyle = dataset.backgroundColor[index]
+                            // ctx.fillRect(x, y, 10, 10);
+
+                            //draw Line
+                            const halfwidth = width / 1.5;
+                            const halfheight = height / 1.5;
+
+                            const xLine = x >= halfwidth ? x + 20 : x - 55;
+                            const yLine = y >= halfheight ? y + 70 : y - 75;
+                            const extraLine = x >= halfwidth ? 10 : -10;
+
+                            ctx.beginPath();
+                            ctx.moveTo(x, y);
+                            ctx.lineTo(xLine, yLine);
+                            ctx.lineTo(xLine + extraLine, yLine);
+                            ctx.strokeStyle = 'black';
+                            ctx.stroke();
+
+                            //Text
+                            const textWidth = ctx.measureText(chart.data.datasets[i].data[index].width);
+                            ctx.font = '15px Arial bold';
+
+                            const textXPosition = x >= halfwidth ? 'left' : 'right';
+                            const plusFivePx = x >= halfwidth ? 5 : -5;
+                            ctx.textAlign = textXPosition;
+                            ctx.textBaseline = 'middle';
+                            ctx.fillStyle = '#ffffff';
+
+                            const persen = (chart.data.datasets[i].data[index] / siptl2[0].nilai[0]
+                                .nilai * 100).toFixed(2)
+
+                            ctx.fillText(persen + '%', xLine + extraLine +
+                                plusFivePx,
+                                yLine)
+
+                        })
+                    })
+                }
+            }
+
+            let chartSIPTLTemuanIjenRPCurrent = new Chart(myChart, {
+                type: 'pie',
+                data: {
+                    labels: [
+                        'Sudah Tindak Lanjut',
+                        'Sisa',
+                    ],
+                    datasets: [{
+                        data: [
+                            siptl2[1].nilai[0].tuntas[0].nilai, siptl2[1].nilai[0].sisa[0].nilai
+                        ],
+                        backgroundColor: [
+                            'rgb(37, 128, 246)',
+                            'rgb(246, 159, 27)'
+                        ],
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    layout: {
+                        padding: 20
+                    },
+                    plugins: {
+                        tooltip: {
+                            enabled: true
+                        },
+                        datalabels: {
+                            color: 'rgb(0, 0, 0)',
+                            align: 'center',
+                            font: {
+                                weight: 'bold',
+                                size: 15,
+                            },
+                            formatter: (value, context) => {
+                                const persen = (value / siptl2[0].nilai[0]
+                                    .nilai * 100).toFixed(2)
+                                const display = [`${persen}%`]
+                                return display
+                            },
+                        },
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            },
+                            display: false,
+                            position: 'bottom',
+                            align: 'start'
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 1,
+                },
+                plugins: [ChartDataLabels],
+                // PieLabelsLine,
+            });
+            return chartSIPTLTemuanIjenRPCurrent;
+        }
+    </script>
