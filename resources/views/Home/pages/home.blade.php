@@ -1,53 +1,54 @@
 @extends('Home.layouts.layouthome')
 
 @section('section')
-    <section>
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-md-6 text-right aos-item" data-aos="fade-right">
-                    <h2 class="fade-in-left">Berita</h2>
+    <div class="container">
+        <section>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-6 text-right aos-item" data-aos="fade-right">
+                        <h2 class="fade-in-left">Berita</h2>
+                    </div>
+                    <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
+                        <a href="{{ route('Berita') }}"class="text-primary icon-move-right">lihat selengkapnya<i
+                                class="fas fa-arrow-right text-sm ms-1"></i></a>
+                    </div>
                 </div>
-                <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
-                    <a href="{{ route('Berita') }}"class="text-primary icon-move-right">lihat selengkapnya<i
-                            class="fas fa-arrow-right text-sm ms-1"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                @foreach ($news->sortByDesc('created_at') as $key => $item)
-                    <div class="col-lg-2 col-sm-6 {{ $key == 0 ? '' : '' }}">
-                        <div class="card card-plain">
-                            @php
-                                $thumbnailBerita = explode('|', $item->thumbnail);
-                            @endphp
-                            <div class="card-header p-0 position-relative aos-item" data-aos="fade-left">
-                                <div class="geeks">
-                                    <a class="d-block blur-shadow-image" href="{{ url('/news/' . $item->slug) }}">
-                                        <img src="{{ url('storage/uploads/berita/' . $thumbnailBerita[0]) }}"
-                                            alt="img-blur-shadow" class="  img img-thumbnail" loading="lazy"
-                                            style="width: 100%; height: 8vw; object-fit: cover;">
-                                    </a>
+                <div class="row">
+                    @foreach ($news->sortByDesc('created_at') as $key => $item)
+                        <div class="col-lg-2 col-sm-6 {{ $key == 0 ? '' : '' }}">
+                            <div class="card card-plain">
+                                @php
+                                    $thumbnailBerita = explode('|', $item->thumbnail);
+                                @endphp
+                                <div class="card-header p-0 position-relative aos-item" data-aos="fade-left">
+                                    <div class="geeks">
+                                        <a class="d-block blur-shadow-image" href="{{ url('/news/' . $item->slug) }}">
+                                            <img src="{{ url('storage/uploads/berita/' . $thumbnailBerita[0]) }}"
+                                                alt="img-blur-shadow" class="  img img-thumbnail" loading="lazy"
+                                                style="width: 100%; height: 8vw; object-fit: cover;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 aos-item" data-aos="fade-left">
+                                    <h5 style="min-height: 55px; max-height: 60px; font-size: 15px">
+                                        <a href="{{ url('/news/' . $item->slug) }}"
+                                            class="text-dark font-weight-bold">{{ $item->subject }}</a>
+                                    </h5>
                                 </div>
                             </div>
-                            <div class="card-body px-0 aos-item" data-aos="fade-left">
-                                <h5 style="min-height: 55px; max-height: 60px; font-size: 15px">
-                                    <a href="{{ url('/news/' . $item->slug) }}"
-                                        class="text-dark font-weight-bold">{{ $item->subject }}</a>
-                                </h5>
-                            </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
-            {{-- <div class="row">
+                    @endforeach
+                </div>
+                {{-- <div class="row">
                 <div class="text-center pb-1">
                     <a href="{{ route('Berita') }}"class="overflow text-primary icon-move-right">Berita
                         Selengkapnya<i class="fas fa-arrow-right text-sm ms-1"></i></a>
                 </div>
             </div> --}}
-        </div>
-    </section>
-    {{-- Berita --}}
-    {{-- <section class="py-3 aos-all" id="berita">
+            </div>
+        </section>
+        {{-- Berita --}}
+        {{-- <section class="py-3 aos-all" id="berita">
         <div class="container">
             <div class="row my-5">
                 <div class="col-md-6 mx-auto aos-item" data-aos="fade-left">
@@ -90,159 +91,160 @@
         </div>
     </section> --}}
 
-    {{-- Profile --}}
-    <section class="py-3 aos-all" id="profile">
-        <div class="container">
+        {{-- Profile --}}
+        <section class="py-3 aos-all" id="profile">
+            <div class="container">
 
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-            </div>
-            <div class="row my-5">
-                <div class="col-md-6 mx-auto aos-item" data-aos="fade-right">
-                    <h2 class="fade-in-left">Profil</h2>
-                </div>
-                <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
-                    <a href="{{ route('Profil') }}"class="text-primary icon-move-right">lihat selengkapnya<i
-                            class="fas fa-arrow-right text-sm ms-1"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 px-3 aos-item" data-aos="fade-right">
-                    <img src="{{ asset('storage/dashboard/fotoorganisasi.png') }}" alt="img-blur-shadow"
-                        style="width: 100%;" class="img-fluid" loading="lazy">
-                    <!-- <img src="../template/material-kit-master/assets/img/examples/testimonial-6-2.jpg" alt="img-blur-shadow"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                width="100%" class="img-fluid shadow border-radius-lg" loading="lazy"> -->
-                </div>
-                <div class="col-lg-6 px-3 aos-item" data-aos="fade-right">
-                    <div class="row">
-                        <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 mb-5">
-                            <h3>Tujuan</h3>
-                            <p class="text-dark justify pe-5">Tujuan Direktorat Kepatuhan Intern merupakan turunan dari
-                                Tujuan
-                                Kementerian
-                                PUPR
-                                dan tujuan Direktorat Jenderal Sumber Daya Air yaitu Terwujudnya kepatuhan intern
-                                melalui peningkatan pengendalian risiko dan akuntabilitas di lingkungan Dirjen Sumber
-                                Daya Air
-                                Kementerian Pekerjaan Umum dan Perumahan Rakyat untuk mendukung ketersediaan air.
-                            </p>
-                        </div>
-                        <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 mb-5 aos-item" data-aos="fade-right">
-                            <h3>Sasaran</h3>
-                            <p class="text-dark pe-5">ketersediaan air melalui
-                                Pengelolaan SDA secara Terintegrasi menjadi Ketahanan Sumber Daya Air
-                                (Berdasarkan Surat Direktur Sistem dan Prosedur Pendanaan Pembangunan Bappenas
-                                Nomor 05109/Dt.8.5/05/2020)</p>
-                            <!--<a href="javascript:;" class="text-primary icon-move-right">More about us  <i class="fas fa-arrow-right text-sm ms-1"></i>-->
-                            </a>
-                        </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil
+                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Produk Hukum --}}
-    <section class="py-3 aos-all" id="hukum">
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-md-12 mx-auto aos-item" data-aos="fade-left">
-                    <h2>Dasar Pembentukan Hukum</h2>
+                <div class="row my-5">
+                    <div class="col-md-6 mx-auto aos-item" data-aos="fade-right">
+                        <h2 class="fade-in-left">Profil</h2>
+                    </div>
+                    <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
+                        <a href="{{ route('Profil') }}"class="text-primary icon-move-right">lihat selengkapnya<i
+                                class="fas fa-arrow-right text-sm ms-1"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 aos-item" data-aos="fade-left">
-                    <h4 class="mt-5 mt-lg-0">PEDOMAN PENERAPAN MANAJEMEN RISIKO DI KEMENTERIAN PEKERJAAN
-                        UMUM DAN PERUMAHAN RAKYAT</h4>
-                    <p class="pe-5">Bahwa untuk melaksanakan manajemen risiko secara komprehensif di
-                        Kementerian Pekerjaan Umum dan Perumahan Rakyat serta
-                        melaksanakan ketentuan Pasal 13 ayat (1) Peraturan Pemerintah Nomor
-                        60 Tahun 2008 tentang Sistem Pengendalian Intern Pemerintah, perlu
-                        menetapkan Pedoman Penerapan Manajemen Risiko di Kementerian
-                        Pekerjaan Umum dan Perumahan Rakyat.</p>
-                </div>
-                <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 aos-item" data-aos="fade-left">
-                    <div class=" row">
-                        <div class="col-md-12">
-                            <div class="p-3 info-horizontal">
-                                <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                    <a href="{{ asset('/storage/dashboard/PP60Tahun2008_SPIP.pdf') }}" target="_blank"><i
-                                            class="fas fa-file opacity-10"></i></a>
-                                </div>
-                                <div class="description ps-3">
-                                    <p class="mb-0">Peraturan Pemerintah Nomor 60 Tahun 2008 tentang Sistem
-                                        Pengendalian Intern Pemerintah (Lembaran Negara Republik Indonesia
-                                        Tahun 2008 Nomor 127, Tambahan Lembaran Negara Republik
-                                        Indonesia Nomor 4890)</p>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-6 px-3 aos-item" data-aos="fade-right">
+                        <img src="{{ asset('storage/dashboard/fotoorganisasi.png') }}" alt="img-blur-shadow"
+                            style="width: 100%;" class="img-fluid" loading="lazy">
+                        <!-- <img src="../template/material-kit-master/assets/img/examples/testimonial-6-2.jpg" alt="img-blur-shadow"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width="100%" class="img-fluid shadow border-radius-lg" loading="lazy"> -->
+                    </div>
+                    <div class="col-lg-6 px-3 aos-item" data-aos="fade-right">
+                        <div class="row">
+                            <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 mb-5">
+                                <h3>Tujuan</h3>
+                                <p class="text-dark justify pe-5">Tujuan Direktorat Kepatuhan Intern merupakan turunan dari
+                                    Tujuan
+                                    Kementerian
+                                    PUPR
+                                    dan tujuan Direktorat Jenderal Sumber Daya Air yaitu Terwujudnya kepatuhan intern
+                                    melalui peningkatan pengendalian risiko dan akuntabilitas di lingkungan Dirjen Sumber
+                                    Daya Air
+                                    Kementerian Pekerjaan Umum dan Perumahan Rakyat untuk mendukung ketersediaan air.
+                                </p>
                             </div>
-                            <div class="p-3 info-horizontal">
-                                <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                    <a href="{{ asset('/storage/dashboard/Perpres Nomor 18 Tahun 2020.pdf') }}"
-                                        target="_blank"><i class="fas fa-file opacity-10"></i></a>
-                                </div>
-                                <div class="description ps-3">
-                                    <p class="mb-0">Peraturan Presiden Nomor 18 tahun 2020 tentang Rencana
-                                        Pembangunan Jangka Menengah Nasional Tahun 2020-2024
-                                        (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 10)</p>
-                                </div>
-                            </div>
-                            <div class="p-3 info-horizontal">
-                                <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                    <a href="{{ asset('/storage/dashboard/PermenPUPR20-2018.pdf') }}" target="_blank"><i
-                                            class="fas fa-file opacity-10"></i></a>
-                                </div>
-                                <div class="description ps-3">
-                                    <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 20
-                                        Tahun 2018 tentang Penyelenggaraan Sistem Pengendalian Intern
-                                        Pemerintah di Kementerian Pekerjaan Umum dan Perumahan Rakyat
-                                        (Berita Negara Republik Indonesia Tahun 2018 Nomor 1121)
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="p-3 info-horizontal">
-                                <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                    <a href="{{ asset('/storage/dashboard/Permen PUPR Nomor 13 Tahun 2020.pdf') }}"
-                                        target="_blank"><i class="fas fa-file opacity-10"></i></a>
-                                </div>
-                                <div class="description ps-3">
-                                    <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 13
-                                        Tahun 2020 tentang Organisasi dan Tata Kerja Kementerian Pekerjaan
-                                        Umum dan Perumahan Rakyat (Berita Negara Republik Indonesia
-                                        Tahun 2020 Nomor 473);
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="p-3 info-horizontal">
-                                <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                    <a href="{{ asset('/storage/dashboard/Permen PUPR Nomor 16 Tahun 2020.pdf') }}"
-                                        target="_blank"><i class="fas fa-file opacity-10" target="_blank"></i></a>
-                                </div>
-                                <div class="description ps-3">
-                                    <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 16
-                                        Tahun 2020 tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis
-                                        Kementerian Pekerjaan Umum dan Perumahan Rakyat (Berita Negara
-                                        Tahun 2020 Nomor 554) sebagaimana telah diubah dengan Peraturan
-                                        Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 26 Tahun
-                                        2020 tentang Perubahan atas Peraturan Menteri Pekerjaan Umum dan
-                                        Perumahan Rakyat Nomor 16 Tahun 2020 tentang Organisasi dan
-                                        Tata Kerja Unit Pelaksana Teknis Kementerian Pekerjaan Umum dan
-                                        Perumahan Rakyat (Berita Negara Tahun 2020 Nomor 1144);
-                                    </p>
-                                </div>
+                            <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 mb-5 aos-item" data-aos="fade-right">
+                                <h3>Sasaran</h3>
+                                <p class="text-dark pe-5">ketersediaan air melalui
+                                    Pengelolaan SDA secara Terintegrasi menjadi Ketahanan Sumber Daya Air
+                                    (Berdasarkan Surat Direktur Sistem dan Prosedur Pendanaan Pembangunan Bappenas
+                                    Nomor 05109/Dt.8.5/05/2020)</p>
+                                <!--<a href="javascript:;" class="text-primary icon-move-right">More about us  <i class="fas fa-arrow-right text-sm ms-1"></i>-->
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    {{-- Gallery --}}
-    {{-- <section class="pt-5 aos-all" id="galeri">
+        {{-- Produk Hukum --}}
+        <section class="py-3 aos-all" id="hukum">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-12 mx-auto aos-item" data-aos="fade-left">
+                        <h2>Dasar Pembentukan Hukum</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 aos-item" data-aos="fade-left">
+                        <h4 class="mt-5 mt-lg-0">PEDOMAN PENERAPAN MANAJEMEN RISIKO DI KEMENTERIAN PEKERJAAN
+                            UMUM DAN PERUMAHAN RAKYAT</h4>
+                        <p class="pe-5">Bahwa untuk melaksanakan manajemen risiko secara komprehensif di
+                            Kementerian Pekerjaan Umum dan Perumahan Rakyat serta
+                            melaksanakan ketentuan Pasal 13 ayat (1) Peraturan Pemerintah Nomor
+                            60 Tahun 2008 tentang Sistem Pengendalian Intern Pemerintah, perlu
+                            menetapkan Pedoman Penerapan Manajemen Risiko di Kementerian
+                            Pekerjaan Umum dan Perumahan Rakyat.</p>
+                    </div>
+                    <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 aos-item" data-aos="fade-left">
+                        <div class=" row">
+                            <div class="col-md-12">
+                                <div class="p-3 info-horizontal">
+                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                        <a href="{{ asset('/storage/dashboard/PP60Tahun2008_SPIP.pdf') }}"
+                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Peraturan Pemerintah Nomor 60 Tahun 2008 tentang Sistem
+                                            Pengendalian Intern Pemerintah (Lembaran Negara Republik Indonesia
+                                            Tahun 2008 Nomor 127, Tambahan Lembaran Negara Republik
+                                            Indonesia Nomor 4890)</p>
+                                    </div>
+                                </div>
+                                <div class="p-3 info-horizontal">
+                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                        <a href="{{ asset('/storage/dashboard/Perpres Nomor 18 Tahun 2020.pdf') }}"
+                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Peraturan Presiden Nomor 18 tahun 2020 tentang Rencana
+                                            Pembangunan Jangka Menengah Nasional Tahun 2020-2024
+                                            (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 10)</p>
+                                    </div>
+                                </div>
+                                <div class="p-3 info-horizontal">
+                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                        <a href="{{ asset('/storage/dashboard/PermenPUPR20-2018.pdf') }}"
+                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 20
+                                            Tahun 2018 tentang Penyelenggaraan Sistem Pengendalian Intern
+                                            Pemerintah di Kementerian Pekerjaan Umum dan Perumahan Rakyat
+                                            (Berita Negara Republik Indonesia Tahun 2018 Nomor 1121)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-3 info-horizontal">
+                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                        <a href="{{ asset('/storage/dashboard/Permen PUPR Nomor 13 Tahun 2020.pdf') }}"
+                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 13
+                                            Tahun 2020 tentang Organisasi dan Tata Kerja Kementerian Pekerjaan
+                                            Umum dan Perumahan Rakyat (Berita Negara Republik Indonesia
+                                            Tahun 2020 Nomor 473);
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-3 info-horizontal">
+                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
+                                        <a href="{{ asset('/storage/dashboard/Permen PUPR Nomor 16 Tahun 2020.pdf') }}"
+                                            target="_blank"><i class="fas fa-file opacity-10" target="_blank"></i></a>
+                                    </div>
+                                    <div class="description ps-3">
+                                        <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 16
+                                            Tahun 2020 tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis
+                                            Kementerian Pekerjaan Umum dan Perumahan Rakyat (Berita Negara
+                                            Tahun 2020 Nomor 554) sebagaimana telah diubah dengan Peraturan
+                                            Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 26 Tahun
+                                            2020 tentang Perubahan atas Peraturan Menteri Pekerjaan Umum dan
+                                            Perumahan Rakyat Nomor 16 Tahun 2020 tentang Organisasi dan
+                                            Tata Kerja Unit Pelaksana Teknis Kementerian Pekerjaan Umum dan
+                                            Perumahan Rakyat (Berita Negara Tahun 2020 Nomor 1144);
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{-- Gallery --}}
+        {{-- <section class="pt-5 aos-all" id="galeri">
         <div class="container">
             <div class="row my-5">
                 <div class="col-md-6 mx-auto aos-item"data-aos="fade-right">
@@ -285,8 +287,8 @@
         </div>
     </section> --}}
 
-    {{-- Tutorial --}}
-    {{-- <section class="pt-5 aos-all">
+        {{-- Tutorial --}}
+        {{-- <section class="pt-5 aos-all">
         <div class=" container">
             <div class=" row my-5">
                 <div class="col-md-6 mx-auto aos-item" data-aos="fade-right">
@@ -411,6 +413,7 @@
             </div>
         </div>
     </section> --}}
+    </div>
 @endsection
 @push('script-css')
     <style>
