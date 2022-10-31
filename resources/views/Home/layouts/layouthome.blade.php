@@ -14,9 +14,6 @@
     @include('Home.components.navbar')
     @include('Home.components.head')
     @yield('section')
-    <a href="#" class="to-top">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-    </a>
     @include('Home.components.footer')
 
     @include('Home.components.js')

@@ -20,9 +20,10 @@
 </nav>
 
 {{-- navbar kedua --}}
-<nav class="navbar navbar-expand-sm bg-gradient-navbar-second" style="border-bottom: 5px solid rgb(255, 193, 59)">
+<nav class="navbar navbar-expand-lg sticky-top bg-gradient-navbar-second"
+    style="border-bottom: 5px solid rgb(255, 193, 59)">
     <div class="container" style="">
-        <a class="navbar-brand " href="#"><img src="/img/login/logo_sikimr.png" alt="Logo" height="65"
+        <a class="navbar-brand " href="#"><img src="/img/login/logo_sikimr.png" alt="Logo" height="50"
                 class="img-responsive"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

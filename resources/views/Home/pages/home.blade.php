@@ -1,497 +1,36 @@
 @extends('Home.layouts.layouthome')
-
 @section('section')
-    <div class="container">
-        <section>
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-md-6 text-right aos-item" data-aos="fade-right">
-                        <h2 class="fade-in-left">Berita</h2>
-                    </div>
-                    <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
-                        <a href="{{ route('Berita') }}"class="text-primary icon-move-right">lihat selengkapnya<i
-                                class="fas fa-arrow-right text-sm ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    @foreach ($news->sortByDesc('created_at') as $key => $item)
-                        <div class="col-lg-2 col-sm-6 {{ $key == 0 ? '' : '' }}">
-                            <div class="card card-plain">
-                                @php
-                                    $thumbnailBerita = explode('|', $item->thumbnail);
-                                @endphp
-                                <div class="card-header p-0 position-relative aos-item" data-aos="fade-left">
-                                    <div class="geeks">
-                                        <a class="d-block blur-shadow-image" href="{{ url('/news/' . $item->slug) }}">
-                                            <img src="{{ url('storage/uploads/berita/' . $thumbnailBerita[0]) }}"
-                                                alt="img-blur-shadow" class="  img img-thumbnail" loading="lazy"
-                                                style="width: 100%; height: 8vw; object-fit: cover;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-body px-0 aos-item" data-aos="fade-left">
-                                    <h5 style="min-height: 55px; max-height: 60px; font-size: 15px">
-                                        <a href="{{ url('/news/' . $item->slug) }}"
-                                            class="text-dark font-weight-bold">{{ $item->subject }}</a>
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-                {{-- <div class="row">
-                <div class="text-center pb-1">
-                    <a href="{{ route('Berita') }}"class="overflow text-primary icon-move-right">Berita
-                        Selengkapnya<i class="fas fa-arrow-right text-sm ms-1"></i></a>
-                </div>
-            </div> --}}
-            </div>
-        </section>
+    <div class="container my-5">
         {{-- Berita --}}
-        {{-- <section class="py-3 aos-all" id="berita">
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-md-6 mx-auto aos-item" data-aos="fade-left">
-                    <h2>Berita</h2>
-                </div>
-                <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-left">
-                    <a href="{{ route('Berita') }}"class="text-primary icon-move-right">lihat selengkapnya<i
-                            class="fas fa-arrow-right text-sm ms-1"></i></a>
-                </div>
+        <section>
+            <div>
+                <ul class="berita">
+                    <li>
+                        <h2 class="titleberita">Berita</h2>
+                    </li>
+                    <li>
+                        <h4 class="titleselengkapnya">Lihat Selengkapnya</h4>
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                @foreach ($news->sortByDesc('created_at') as $item)
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card card-plain">
-                            <div class="card-header p-0 position-relative aos-item" data-aos="fade-left">
-                                <a class="d-block blur-shadow-image" href="{{ url('/news/' . $item->slug) }}">
-                                    <img src="{{ asset('/storage/uploads/berita/' . $item->thumbnail) }}"
-                                        alt="img-blur-shadow" class="  img img-thumbnail" loading="lazy"
-                                        style="width: 100%; height: 8vw; object-fit: cover;">
-                                </a>
-                            </div>
-                            <div class="card-body px-0 aos-item" data-aos="fade-left">
-                                <h5 style="min-height: 65px">
-                                    <a href="{{ url('/news/' . $item->slug) }}"
-                                        class="text-dark font-weight-bold">{{ $item->subject }}</a>
-                                </h5>
-                                <p>
-                                    {!! substr_replace($item->description, ' ...', 90) !!}
-                                </p>
-                                <a href="{{ url('/news/' . $item->slug) }}"
-                                    class="text-info text-sm icon-move-right">Read
-                                    More
-                                    <i class="fas fa-arrow-right text-xs ms-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section> --}}
-
+        </section>
         {{-- Profile --}}
-        <section class="py-3 aos-all" id="profile">
-            <div class="container">
+        <section>
 
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        Nihil
-                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col-md-6 mx-auto aos-item" data-aos="fade-right">
-                        <h2 class="fade-in-left">Profil</h2>
-                    </div>
-                    <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
-                        <a href="{{ route('Profil') }}"class="text-primary icon-move-right">lihat selengkapnya<i
-                                class="fas fa-arrow-right text-sm ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 px-3 aos-item" data-aos="fade-right">
-                        <img src="{{ asset('storage/dashboard/fotoorganisasi.png') }}" alt="img-blur-shadow"
-                            style="width: 100%;" class="img-fluid" loading="lazy">
-                        <!-- <img src="../template/material-kit-master/assets/img/examples/testimonial-6-2.jpg" alt="img-blur-shadow"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width="100%" class="img-fluid shadow border-radius-lg" loading="lazy"> -->
-                    </div>
-                    <div class="col-lg-6 px-3 aos-item" data-aos="fade-right">
-                        <div class="row">
-                            <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 mb-5">
-                                <h3>Tujuan</h3>
-                                <p class="text-dark justify pe-5">Tujuan Direktorat Kepatuhan Intern merupakan turunan dari
-                                    Tujuan
-                                    Kementerian
-                                    PUPR
-                                    dan tujuan Direktorat Jenderal Sumber Daya Air yaitu Terwujudnya kepatuhan intern
-                                    melalui peningkatan pengendalian risiko dan akuntabilitas di lingkungan Dirjen Sumber
-                                    Daya Air
-                                    Kementerian Pekerjaan Umum dan Perumahan Rakyat untuk mendukung ketersediaan air.
-                                </p>
-                            </div>
-                            <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 mb-5 aos-item" data-aos="fade-right">
-                                <h3>Sasaran</h3>
-                                <p class="text-dark pe-5">ketersediaan air melalui
-                                    Pengelolaan SDA secara Terintegrasi menjadi Ketahanan Sumber Daya Air
-                                    (Berdasarkan Surat Direktur Sistem dan Prosedur Pendanaan Pembangunan Bappenas
-                                    Nomor 05109/Dt.8.5/05/2020)</p>
-                                <!--<a href="javascript:;" class="text-primary icon-move-right">More about us  <i class="fas fa-arrow-right text-sm ms-1"></i>-->
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
+        {{-- Dasar Pembentukan Hukum --}}
+        <section>
 
-        {{-- Produk Hukum --}}
-        <section class="py-3 aos-all" id="hukum">
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-md-12 mx-auto aos-item" data-aos="fade-left">
-                        <h2>Dasar Pembentukan Hukum</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 aos-item" data-aos="fade-left">
-                        <h4 class="mt-5 mt-lg-0">PEDOMAN PENERAPAN MANAJEMEN RISIKO DI KEMENTERIAN PEKERJAAN
-                            UMUM DAN PERUMAHAN RAKYAT</h4>
-                        <p class="pe-5">Bahwa untuk melaksanakan manajemen risiko secara komprehensif di
-                            Kementerian Pekerjaan Umum dan Perumahan Rakyat serta
-                            melaksanakan ketentuan Pasal 13 ayat (1) Peraturan Pemerintah Nomor
-                            60 Tahun 2008 tentang Sistem Pengendalian Intern Pemerintah, perlu
-                            menetapkan Pedoman Penerapan Manajemen Risiko di Kementerian
-                            Pekerjaan Umum dan Perumahan Rakyat.</p>
-                    </div>
-                    <div class="col-lg-12 mt-lg-0 mt-5 ps-lg-0 ps-0 aos-item" data-aos="fade-left">
-                        <div class=" row">
-                            <div class="col-md-12">
-                                <div class="p-3 info-horizontal">
-                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                        <a href="{{ asset('/storage/dashboard/PP60Tahun2008_SPIP.pdf') }}"
-                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
-                                    </div>
-                                    <div class="description ps-3">
-                                        <p class="mb-0">Peraturan Pemerintah Nomor 60 Tahun 2008 tentang Sistem
-                                            Pengendalian Intern Pemerintah (Lembaran Negara Republik Indonesia
-                                            Tahun 2008 Nomor 127, Tambahan Lembaran Negara Republik
-                                            Indonesia Nomor 4890)</p>
-                                    </div>
-                                </div>
-                                <div class="p-3 info-horizontal">
-                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                        <a href="{{ asset('/storage/dashboard/Perpres Nomor 18 Tahun 2020.pdf') }}"
-                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
-                                    </div>
-                                    <div class="description ps-3">
-                                        <p class="mb-0">Peraturan Presiden Nomor 18 tahun 2020 tentang Rencana
-                                            Pembangunan Jangka Menengah Nasional Tahun 2020-2024
-                                            (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 10)</p>
-                                    </div>
-                                </div>
-                                <div class="p-3 info-horizontal">
-                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                        <a href="{{ asset('/storage/dashboard/PermenPUPR20-2018.pdf') }}"
-                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
-                                    </div>
-                                    <div class="description ps-3">
-                                        <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 20
-                                            Tahun 2018 tentang Penyelenggaraan Sistem Pengendalian Intern
-                                            Pemerintah di Kementerian Pekerjaan Umum dan Perumahan Rakyat
-                                            (Berita Negara Republik Indonesia Tahun 2018 Nomor 1121)
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-3 info-horizontal">
-                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                        <a href="{{ asset('/storage/dashboard/Permen PUPR Nomor 13 Tahun 2020.pdf') }}"
-                                            target="_blank"><i class="fas fa-file opacity-10"></i></a>
-                                    </div>
-                                    <div class="description ps-3">
-                                        <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 13
-                                            Tahun 2020 tentang Organisasi dan Tata Kerja Kementerian Pekerjaan
-                                            Umum dan Perumahan Rakyat (Berita Negara Republik Indonesia
-                                            Tahun 2020 Nomor 473);
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-3 info-horizontal">
-                                    <div class="icon icon-shape  bg-gradient-primary shadow-primary text-center">
-                                        <a href="{{ asset('/storage/dashboard/Permen PUPR Nomor 16 Tahun 2020.pdf') }}"
-                                            target="_blank"><i class="fas fa-file opacity-10" target="_blank"></i></a>
-                                    </div>
-                                    <div class="description ps-3">
-                                        <p class="mb-0">Peraturan Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 16
-                                            Tahun 2020 tentang Organisasi dan Tata Kerja Unit Pelaksana Teknis
-                                            Kementerian Pekerjaan Umum dan Perumahan Rakyat (Berita Negara
-                                            Tahun 2020 Nomor 554) sebagaimana telah diubah dengan Peraturan
-                                            Menteri Pekerjaan Umum dan Perumahan Rakyat Nomor 26 Tahun
-                                            2020 tentang Perubahan atas Peraturan Menteri Pekerjaan Umum dan
-                                            Perumahan Rakyat Nomor 16 Tahun 2020 tentang Organisasi dan
-                                            Tata Kerja Unit Pelaksana Teknis Kementerian Pekerjaan Umum dan
-                                            Perumahan Rakyat (Berita Negara Tahun 2020 Nomor 1144);
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
+        {{-- Faq --}}
+        <section>
 
-        {{-- Gallery --}}
-        {{-- <section class="pt-5 aos-all" id="galeri">
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-md-6 mx-auto aos-item"data-aos="fade-right">
-                    <h2>Gallery</h2>
-                </div>
-                <div class="col-md-6 mx-auto text-end">
-                    <a href="/gallery" class="text-primary icon-move-right">lihat selengkapnya<i
-                            class="fas fa-arrow-right text-sm ms-1"></i></a>
-                </div>
-            </div>
-            <div class="row my-5">
-                @foreach ($galleries->sortByDesc('created_at') as $item)
-                    <div class="col-md-4 my-5">
-                        <div class="card-group popup-gallery">{{  }}{{  }}
-                            <div class="card" data-animation="true">
-                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                    <a class="d-block blur-shadow-image aos-item" data-aos="fade-right"
-                                        style="width: 100%; height: 15vw; object-fit: cover;"
-                                        data-src="{{ asset('/storage/uploads/gallery/' . $item->file_name) }}">
-                                        <img src="{{ asset('/storage/uploads/gallery/' . $item->file_name) }}"
-                                            alt="img-blur-shadow" class="img-fluid shadow border-radius-lg"
-                                            style="width: 100%; height: 15vw; object-fit: cover;">
-                                    </a>
-                                    <div class="colored-shadow"
-                                        style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                                    </div>
-                                </div>
-                                <div class="card-body text-center">
-                                    <div class="d-flex mt-n6 mx-auto">
-                                        <div class="ms-auto border-0 col-md-12 mx-auto text-center">
-                                            <p class="text-dark mt-1">{{ $item->caption }}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section> --}}
-
-        {{-- Tutorial --}}
-        {{-- <section class="pt-5 aos-all">
-        <div class=" container">
-            <div class=" row my-5">
-                <div class="col-md-6 mx-auto aos-item" data-aos="fade-right">
-                    <h2 class="fade-in-left">Tutor Dek</h2>
-                </div>
-                <div class="col-md-6 mx-auto text-end aos-item" data-aos="fade-right">
-                    <a href="{{ route('Tutorial') }}"class="text-primary icon-move-right">lihat selengkapnya<i
-                            class="fas fa-arrow-right text-sm ms-1"></i></a>
-                </div>
-                <div class=" col-md-12">
-                    <div class="card-group">
-                        <div class="card" data-animation="true">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg"
-                                        alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
-                                </a>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                                </div>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="d-flex mt-n6 mx-auto">
-                                    <a class="btn btn-link text-primary ms-auto border-0" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Refresh">
-                                        <i class="material-icons text-lg">refresh</i>
-                                    </a>
-                                    <button class="btn btn-link text-info me-auto border-0" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Edit">
-                                        <i class="material-icons text-lg">edit</i>
-                                    </button>
-                                </div>
-                                <h5 class="font-weight-normal mt-3">{{  }}
-                                    <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                                </h5>
-                                <p class="mb-0">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to
-                                    "Naviglio" where you can enjoy the main night life in Barcelona.
-                                </p>
-                            </div>
-                            <hr class="dark horizontal my-0">
-                            <div class="card-footer d-flex">
-                                <p class="font-weight-normal my-auto">$899/night</p>
-                                <i class="material-icons position-relative ms-auto text-lg me-1 my-auto">place</i>
-                                <p class="text-sm my-auto"> Barcelona, Spain</p>
-                            </div>
-                        </div>
-                        <div class="card" data-animation="true">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg"
-                                        alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
-                                </a>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                                </div>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="d-flex mt-n6{{  mx- }}auto">
-                                    <a class="btn btn-link text-primary ms-auto border-0" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Refresh">
-                                        <i class="material-icons text-lg">refresh</i>
-                                    </a>
-                                    <button class="btn btn-link text-info me-auto border-0" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Edit">
-                                        <i class="material-icons text-lg">edit</i>
-                                    </button>
-                                </div>
-                                <h5 class="font-weight-normal mt-3">
-                                    <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                                </h5>
-                                <p class="mb-0">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to
-                                    "Naviglio" where you can enjoy the main night life in Barcelona.
-                                </p>
-                            </div>
-                            <hr class="dark horizontal my-0">
-                            <div class="card-footer d-flex">
-                                <p class="font-weight-normal my-auto">$899/night</p>
-                                <i class="material-icons position-relative ms-auto text-lg me-1 my-auto">place</i>
-                                <p class="text-sm my-auto"> Barcelona, Spain</p>
-                            </div>
-                        </div>
-                        <div class="card" data-animation="true">
-                            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg"
-                                        alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
-                                </a>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg&quot;);">
-                                </div>
-                            </div>
-                            <div class="card-body text-center">
-                                <div class="d-flex mt-n6 mx-auto">
-                                    <a class="btn btn-link text-primary ms-auto border-0" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Refresh">
-                                        <i class="material-icons text-lg">refresh</i>
-                                    </a>
-                                    <button class="btn btn-link text-info me-auto border-0" data-bs-toggle="tooltip"
-                                        data-bs-placement="bottom" title="Edit">
-                                        <i class="material-icons text-lg">edit</i>
-                                    </button>
-                                </div>
-                                <h5 class="font-weight-normal mt-3">
-                                    <a href="javascript:;">Cozy 5 Stars Apartment</a>
-                                </h5>
-                                <p class="mb-0">
-                                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to
-                                    "Naviglio" where you can enjoy the main night life in Barcelona.
-                                </p>
-                            </div>
-                            <hr class="dark horizontal my-0">
-                            <div class="card-footer d-flex">
-                                <p class="font-weight-normal my-auto">$899/night</p>
-                                <i class="material-icons position-relative ms-auto text-lg me-1 my-auto">place</i>
-                                <p class="text-sm my-auto"> Barcelona, Spain</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+        </section>
     </div>
 @endsection
 @push('script-css')
-    <style>
-        .geeks img {
-            width: 100%;
-            transition: 0.5s all ease-in-out;
-        }
-
-        .geeks:hover img {
-            transform: scale(1.1);
-        }
-    </style>
 @endpush
 @push('script-js')
-    {{-- waktu di atas chart --}}
-    <script>
-        const toTop = document.querySelector(".to-top");
-
-        window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 300) {
-                toTop.classList.add("active");
-            } else {
-                toTop.classList.remove("active");
-            }
-        })
-
-        var timeDisplay = document.getElementById("time");
-
-
-        function refreshTime() {
-            var dateString = new Date().toLocaleString("id", {
-                timeZone: "Asia/Jakarta"
-            });
-            var formattedString = dateString.replace(/\./g, ':');
-            timeDisplay.innerHTML = formattedString;
-        }
-
-        setInterval(refreshTime, 1000);
-
-        var today = new Date()
-        var hours = today.getHours();
-
-        const options = {
-            year: "numeric",
-            month: "long",
-            day: "numeric"
-        };
-
-        const tanggal = today.toLocaleDateString('id-ID', options);
-
-        if (hours >= 16) {
-            hours = 16
-        } else if (hours >= 12) {
-            hours = 12
-        } else if (hours >= 8) {
-            hours = 8
-        }
-        // console.log(today)
-
-        // today = formattedString + '?' + hours + ':00:00';
-
-        var tagMR = document.getElementById('status_dataMR')
-        var tagPBJ = document.getElementById('status_dataPBJ')
-        var tagSIPTL = document.getElementById('status_dataSIPTL')
-        var tagZI = document.getElementById('status_dataZI')
-        var tagPeng1 = document.getElementById('status_dataPeng1')
-        var tagPeng2 = document.getElementById('status_dataPeng2')
-        var tagSop = document.getElementById('status_dataSop')
-
-        tagMR.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-        tagPBJ.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-        //tagSIPTL.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-        tagZI.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-        tagPeng1.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-        tagPeng2.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-        tagSop.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-    </script>
-
     {{-- script chart manajemen risiko --}}
     <script>
         /*Komitmen Manajemen Risiko*/
@@ -586,6 +125,7 @@
 
             return chartMRCurrent;
         }
+
         /*Komitmen Triwulan 1*/
         $('#chartMRtriwulan1').html(myChartMRtriwulan1())
 
@@ -667,6 +207,7 @@
             });
             return chartMRCurrent;
         }
+
         /*Komitmen Triwulan 2*/
         $('#chartMRtriwulan2').html(myChartMRtriwulan2())
 
@@ -749,6 +290,7 @@
             return chartMRCurrent;
 
         }
+
         /*Komitmen Triwulan 3*/
         $('#chartMRtriwulan3').html(myChartMRtriwulan3())
 
@@ -831,6 +373,7 @@
             return chartMRCurrent;
 
         }
+
         /*Komitmen Triwulan 4*/
         $('#chartMRtriwulan4').html(myChartMRtriwulan4())
 
@@ -915,8 +458,8 @@
     </script>
 
     {{-- script PBJ --}}
-    {{-- script chart kumulatif pengadaan barang dan jasa --}}
     <script>
+        // script chart kumulatif pengadaan barang dan jasa
         $('#chartPBJKumulatif').html(myChartPBJKumulatif())
 
         function myChartPBJKumulatif() {
@@ -1036,9 +579,8 @@
             return chartPBJKumulatifCurrent;
             chartPBJKumulatifCurrent.render();
         }
-    </script>
-    {{-- script status paket kontraktual pengadaan barang dan jasa --}}
-    <script>
+
+        //script status paket kontraktual pengadaan barang dan jasa
         $('#chartPBJKontraktualPKT').html(myChartPBJKontraktualPKT())
 
         function myChartPBJKontraktualPKT() {
@@ -1126,9 +668,8 @@
             return chartPBJKontraktualPKT;
             chartPBJKontraktualPKT.render();
         }
-    </script>
-    {{-- script kontraktual rupiah --}}
-    <script>
+
+        //script kontraktual rupiah
         $('#chartPBJKontraktualRP').html(myChartPBJKontraktualRP())
 
         function myChartPBJKontraktualRP() {
@@ -1363,8 +904,8 @@
     </script>
 
     {{-- script Pengaduan --}}
-    {{-- script pengaduan tahunan --}}
     <script>
+        // script pengaduan tahunan
         $('#chartPengaduanTahun').html(myChartPengaduanTahun())
 
         function myChartPengaduanTahun() {
@@ -1506,9 +1047,8 @@
             });
             return chartPengaduanTahunCurrent;
         }
-    </script>
-    {{-- script pengaduan kategori --}}
-    <script>
+
+        // script pengaduan kategori
         $('#chartPengaduanKategori').html(myChartPengaduanKategori())
 
         function myChartPengaduanKategori() {
@@ -1592,9 +1132,8 @@
             });
             return chartPengaduanKategoriCurrent;
         }
-    </script>
-    {{-- script simpulan telaah --}}
-    <script>
+
+        // script simpulan telaah
         $('#chartPengaduanTelaah').html(myChartPengaduanTelaah())
 
         function myChartPengaduanTelaah() {
@@ -1665,9 +1204,8 @@
             });
             return chartPengaduanTelaahCurrent;
         }
-    </script>
-    {{-- script pengaduan BBWS --}}
-    <script>
+
+        // script pengaduan BBWS
         $('#chartPengaduanBBWS').html(mychartPengaduanBBWS())
 
         function mychartPengaduanBBWS() {
@@ -1796,9 +1334,8 @@
             });
             return chartPengaduanBBWS;
         }
-    </script>
-    {{-- script pengaduan dirpembina --}}
-    <script>
+
+        // script pengaduan dirpembina
         $('#chartPengaduanDirPembina').html(mychartPengaduanDirPembina())
 
         function mychartPengaduanDirPembina() {
@@ -1926,7 +1463,7 @@
         }
     </script>
 
-    {{-- script pengaduan sop --}}
+    {{-- sop --}}
     <script>
         $('#chartSOP').html(myChartSOP())
 
