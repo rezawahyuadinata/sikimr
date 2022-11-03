@@ -1,11 +1,26 @@
-{{-- scroll tutorial home --}}
+{{-- Carousel Header contoh ketiga --}}
+<script>
+    var swiper = new Swiper(".headerSwiper", {});
+</script>
+
+{{-- Carousel tutorial contoh kedua --}}
 <script>
     var swiper = new Swiper(".tutorialSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
         loop: true,
-        autoplay: {
-            delay: 5000,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".thumbnailSwiper", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
         },
     });
 </script>

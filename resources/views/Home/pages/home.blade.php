@@ -1,30 +1,25 @@
 @extends('Home.layouts.layouthome')
 @section('section')
-    <div class="container my-5">
+    <div class="container py-3">
         {{-- Berita --}}
-        <section>
-            <div>
-                <ul class="berita">
-                    <li>
-                        <h2 class="titleberita">Berita</h2>
-                    </li>
-                    <li>
-                        <h4 class="titleselengkapnya">Lihat Selengkapnya</h4>
-                    </li>
-                </ul>
-            </div>
+        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3"></div>
+            <div class="container py-2"></div>
         </section>
         {{-- Profile --}}
-        <section>
-
+        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3"></div>
+            <div class="container py-2"></div>
         </section>
         {{-- Dasar Pembentukan Hukum --}}
-        <section>
-
+        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3"></div>
+            <div class="container py-2"></div>
         </section>
         {{-- Faq --}}
-        <section>
-
+        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3"></div>
+            <div class="container py-2"></div>
         </section>
     </div>
 @endsection
