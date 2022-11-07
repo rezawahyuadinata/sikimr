@@ -74,7 +74,8 @@
                                 Tutorial
                             </span>
                         </a>
-                        <a class="nav-link btn btn-primary mb-0 me-1 mt-2 mt-md-0 p-2 navbar-font-style" href="#">
+                        <a class="nav-link btn btn-primary mb-0 me-1 mt-2 mt-md-0 p-2 navbar-font-style"
+                            href="{{ url('/login') }}">
                             <span class="navbar-btn-menu">
                                 Aplikasi
                             </span>

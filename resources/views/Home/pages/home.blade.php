@@ -2,24 +2,46 @@
 @section('section')
     <div class="container py-3">
         {{-- Berita --}}
-        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
-            <div class="container mb-3"></div>
-            <div class="container py-2"></div>
+        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3">
+                <div class="d-flex container-fluid justify-content-between">
+                    <h3 class="d-inline align-self-center">Berita</h3>
+                    <a href="" class="text-danger" style="text-decoration: none">
+                        <p class="d-inline align-self-center">Lihat Selengkapnya</p>
+                    </a>
+                </div>
+            </div>
+            <div class="container bg-secondary py-2"></div>
         </section>
         {{-- Profile --}}
-        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
-            <div class="container mb-3"></div>
-            <div class="container py-2"></div>
+        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3">
+                <div class="d-flex container-fluid justify-content-between">
+                    <h3 class="d-inline align-self-center">Profile</h3>
+                    <a href="" class="text-danger" style="text-decoration: none">
+                        <p class="d-inline align-self-center">Lihat Selengkapnya</p>
+                    </a>
+                </div>
+            </div>
+            <div class="container bg-secondary py-2"></div>
         </section>
         {{-- Dasar Pembentukan Hukum --}}
-        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
-            <div class="container mb-3"></div>
-            <div class="container py-2"></div>
+        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3">
+                <div class="d-flex container-fluid justify-content-between">
+                    <h3 class="d-inline align-self-center">Dasar Pembentukan Hukum</h3>
+                </div>
+            </div>
+            <div class="container bg-secondary py-2"></div>
         </section>
         {{-- Faq --}}
-        <section class="my-5 bg-secondary rounded-2 border-2" style="width:100%; height: 40vh">
-            <div class="container mb-3"></div>
-            <div class="container py-2"></div>
+        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+            <div class="container mb-3">
+                <div class="d-flex container-fluid justify-content-between">
+                    <h3 class="d-inline align-self-center">FAQ</h3>
+                </div>
+            </div>
+            <div class="container bg-secondary py-2"></div>
         </section>
     </div>
 @endsection

@@ -1,4 +1,9 @@
 <!--   Core JS Files   -->
+{{-- Maps --}}
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/geodata/data/countries2.js"></script>
 {{-- bawaan --}}
 <script src="{{ asset('template/sikimr/js/script.js') }}"></script>
 {{-- Jquery --}}

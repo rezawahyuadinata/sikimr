@@ -142,4 +142,52 @@
         font-style: normal;
         color: var(--sub-title-color)
     }
+
+    .text-control-button {
+        color: var(--title-color);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .text-control-button:hover {
+        color: white;
+        background-color: var(--sub-title-color);
+    }
+
+    /* tambahan animasi */
+    .start-page {}
+
+    /* tombol */
+    .btn-manajemen {}
+
+    .btn-pengadaan {}
+
+    .btn-integritas {}
+
+    .btn-pengaduan {}
+
+    .btn-sop {}
+
+    /* tutorial */
+    .start-page:has(.tutorial) {}
+
+    /* berita */
+    .start-page:has(.berita) {}
+
+    /* Manajemen Risiko */
+    .start-page:has(.manajemen) {}
+
+    /* Pengadaan Barang dan Jasa */
+    .start-page:has(.pengadaan) {}
+
+    /* Zona Integritas */
+    .start-page:has(.zona-integritas) {}
+
+    /* Pengaduan */
+    .start-page:has(.pengaduan) {}
+
+    /* standard operator procedure */
+    .start-page:has(.sop) {}
 </style>

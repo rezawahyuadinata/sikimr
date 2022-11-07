@@ -3,6 +3,15 @@
     var swiper = new Swiper(".headerSwiper", {});
 </script>
 
+<script>
+    $(function() {
+        $('.showSingle').click(function() {
+            $('.targetDiv').not('#div' + $(this).attr('target')).hide();
+            $('#div' + $(this).attr('target')).show();
+        });
+    });
+</script>
+
 {{-- Carousel tutorial contoh kedua --}}
 <script>
     var swiper = new Swiper(".tutorialSwiper", {
@@ -163,14 +172,15 @@
     var tagPBJ = document.getElementById('status_dataPBJ')
     var tagSIPTL = document.getElementById('status_dataSIPTL')
     var tagZI = document.getElementById('status_dataZI')
+    var tagPeng = document.getElementById('status_dataPeng')
     var tagPeng1 = document.getElementById('status_dataPeng1')
     var tagPeng2 = document.getElementById('status_dataPeng2')
     var tagSop = document.getElementById('status_dataSop')
 
     tagMR.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagPBJ.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
-    //tagSIPTL.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagZI.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
+    tagPeng.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagPeng1.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagPeng2.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagSop.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
