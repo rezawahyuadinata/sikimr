@@ -22,7 +22,7 @@
 {{-- navbar kedua --}}
 <nav class="navbar navbar-expand-lg sticky-top bg-gradient-navbar-second"
     style="border-bottom: 5px solid rgb(255, 193, 59)">
-    <div class="container" style="">
+    <div class="container">
         <a class="navbar-brand " href="#"><img src="/img/login/logo_sikimr.png" alt="Logo" height="50"
                 class="img-responsive"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,35 +32,35 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="#">
                         <span class="navbar-menu">
                             Beranda
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="#">
                         <span class="navbar-menu">
                             Berita
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="#">
                         <span class="navbar-menu">
                             Profile
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="#">
                         <span class="navbar-menu">
                             Hukum
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="#">
                         <span class="navbar-menu">
                             SOP
                         </span>
@@ -68,18 +68,22 @@
                 </li>
                 <li class="nav-item gap-2 rounded-4">
                     <div class="d-flex justify-content-between">
-                        <a class="nav-link btn btn-danger mb-0 me-1 mt-2 mx-2 mt-md-0 p-2 navbar-font-style"
-                            href="#">
-                            <span class="navbar-btn-menu">
-                                Tutorial
-                            </span>
-                        </a>
-                        <a class="nav-link btn btn-primary mb-0 me-1 mt-2 mt-md-0 p-2 navbar-font-style"
-                            href="{{ url('/login') }}">
-                            <span class="navbar-btn-menu">
+                        <button class="btn btn-danger mb-0 me-1 mt-2 mx-2 mt-md-0 p-2 navbar-font-style" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorial
+                        </button>
+                        <div class="dropdown-center">
+                            <button class="btn btn-primary mb-0 me-1 mt-2 mx-2 mt-md-0 p-2 navbar-font-style"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Aplikasi
-                            </span>
-                        </a>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ url('/login') }}">Manajemen Risiko</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/login') }}">Zona Integritas</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/login') }}">Sikon</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/login') }}">Pengaduan</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
             </ul>

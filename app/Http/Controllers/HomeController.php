@@ -1196,8 +1196,17 @@ class HomeController extends MYController
     public function tableMR()
     {
         $year = request("year");
-
-        $data_t1 = DB::table("tbl_pemantauan_mr")
+        // komitmen t1
+        $data_t1_komitmen = DB::table("tbl_komitmen_mr")
+            ->where(DB::raw("mr_periode"), $year)
+            ->where("tbl_komitmen_mr.level", 'UPR-T1')->select(
+                DB::raw("'UPR-T1' upr"),
+                DB::raw("'UNOR' as level_user"),
+                DB::raw("IFNULL(SUM(verifikasi = '3'),0) komitmen_v"),
+                DB::raw("IFNULL(SUM(verifikasi < 3),0) komitmen_d"),
+            )->get();
+        // pemantauan t1
+        $data_t1_pemantauan = DB::table("tbl_pemantauan_mr")
             ->where(DB::raw("tahun"), $year)
             ->where("tbl_pemantauan_mr.level", 'UPR-T1')
             ->select(
@@ -1216,7 +1225,22 @@ class HomeController extends MYController
                 DB::raw("IFNULL(SUM(verifikasi < 3 AND triwulan = 4),0) komitmen_t4_d"),
             )
             ->get();
-        $data_t2 = DB::table("tbl_pemantauan_mr")
+        $data_t2_komitmen = DB::table("tbl_komitmen_mr")
+            ->where(DB::raw("mr_periode"), $year)
+            ->where("tbl_komitmen_mr.level", 'UPR-T2')
+            ->leftJoin("eselon-2", 'eselon-2.id', '=', 'tbl_komitmen_mr.eselon2_id')
+            ->select(
+                DB::raw("'UPR-T2' upr"),
+                db::raw("(CASE
+                    WHEN `eselon-2`.`level_user` = 'balai' THEN 'BALAI (BBWS/BWS)'
+                    WHEN `eselon-2`.`level_user` = 'balai_teknik' THEN 'BALTEK'
+                    ELSE 'UKER'
+                END) level_user"),
+                DB::raw("IFNULL(SUM(verifikasi = '3'),0) komitmen_v"),
+                DB::raw("IFNULL(SUM(verifikasi < 3),0) komitmen_d"),
+            )
+            ->get();
+        $data_t2_pemantauan = DB::table("tbl_pemantauan_mr")
             ->where(DB::raw("tahun"), $year)
             ->where("tbl_pemantauan_mr.level", 'UPR-T2')
             ->leftJoin("eselon-2", 'eselon-2.id', '=', 'tbl_pemantauan_mr.eselon2_id')
@@ -1240,14 +1264,30 @@ class HomeController extends MYController
                 DB::raw("IFNULL(SUM(verifikasi < 3 AND triwulan = 4),0) komitmen_t4_d"),
             )
             ->get();
-        $data_t3 = DB::table("tbl_pemantauan_mr")
+        $data_t3_komitmen = DB::table("tbl_komitmen_mr")
+            ->where(DB::raw("mr_periode"), $year)
+            ->where("tbl_komitmen_mr.level", 'UPR-T3')
+            ->leftJoin("users", 'users.id', '=', 'tbl_komitmen_mr.dibuat_oleh')
+            ->leftJoin("eselon-2", 'eselon-2.id', '=', 'tbl_komitmen_mr.eselon2_id')
+            ->select(
+                DB::raw("'UPR-T3' upr"),
+                DB::raw("(CASE
+                    WHEN `eselon-2`.`level_user` ='balai' THEN 'BALAI (BBWS/BWS)'
+                    WHEN `eselon-2`.`level_user` ='balai_teknik' THEN 'BALTEK'
+                    ELSE 'UKER'
+                END) level_user"),
+                DB::raw("IFNULL(SUM(verifikasi = '3'),0) komitmen_v"),
+                DB::raw("IFNULL(SUM(verifikasi < 3),0) komitmen_d"),
+            )
+            ->get();
+        $data_t3_pemantauan = DB::table("tbl_pemantauan_mr")
             ->where(DB::raw("tahun"), $year)
             ->where("tbl_pemantauan_mr.level", 'UPR-T3')
             ->leftJoin("users", 'users.id', '=', 'tbl_pemantauan_mr.dibuat_oleh')
             ->leftJoin("eselon-2", 'eselon-2.id', '=', 'tbl_pemantauan_mr.eselon2_id')
             ->select(
                 DB::raw("'UPR-T3' upr"),
-                db::raw("(CASE
+                DB::raw("(CASE
                     WHEN `eselon-2`.`level_user` ='balai' THEN 'BALAI (BBWS/BWS)'
                     WHEN `eselon-2`.`level_user` ='balai_teknik' THEN 'BALTEK'
                     ELSE 'UKER'
@@ -1265,7 +1305,18 @@ class HomeController extends MYController
                 DB::raw("IFNULL(SUM(verifikasi < 3 AND triwulan = 4),0) komitmen_t4_d"),
             )
             ->get();
-        $data_t3_op = DB::table("tbl_pemantauan_mr")
+        $data_t3_op_komitmen = DB::table("tbl_komitmen_mr")
+            ->where(DB::raw("mr_periode"), $year)
+            ->where("tbl_komitmen_mr.level", 'UPR-T3')
+            ->where("eselon2_id", 7)
+            ->select(
+                DB::raw("'UPR-T3' upr"),
+                DB::raw("'SKPD TP-OP' level_user"),
+                DB::raw("IFNULL(SUM(verifikasi = '3'),0) komitmen_v"),
+                DB::raw("IFNULL(SUM(verifikasi < 3),0) komitmen_d"),
+            )
+            ->get();
+        $data_t3_op_pemantauan = DB::table("tbl_pemantauan_mr")
             ->where(DB::raw("tahun"), $year)
             ->where("tbl_pemantauan_mr.level", 'UPR-T3')
             ->where("eselon2_id", 7)
@@ -1299,7 +1350,7 @@ class HomeController extends MYController
         $total_komitmen_t4_d = 0;
         $data = [];
 
-        foreach ($data_t1 as $dt1) {
+        foreach ($data_t1_pemantauan as $dt1) {
             $data[] = $dt1;
             $total_jumlah += $dt1->jumlah;
             $total_komitmen_v += $dt1->komitmen_v;
@@ -1313,7 +1364,7 @@ class HomeController extends MYController
             $total_komitmen_t4_v += $dt1->komitmen_t4_v;
             $total_komitmen_t4_d += $dt1->komitmen_t4_d;
         }
-        foreach ($data_t2 as $dt2) {
+        foreach ($data_t2_pemantauan as $dt2) {
             $data[] = $dt2;
             $total_jumlah += $dt2->jumlah;
             $total_komitmen_v += $dt2->komitmen_v;
@@ -1327,7 +1378,7 @@ class HomeController extends MYController
             $total_komitmen_t4_v += $dt2->komitmen_t4_v;
             $total_komitmen_t4_d += $dt2->komitmen_t4_d;
         }
-        foreach ($data_t3 as $dt3) {
+        foreach ($data_t3_pemantauan as $dt3) {
             $data[] = $dt3;
             $total_jumlah += $dt3->jumlah;
             $total_komitmen_v += $dt3->komitmen_v;
@@ -1341,7 +1392,7 @@ class HomeController extends MYController
             $total_komitmen_t4_v += $dt3->komitmen_t4_v;
             $total_komitmen_t4_d += $dt3->komitmen_t4_d;
         }
-        foreach ($data_t3_op as $dt3_op) {
+        foreach ($data_t3_op_pemantauan as $dt3_op) {
             $data[] = $dt3_op;
             $total_jumlah += $dt3_op->jumlah;
             $total_komitmen_v += $dt3_op->komitmen_v;

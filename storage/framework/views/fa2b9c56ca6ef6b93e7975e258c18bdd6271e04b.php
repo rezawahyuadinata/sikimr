@@ -1,7 +1,7 @@
 <?php $__env->startSection('section'); ?>
     <div class="container py-3">
         
-        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+        <section class="my-5 rounded-2 border-2" style="width:100%; height: auto">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
                     <h3 class="d-inline align-self-center">Berita</h3>
@@ -10,37 +10,522 @@
                     </a>
                 </div>
             </div>
-            <div class="container bg-secondary py-2"></div>
+            <div class="container py-2">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 my-2">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
+                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 my-2">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
+                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 my-2">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
+                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 my-2">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
+                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                            </svg>
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                    to
+                                    additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
         
-        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+        <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
-                    <h3 class="d-inline align-self-center">Profile</h3>
+                    <h3 class="d-inline align-self-center">Profile KI & MR</h3>
                     <a href="" class="text-danger" style="text-decoration: none">
                         <p class="d-inline align-self-center">Lihat Selengkapnya</p>
                     </a>
                 </div>
             </div>
-            <div class="container bg-secondary py-2"></div>
+            <div class="container py-2">
+                <div class="row g-3">
+                    <div class="col-sm-4 bg-secondary" style="height: 405px"></div>
+                    <div class="col-sm-8">
+                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
+                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-2">
+                <div class="row g-3">
+                    <div class="col-sm-8">
+                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
+                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
+                    </div>
+                    <div class="col-sm-4 bg-secondary" style="height: 405px"></div>
+                </div>
+            </div>
         </section>
+
         
-        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+        <section class="my-5 rounded-2 border-2" style="width:100%; height: auto">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
                     <h3 class="d-inline align-self-center">Dasar Pembentukan Hukum</h3>
                 </div>
             </div>
-            <div class="container bg-secondary py-2"></div>
+            <div class="container py-2">
+                <div class="container bg-secondary" style="height: 100px">
+
+                </div>
+            </div>
+            <div class="container py-2">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="container">
+                            
+                            <div class="row my-3">
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                            </div>
+                            
+                            <div class="row my-3">
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                            </div>
+                            
+                            <div class="row my-3">
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                            </div>
+                            
+                            <div class="row my-3">
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                            </div>
+                            
+                            <div class="row my-3">
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <embed src="file_name.pdf" width="auto" height="200px" />
+                    </div>
+                </div>
+            </div>
         </section>
+
         
-        <section class="my-5 rounded-2 border-2" style="width:100%; height: 40vh">
+        <section class="my-5 rounded-2 border-2" style="width:100%;">
+            <div class="container mb-3">
+                <div class="d-flex container-fluid justify-content-between">
+                    <h3 class="d-inline align-self-center">Kegiatan KI & MR</h3>
+                </div>
+            </div>
+            <div class="container-fluid py-2">
+                <div class="row justify-content-center">
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                    <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
                     <h3 class="d-inline align-self-center">FAQ</h3>
                 </div>
             </div>
-            <div class="container bg-secondary py-2"></div>
+            <div class="container py-2">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionMR">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-collapseMR" aria-expanded="false"
+                                aria-controls="accordion-collapseMR">
+                                Manajemen Risiko
+                            </button>
+                        </h2>
+                        
+                        <div id="accordion-collapseMR" class="accordion-collapse collapse" aria-labelledby="accordionMR"
+                            data-bs-parent="#accordionFlushExample">
+                            
+                            <div class="accordion-body">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR1" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR1">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR1" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR1">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR2">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR2" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR2">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR2" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR2">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR3">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR3" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR3">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR3" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR3">
+                                            <div class="accordion-body">
+                                                <strong>This is the first item's accordion body.</strong> It is shown by
+                                                default, until the collapse plugin adds the appropriate classes that we use
+                                                to style each element. These classes control the overall appearance, as well
+                                                as the showing and hiding via CSS transitions. You can modify any of this
+                                                with custom CSS or overriding our default variables. It's also worth noting
+                                                that just about any HTML can go within the <code>.accordion-body</code>,
+                                                though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionSOP">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-collapseSOP" aria-expanded="false"
+                                aria-controls="accordion-collapseSOP">
+                                SOP
+                            </button>
+                        </h2>
+                        
+                        <div id="accordion-collapseSOP" class="accordion-collapse collapse"
+                            aria-labelledby="accordionSOP" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                
+                                <div class="accordion-body">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP1" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP1">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP1" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP1">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                                    default, until the collapse plugin adds the appropriate classes that we
+                                                    use
+                                                    to style each element. These classes control the overall appearance, as
+                                                    well
+                                                    as the showing and hiding via CSS transitions. You can modify any of
+                                                    this
+                                                    with custom CSS or overriding our default variables. It's also worth
+                                                    noting
+                                                    that just about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP2">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP2" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP2">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP2" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP2">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                                    default, until the collapse plugin adds the appropriate classes that we
+                                                    use
+                                                    to style each element. These classes control the overall appearance, as
+                                                    well
+                                                    as the showing and hiding via CSS transitions. You can modify any of
+                                                    this
+                                                    with custom CSS or overriding our default variables. It's also worth
+                                                    noting
+                                                    that just about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP3">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP3" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP3">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP3" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP3">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                                    default, until the collapse plugin adds the appropriate classes that we
+                                                    use
+                                                    to style each element. These classes control the overall appearance, as
+                                                    well
+                                                    as the showing and hiding via CSS transitions. You can modify any of
+                                                    this
+                                                    with custom CSS or overriding our default variables. It's also worth
+                                                    noting
+                                                    that just about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionZI">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-collapseZI" aria-expanded="false"
+                                aria-controls="accordion-collapseZI">
+                                Zona Integritas
+                            </button>
+                        </h2>
+                        
+                        <div id="accordion-collapseZI" class="accordion-collapse collapse" aria-labelledby="accordionZI"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                
+                                <div class="accordion-body">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI1" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI1">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI1" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI1">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                                    default, until the collapse plugin adds the appropriate classes that we
+                                                    use
+                                                    to style each element. These classes control the overall appearance, as
+                                                    well
+                                                    as the showing and hiding via CSS transitions. You can modify any of
+                                                    this
+                                                    with custom CSS or overriding our default variables. It's also worth
+                                                    noting
+                                                    that just about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI2">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI2" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI2">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI2" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI2">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                                    default, until the collapse plugin adds the appropriate classes that we
+                                                    use
+                                                    to style each element. These classes control the overall appearance, as
+                                                    well
+                                                    as the showing and hiding via CSS transitions. You can modify any of
+                                                    this
+                                                    with custom CSS or overriding our default variables. It's also worth
+                                                    noting
+                                                    that just about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI3">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI3" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI3">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI3" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI3">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is shown by
+                                                    default, until the collapse plugin adds the appropriate classes that we
+                                                    use
+                                                    to style each element. These classes control the overall appearance, as
+                                                    well
+                                                    as the showing and hiding via CSS transitions. You can modify any of
+                                                    this
+                                                    with custom CSS or overriding our default variables. It's also worth
+                                                    noting
+                                                    that just about any HTML can go within the <code>.accordion-body</code>,
+                                                    though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 <?php $__env->stopSection(); ?>

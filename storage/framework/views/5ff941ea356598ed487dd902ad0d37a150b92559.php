@@ -20,12 +20,20 @@
         padding-bottom: 1em;
     }
 
+    /* .animasi-bg:hover {
+        background-color: var(--sub-title-color);
+        color: white
+    } */
+
     .navbar-font-style:has(.navbar-menu) {
         color: black;
+        border-radius: .5em;
     }
 
     .navbar-font-style:has(.navbar-menu):hover {
-        color: var(--sub-title-color);
+        background-color: var(--sub-title-color);
+        color: white;
+        border-radius: .5em;
     }
 
     .navbar-font-style:has(.navbar-btn-menu) {
@@ -94,6 +102,24 @@
         background: rgba(255, 255, 255);
         border-end-end-radius: 10em;
         border-bottom: 10px solid rgb(255, 193, 59);
+    }
+
+    .font-table-head {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .font-table {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     .masthead {
@@ -190,5 +216,10 @@
 
     /* standard operator procedure */
     .start-page:has(.sop) {}
+</style>
+
+
+<style>
+
 </style>
 <?php /**PATH D:\Codes\Programs\github reza\projek-sikimr\resources\views/Home/components/script-css.blade.php ENDPATH**/ ?>

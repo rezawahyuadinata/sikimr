@@ -1,5 +1,4 @@
 // bundle boostrap
-
 ! function (t, e) {
     "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = "undefined" != typeof globalThis ? globalThis : t || self).bootstrap = e()
 }(this, (function () {
@@ -3270,7 +3269,6 @@
 }));
 
 // animate on scroll
-
 ! function (e, t) {
     "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.AOS = t() : e.AOS = t()
 }(this, function () {
@@ -3819,7 +3817,6 @@
 });
 
 // popper boostrap
-
 ! function (e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e = "undefined" != typeof globalThis ? globalThis : e || self).Popper = {})
 }(this, (function (e) {

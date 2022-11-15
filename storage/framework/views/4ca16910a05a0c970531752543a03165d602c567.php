@@ -81,82 +81,233 @@
 <div class="container-fluid">
     <div class="row pt-3 px-2">
         <div class="col-md-8">
-            <div class=" ms-auto" style="min-height: 80vh">
+            <div class=" ms-auto" style="min-height: 80vh;">
                 
                 <section id="div1" class="targetDiv" style="display: block">
-                    <div class="container" style="min-height: 10vh; width: 50%">
+                    <div class="container-fluid" style="min-height: 10vh; width: 80%">
                         <h3 class="text-center">Manajemen Risiko</h3>
                         <h5 class="text-center" style="font-size: 14px" id="status_dataMR""></h5>
                     </div>
-                    <div class="container mt-1 mb-3" style="min-height: 58vh; width: 100%">
-                        
+                    <div class="container mt-1" style="width: 100%">
+                        <div class="table-responsive">
+                            <table class="table table-bordered dark"
+                                style="border: 2px solid black; width: 100%; height:60vh">
+                                <thead>
+                                    <tr style="border: .5px solid black" class="table-light">
+                                        <th class="text-dark text-sm-center align-middle font-table-head"
+                                            style="border: 1px solid black;">
+                                            Progress
+                                        </th>
+                                        <th class="text-dark text-sm-center align-middle font-table-head" colspan="2"
+                                            style="border: 1px solid black;">
+                                            Komitmen MR</th>
+                                        <th class="text-dark text-sm-center align-middle font-table-head" colspan="2"
+                                            style="border: 1px solid black;">
+                                            T1</th>
+                                        <th class="text-dark text-sm-center align-middle font-table-head" colspan="2"
+                                            style="border: 1px solid black;">
+                                            T2</th>
+                                        <th class="text-dark text-sm-center align-middle font-table-head" colspan="2"
+                                            style="border: 1px solid black;">T3</th>
+                                        <th class="text-dark text-sm-center align-middle font-table-head" colspan="2"
+                                            style="border: 1px solid black;">T4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border: .5px solid black" class="table-danger ">
+                                        <th class="text-dark text-sm-center align-middle font-table-head">Belum
+                                        </th>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo 293 - ($kom_d + $kom_v); ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(((293 - ($kom_d + $kom_v)) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo 293 - ($t1_d + $t1_v); ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(((293 - ($t1_d + $t1_v)) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo 293 - ($t2_d + $t2_v); ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(((293 - ($t2_d + $t2_v)) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo 293 - ($t3_d + $t3_v); ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(((293 - ($t3_d + $t3_v)) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo 293 - ($t4_d + $t4_v); ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(((293 - ($t4_d + $t4_v)) / 293) * 100) . '%'; ?></td>
+                                    </tr>
+                                    <tr style="border: .5px solid black" class="table-warning">
+                                        <th class="text-dark text-sm-center align-middle font-table-head">Draft
+                                        </th>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $kom_d; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($kom_d / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t1_d; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t1_d / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t2_d; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t2_d / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t3_d; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t3_d / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t4_d; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t4_d / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                    </tr>
+                                    <tr style="border: .5px solid black" class="table-info">
+                                        <th class="text-dark text-sm-center align-middle font-table-head">
+                                            Verifikasi
+                                        </th>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $kom_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($kom_v / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t1_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t1_v / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t2_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t2_v / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t3_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t3_v / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo $t4_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table">
+                                            <?php echo round(($t4_v / 293) * 100) . '%'; ?>
+
+                                        </td>
+                                    </tr>
+                                    <tr style="border: .5px solid black" class="table-success">
+                                        <th class="text-dark text-sm-center align-middle font-table-head">Total
+                                        </th>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo 293 - ($kom_d + $kom_v) + $kom_v + $kom_d; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo round(((293 - ($kom_d + $kom_v) + $kom_d + $kom_v) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo 293 - ($t1_d + $t1_v) + $t1_d + $t1_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo round(((293 - ($t1_d + $t1_v) + $t1_d + $t1_v) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo 293 - ($t2_d + $t2_v) + $t2_d + $t2_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo round(((293 - ($t2_d + $t2_v) + $t2_d + $t2_v) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo 293 - ($t3_d + $t3_v) + $t3_d + $t3_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo round(((293 - ($t3_d + $t3_v) + $t3_d + $t3_v) / 293) * 100) . '%'; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo 293 - ($t4_d + $t4_v) + $t4_d + $t4_v; ?></td>
+                                        <td class="text-dark text-sm-center align-middle font-table"
+                                            style="border: 1px solid black">
+                                            <?php echo round(((293 - ($t4_d + $t4_v) + $t4_d + $t4_v) / 293) * 100) . '%'; ?></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </section>
                 
                 <section id="div2" class="targetDiv" style="display: none">
-                    <div class="container" style="min-height: 10vh; width: 50%">
+                    <div class="container-fluid" style="min-height: 10vh; width: 80%">
                         <h3 class="text-center">Pengadaan Barang dan Jasa</h3>
                         <h5 class="text-center" style="font-size: 14px" id="status_dataPBJ"></h5>
                     </div>
-                    <div class="container mt-1 mb-3" style="min-height: 58vh; width: 100%">
+                    <div class="container mt-1" style="min-height: 58vh; width: 100%">
                         
                     </div>
                 </section>
                 
                 <section id="div3" class="targetDiv" style="display: none">
-                    <div class="container" style="min-height: 10vh; width: 50%">
+                    <div class="container-fluid" style="min-height: 10vh; width: 80%">
                         <h3 class="text-center">Zona Integritas</h3>
                         <h5 class="text-center" style="font-size: 14px" id="status_dataZI"></h5>
                     </div>
-                    <div class="container mt-1 mb-3" style="min-height: 58vh; width: 100%">
+                    <div class="container mt-1" style="min-height: 58vh; width: 100%">
                         
                     </div>
                 </section>
                 
                 <section id="div4" class="targetDiv" style="display: none">
-                    <div class="container" style="min-height: 10vh; width: 50%">
+                    <div class="container-fluid" style="min-height: 10vh; width: 80%">
                         <h3 class="text-center">Pengaduan</h3>
                         <h5 class="text-center" style="font-size: 14px" id="status_dataPeng"></h5>
                     </div>
-                    <div class="container mt-1 mb-3" style="min-height: 58vh; width: 100%">
+                    <div class="container mt-1" style="min-height: 58vh; width: 100%">
                         
                     </div>
                 </section>
                 
                 <section id="div5" class="targetDiv" style="display: none">
-                    <div class="container" style="min-height: 10vh; width: 50%">
+                    <div class="container-fluid" style="min-height: 10vh; width: 80%">
                         <h3 class="text-center">SOP</h3>
                         <h5 class="text-center" style="font-size: 14px" id="status_dataPeng1"></h5>
                     </div>
-                    <div class="container mt-1 mb-3" style="min-height: 58vh; width: 100%">
+                    <div class="container mt-1" style="min-height: 58vh; width: 100%">
                         
                     </div>
                 </section>
                 
-                <div class="overflow-hidden">
-                    <div class="container overflow-auto mt-4 d-flex px-5" style="width: 100%; ">
-                        <a target="1"
-                            class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
-                            style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Manajemen Risiko</span>
-                        </a>
-                        <a target="2"
-                            class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
-                            style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Pengadaan Barang
-                                Jasa</span>
-                        </a>
-                        <a target="3"
-                            class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
-                            style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Zona Integritas</span>
-                        </a>
-                        <a target="4"
-                            class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
-                            style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Pengaduan</span>
-                        </a>
-                        <a target="5"
-                            class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
-                            style="height: 7vh; cursor: pointer; border: 2px solid black"><span>SOP</span>
-                        </a>
-                    </div>
+                <div class="container overflow-auto ms-auto d-flex mx-3" style="width: 100%; ">
+                    <a target="1"
+                        class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
+                        style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Manajemen Risiko</span>
+                    </a>
+                    <a target="2"
+                        class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
+                        style="height: 7vh; cursor: pointer; border: 2px solid black"><span>PBJ</span>
+                    </a>
+                    <a target="3"
+                        class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
+                        style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Zona Integritas</span>
+                    </a>
+                    <a target="4"
+                        class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
+                        style="height: 7vh; cursor: pointer; border: 2px solid black"><span>Pengaduan</span>
+                    </a>
+                    <a target="5"
+                        class="showSingle container d-flex justify-content-center align-items-center rounded rounded-3 mx-2 text-decoration-none"
+                        style="height: 7vh; cursor: pointer; border: 2px solid black"><span>SOP</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -181,7 +332,7 @@
                             <div class="card">
                                 <img src="..." style="min-height: 120px" class="card-img bg-secondary"
                                     alt="...">
-                                <div class="card-body" style="height: 200px;">
+                                <div class="card-body" style="max-height: 200px;">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
@@ -192,7 +343,7 @@
                             <div class="card">
                                 <img src="..." style="min-height: 120px" class="card-img bg-secondary"
                                     alt="...">
-                                <div class="card-body" style="height: 200px;">
+                                <div class="card-body" style="max-height: 200px;">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
@@ -216,14 +367,142 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="card my-3 d-flex align-items-center text-bg-dark">
-                        <img src="..." style="height: 270px" class="card-img" alt="...">
-                        <div class="card-img-overlay align-items-center">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
+                <div class="swiper tutorialheaderSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card my-3 d-flex align-items-center text-bg-dark">
+                                    <img src="..." style="height: 290px; background-size: contain"
+                                        class="card-img" alt="...">
+                                    <div class="card-img-overlay align-items-center">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in
+                                            to
+                                            additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
