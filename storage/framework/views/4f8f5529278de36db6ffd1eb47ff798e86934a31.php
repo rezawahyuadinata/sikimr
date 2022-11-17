@@ -1,5 +1,5 @@
-{{-- UNDONE(Reza): memberikan animasi dalam css --}}
-{{-- style dasar --}}
+
+
 <style>
     /* variabel */
     :root {
@@ -13,7 +13,7 @@
     }
 
     /* opem sams weight  */
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+    @import  url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
     /* css Navbar */
     .navbar-font-style {
@@ -70,7 +70,7 @@
     }
 </style>
 
-{{-- navbar style --}}
+
 <style>
     .bg-gradient-navbar-first {
         background: rgb(15, 96, 156);
@@ -94,7 +94,7 @@
     }
 </style>
 
-{{-- header style --}}
+
 <style>
     .mask {
         /* width: 100%;
@@ -254,7 +254,7 @@
     }
 </style>
 
-{{-- Home --}}
+
 <style>
     .berita {
         display: inline;
@@ -328,7 +328,8 @@
     .start-page:has(.sop) {}
 </style>
 
-{{-- berita --}}
+
 <style>
 
 </style>
+<?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/components/script-css.blade.php ENDPATH**/ ?>

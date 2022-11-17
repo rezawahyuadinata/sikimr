@@ -1,13 +1,13 @@
-{{-- Contoh Pertama --}}
+
 <!-- <div class="container-fluid">
     <div class="row pt-3 px-2 ">
-        {{-- carousel --}}
+        
         <div class="col-md-8">
             <div class="bg-secondary border border-2 rounded-2 ms-auto" style="min-height: 80vh">
                 <div class="container-fluid"></div>
             </div>
         </div>
-        {{-- Berita --}}
+        
         <div class="col-md-4">
             <div class="mb-2 ms-auto" style="min-height: 60vh">
                 <div class="container">
@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    {{-- card Berita --}}
+                    
                     <div class="row">
                         <div class="col-md-6 my-3">
                             <div class="card">
@@ -77,16 +77,16 @@
     </div>
 </div> -->
 
-{{-- Contoh Kedua --}}
+
 <div class="container-fluid">
     <div class="row pt-3 px-2">
         <div class="col-md-8">
             <div class="row">
                 <div class="col-12">
-                    {{-- Manajemen Risiko --}}
+                    
                     <section id="div1" class="targetDiv" style="display: block;">
                         <div class="container-fluid" style="min-height: 10vh; width: 80%">
-                            <h3 class="text-center">Manajemen Risiko {{ date('Y') }}</h3>
+                            <h3 class="text-center">Manajemen Risiko <?php echo e(date('Y')); ?></h3>
                             <h5 class="text-center" style="font-size: 14px" id="status_dataMR"></h5>
                         </div>
                         <div class=" container mt-1" style="width: 100%">
@@ -119,53 +119,58 @@
                                             <th class="text-dark text-sm-center align-middle font-table-head">Belum
                                             </th>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! 293 - ($kom_d + $kom_v) !!}</td>
+                                                <?php echo 293 - ($kom_d + $kom_v); ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(((293 - ($kom_d + $kom_v)) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($kom_d + $kom_v)) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! 293 - ($t1_d + $t1_v) !!}</td>
+                                                <?php echo 293 - ($t1_d + $t1_v); ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(((293 - ($t1_d + $t1_v)) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t1_d + $t1_v)) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! 293 - ($t2_d + $t2_v) !!}</td>
+                                                <?php echo 293 - ($t2_d + $t2_v); ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(((293 - ($t2_d + $t2_v)) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t2_d + $t2_v)) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! 293 - ($t3_d + $t3_v) !!}</td>
+                                                <?php echo 293 - ($t3_d + $t3_v); ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(((293 - ($t3_d + $t3_v)) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t3_d + $t3_v)) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! 293 - ($t4_d + $t4_v) !!}</td>
+                                                <?php echo 293 - ($t4_d + $t4_v); ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(((293 - ($t4_d + $t4_v)) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t4_d + $t4_v)) / 293) * 100) . '%'; ?></td>
                                         </tr>
                                         <tr style="border: .5px solid black" class="table-warning">
                                             <th class="text-dark text-sm-center align-middle font-table-head">Draft
                                             </th>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $kom_d !!}</td>
+                                                <?php echo $kom_d; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($kom_d / 293) * 100) . '%' !!}
+                                                <?php echo round(($kom_d / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t1_d !!}</td>
+                                                <?php echo $t1_d; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t1_d / 293) * 100) . '%' !!}
+                                                <?php echo round(($t1_d / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t2_d !!}</td>
+                                                <?php echo $t2_d; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t2_d / 293) * 100) . '%' !!}
+                                                <?php echo round(($t2_d / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t3_d !!}</td>
+                                                <?php echo $t3_d; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t3_d / 293) * 100) . '%' !!}
+                                                <?php echo round(($t3_d / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t4_d !!}</td>
+                                                <?php echo $t4_d; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t4_d / 293) * 100) . '%' !!}
+                                                <?php echo round(($t4_d / 293) * 100) . '%'; ?>
+
                                             </td>
                                         </tr>
                                         <tr style="border: .5px solid black" class="table-info">
@@ -173,29 +178,34 @@
                                                 Verifikasi
                                             </th>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $kom_v !!}</td>
+                                                <?php echo $kom_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($kom_v / 293) * 100) . '%' !!}
+                                                <?php echo round(($kom_v / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t1_v !!}</td>
+                                                <?php echo $t1_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t1_v / 293) * 100) . '%' !!}
+                                                <?php echo round(($t1_v / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t2_v !!}</td>
+                                                <?php echo $t2_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t2_v / 293) * 100) . '%' !!}
+                                                <?php echo round(($t2_v / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t3_v !!}</td>
+                                                <?php echo $t3_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t3_v / 293) * 100) . '%' !!}
+                                                <?php echo round(($t3_v / 293) * 100) . '%'; ?>
+
                                             </td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! $t4_v !!}</td>
+                                                <?php echo $t4_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table">
-                                                {!! round(($t4_v / 293) * 100) . '%' !!}
+                                                <?php echo round(($t4_v / 293) * 100) . '%'; ?>
+
                                             </td>
                                         </tr>
                                         <tr style="border: .5px solid black" class="table-success">
@@ -203,44 +213,44 @@
                                             </th>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! 293 - ($kom_d + $kom_v) + $kom_v + $kom_d !!}</td>
+                                                <?php echo 293 - ($kom_d + $kom_v) + $kom_v + $kom_d; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! round(((293 - ($kom_d + $kom_v) + $kom_d + $kom_v) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($kom_d + $kom_v) + $kom_d + $kom_v) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! 293 - ($t1_d + $t1_v) + $t1_d + $t1_v !!}</td>
+                                                <?php echo 293 - ($t1_d + $t1_v) + $t1_d + $t1_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! round(((293 - ($t1_d + $t1_v) + $t1_d + $t1_v) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t1_d + $t1_v) + $t1_d + $t1_v) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! 293 - ($t2_d + $t2_v) + $t2_d + $t2_v !!}</td>
+                                                <?php echo 293 - ($t2_d + $t2_v) + $t2_d + $t2_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! round(((293 - ($t2_d + $t2_v) + $t2_d + $t2_v) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t2_d + $t2_v) + $t2_d + $t2_v) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! 293 - ($t3_d + $t3_v) + $t3_d + $t3_v !!}</td>
+                                                <?php echo 293 - ($t3_d + $t3_v) + $t3_d + $t3_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! round(((293 - ($t3_d + $t3_v) + $t3_d + $t3_v) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t3_d + $t3_v) + $t3_d + $t3_v) / 293) * 100) . '%'; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! 293 - ($t4_d + $t4_v) + $t4_d + $t4_v !!}</td>
+                                                <?php echo 293 - ($t4_d + $t4_v) + $t4_d + $t4_v; ?></td>
                                             <td class="text-dark text-sm-center align-middle font-table"
                                                 style="border: 1px solid black">
-                                                {!! round(((293 - ($t4_d + $t4_v) + $t4_d + $t4_v) / 293) * 100) . '%' !!}</td>
+                                                <?php echo round(((293 - ($t4_d + $t4_v) + $t4_d + $t4_v) / 293) * 100) . '%'; ?></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </section>
-                    {{-- PBJ --}}
+                    
                     <section id="div2" class="targetDiv" style="display: none;">
                         <div class="container-fluid" style="min-height: 10vh; width: 80%">
-                            <h3 class="text-center">Pengadaan Barang dan Jasa {{ date('Y') }}</h3>
+                            <h3 class="text-center">Pengadaan Barang dan Jasa <?php echo e(date('Y')); ?></h3>
                             <h5 class="text-center" style="font-size: 14px" id="status_dataPBJ"></h5>
                         </div>
                         <div class="container mt-1" style="width: 100%; height: auto">
@@ -411,10 +421,10 @@
                             </div>
                         </div>
                     </section>
-                    {{-- Zoma Integritas --}}
+                    
                     <section id="div3" class="targetDiv" style="display: none;">
                         <div class="container-fluid" style="min-height: 10vh; width: 80%">
-                            <h3 class="text-center">Zona Integritas {{ date('Y') }}</h3>
+                            <h3 class="text-center">Zona Integritas <?php echo e(date('Y')); ?></h3>
                             <h5 class="text-center" style="font-size: 14px" id="status_dataZI"></h5>
                         </div>
                         <div class="container mt-1" style="width: 100%; height: auto">
@@ -424,10 +434,10 @@
                             </div>
                         </div>
                     </section>
-                    {{-- Pengaduan --}}
+                    
                     <section id="div4" class="targetDiv" style="display: none;">
                         <div class="container-fluid" style="min-height: 10vh; width: 80%">
-                            <h3 class="text-center">Pengaduan {{ date('Y') }}</h3>
+                            <h3 class="text-center">Pengaduan <?php echo e(date('Y')); ?></h3>
                             <h5 class="text-center" style="font-size: 14px" id="status_dataPeng"></h5>
                         </div>
                         <div class="container mt-1" style="width: 100%; height: auto">
@@ -585,19 +595,19 @@
                             </div>
                         </div>
                     </section>
-                    {{-- SOP --}}
+                    
                     <section id="div5" class="targetDiv" style="display: none;">
                         <div class="container-fluid" style="min-height: 10vh; width: 80%">
-                            <h3 class="text-center">SOP {{ date('Y') }}</h3>
+                            <h3 class="text-center">SOP <?php echo e(date('Y')); ?></h3>
                             <h5 class="text-center" style="font-size: 14px" id="status_dataPeng1">
                         </div>
                         <div class="container mt-1" style="width: 100%; height: auto">
                             <div class="swiper sopheader" style="height:60vh;">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="{{ Route('SOP') }}">
+                                        <a href="<?php echo e(Route('SOP')); ?>">
                                             <img class="d-block img-fluid"
-                                                src="{{ asset('storage/dashboard/Library_SOP.jpeg') }}"
+                                                src="<?php echo e(asset('storage/dashboard/Library_SOP.jpeg')); ?>"
                                                 alt="First slide" style="width: 100%; height: 100%">
                                         </a>
                                     </div>
@@ -641,7 +651,7 @@
         </div>
         <div class="col-md-4">
             <div class="row">
-                {{-- Berita Terupdate --}}
+                
                 <div class="col-md-12">
                     <div class="mb-2 ms-auto" style="height: auto">
                         <div class="container">
@@ -658,17 +668,17 @@
                         </div>
                         <div class="container">
                             <div class="row">
-                                @foreach ($news->sortByDesc('created_at')->take(2) as $key => $item)
-                                    <div class="col-sm-6 {{ $key == 0 ? '' : '' }}">
+                                <?php $__currentLoopData = $news->sortByDesc('created_at')->take(2); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                    <div class="col-sm-6 <?php echo e($key == 0 ? '' : ''); ?>">
                                         <div class="card card-plain">
-                                            @php
+                                            <?php
                                                 $thumbnailBerita = explode('|', $item->thumbnail);
-                                            @endphp
+                                            ?>
                                             <div class="card-header p-0 position-relative" data-aos="fade-left">
                                                 <div class="geeks">
                                                     <a class="d-block blur-shadow-image"
-                                                        href="{{ url('/news/' . $item->slug) }}">
-                                                        <img src="{{ url('storage/uploads/berita/' . $thumbnailBerita[0]) }}"
+                                                        href="<?php echo e(url('/news/' . $item->slug)); ?>">
+                                                        <img src="<?php echo e(url('storage/uploads/berita/' . $thumbnailBerita[0])); ?>"
                                                             alt="img-blur-shadow" class="  img img-thumbnail"
                                                             loading="lazy"
                                                             style="width: 100%; height: 8vw; object-fit: cover;">
@@ -677,18 +687,18 @@
                                             </div>
                                             <div class="card-body px-0" data-aos="fade-left">
                                                 <h5 style="min-height: 55px; max-height: 60px; font-size: 16px">
-                                                    <a href="{{ url('/news/' . $item->slug) }}"
-                                                        class="text-dark font-weight-bold">{{ $item->subject }}</a>
+                                                    <a href="<?php echo e(url('/news/' . $item->slug)); ?>"
+                                                        class="text-dark font-weight-bold"><?php echo e($item->subject); ?></a>
                                                 </h5>
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </div>
                         </div>
                     </div>
                 </div>
-                {{-- Tutorial --}}
+                
                 <div class="col-md-12">
                     <div class=" rounded-2 my-2 ms-auto" style="height: auto">
                         <div class="container">
@@ -779,46 +789,10 @@
     </div>
 </div>
 
-{{-- contoh Ketiga --}}
-{{-- <div class="swiper headerSwiper">
-    <div class="swiper-wrapper">
-        <style>
-            .size-background {
-                width: 100%;
-                height: 90vh;
-            }
-        </style>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-            <img class="size-background" src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </div>
-    </div>
-</div> --}}
 
-{{-- Contoh Keempat --}}
+
+
+
 <!-- <div class="container-fluid">
 <div class="row pt-3 px-2 ">
 <div class="col-md-8">
@@ -829,7 +803,7 @@
 <div class="col-md-4">
 <div class="container bg-secondary" style="height: 10vh"></div>
 <div class="mb-2 border ms-auto d-inline-flex " style="max-height: 70vh">
-{{-- List Berita --}}
+
 <ul class="list-group overflow-auto ">
 <li class="list-group-item border-0 ">
 <a style="cursor: pointer">
@@ -997,3 +971,4 @@
 </div>
 </div>
 </div> -->
+<?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/components/head.blade.php ENDPATH**/ ?>

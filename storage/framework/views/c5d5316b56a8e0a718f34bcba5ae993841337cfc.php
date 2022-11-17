@@ -1,7 +1,6 @@
-@extends('Home.layouts.layouthome')
-@section('section')
+<?php $__env->startSection('section'); ?>
     <div class="container py-3">
-        {{-- Berita --}}
+        
         <section class="my-5 rounded-2 border-2" style="width:100%; height: auto">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
@@ -110,7 +109,7 @@
             </div>
         </section>
 
-        {{-- Profile --}}
+        
         <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
@@ -140,7 +139,7 @@
             </div>
         </section>
 
-        {{-- Dasar Pembentukan Hukum --}}
+        
         <section class="my-5 rounded-2 border-2" style="width:100%; height: auto">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
@@ -156,27 +155,27 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="container">
-                            {{-- Aturan Pertama --}}
+                            
                             <div class="row my-3">
                                 <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
                                 <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
                             </div>
-                            {{-- Aturan Kedua --}}
+                            
                             <div class="row my-3">
                                 <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
                                 <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
                             </div>
-                            {{-- Aturan Ketiga --}}
+                            
                             <div class="row my-3">
                                 <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
                                 <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
                             </div>
-                            {{-- Aturan Keempat --}}
+                            
                             <div class="row my-3">
                                 <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
                                 <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
                             </div>
-                            {{-- Aturan Kelima --}}
+                            
                             <div class="row my-3">
                                 <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
                                 <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
@@ -190,7 +189,7 @@
             </div>
         </section>
 
-        {{-- Album Kegiatan --}}
+        
         <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
@@ -233,7 +232,7 @@
             </div>
         </section>
 
-        {{-- Faq --}}
+        
         <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
@@ -242,7 +241,7 @@
             </div>
             <div class="container py-2">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
-                    {{-- Manajemen Risiko --}}
+                    
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="accordionMR">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -251,13 +250,13 @@
                                 Manajemen Risiko
                             </button>
                         </h2>
-                        {{-- Manajemen Risiko Collapse --}}
+                        
                         <div id="accordion-collapseMR" class="accordion-collapse collapse" aria-labelledby="accordionMR"
                             data-bs-parent="#accordionFlushExample">
-                            {{-- Acordion Body MR --}}
+                            
                             <div class="accordion-body">
                                 <div class="accordion" id="accordionPanelsStayOpenExample">
-                                    {{-- Faq Manajemen Risiko 1 --}}
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="panelOpen-headingMR1">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -279,7 +278,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- Faq Manajemen Risiko 2 --}}
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="panelOpen-headingMR2">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -301,7 +300,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- Faq Manajemen Risiko 3 --}}
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="panelOpen-headingMR3">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -327,7 +326,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- SOP --}}
+                    
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="accordionSOP">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -336,14 +335,14 @@
                                 SOP
                             </button>
                         </h2>
-                        {{-- SOP Collapse --}}
+                        
                         <div id="accordion-collapseSOP" class="accordion-collapse collapse"
                             aria-labelledby="accordionSOP" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                {{-- accordion body SOP --}}
+                                
                                 <div class="accordion-body">
                                     <div class="accordion" id="accordionPanelsStayOpenExample">
-                                        {{-- Faq SOP 1 --}}
+                                        
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="panelOpen-headingSOP1">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -369,7 +368,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- Faq SOP 2 --}}
+                                        
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="panelOpen-headingSOP2">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -395,7 +394,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- Faq SOP 3 --}}
+                                        
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="panelOpen-headingSOP3">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -426,7 +425,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Zona Integritas --}}
+                    
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="accordionZI">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -435,14 +434,14 @@
                                 Zona Integritas
                             </button>
                         </h2>
-                        {{-- Zona Integritas Collapse --}}
+                        
                         <div id="accordion-collapseZI" class="accordion-collapse collapse" aria-labelledby="accordionZI"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                {{-- Accordion Body Zona Integritas --}}
+                                
                                 <div class="accordion-body">
                                     <div class="accordion" id="accordionPanelsStayOpenExample">
-                                        {{-- Faq Zona Integritas 1 --}}
+                                        
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="panelOpen-headingZI1">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -468,7 +467,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- Faq Zona Integritas 2 --}}
+                                        
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="panelOpen-headingZI2">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -494,7 +493,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- Faq Zona Integritas 3 --}}
+                                        
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="panelOpen-headingZI3">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -529,11 +528,11 @@
             </div>
         </section>
     </div>
-@endsection
-@push('script-css')
-@endpush
-@push('script-js')
-    {{-- script chart manajemen risiko --}}
+<?php $__env->stopSection(); ?>
+<?php $__env->startPush('script-css'); ?>
+<?php $__env->stopPush(); ?>
+<?php $__env->startPush('script-js'); ?>
+    
     <script>
         /*Komitmen Manajemen Risiko*/
         $('#chartMRkomitmen').html(myChartMRkomitmen());
@@ -541,9 +540,9 @@
         function myChartMRkomitmen() {
             let myChart = document.getElementById('chartMRkomitmen').getContext('2d');
 
-            var kom_v = "{!! $kom_v !!}";
-            var kom_d = "{!! $kom_d !!}";
-            var kom_b = "{!! 293 - ($kom_d + $kom_v) !!}";
+            var kom_v = "<?php echo $kom_v; ?>";
+            var kom_d = "<?php echo $kom_d; ?>";
+            var kom_b = "<?php echo 293 - ($kom_d + $kom_v); ?>";
 
             let chartMRCurrent = new Chart(myChart, {
                 type: 'pie',
@@ -635,9 +634,9 @@
         function myChartMRtriwulan1() {
             let myChart = document.getElementById('chartMRtriwulan1').getContext('2d');
 
-            var t1_v = "{!! $t1_v !!}";
-            var t1_d = "{!! $t1_d !!}";
-            var t1_b = "{!! 293 - ($t1_d + $t1_v) !!}";
+            var t1_v = "<?php echo $t1_v; ?>";
+            var t1_d = "<?php echo $t1_d; ?>";
+            var t1_b = "<?php echo 293 - ($t1_d + $t1_v); ?>";
 
             let chartMRCurrent = new Chart(myChart, {
                 type: 'pie',
@@ -717,9 +716,9 @@
         function myChartMRtriwulan2() {
             let myChart = document.getElementById('chartMRtriwulan2').getContext('2d');
 
-            var t2_v = "{!! $t2_v !!}";
-            var t2_d = "{!! $t2_d !!}";
-            var t2_b = "{!! 293 - ($t2_d + $t2_v) !!}";
+            var t2_v = "<?php echo $t2_v; ?>";
+            var t2_d = "<?php echo $t2_d; ?>";
+            var t2_b = "<?php echo 293 - ($t2_d + $t2_v); ?>";
 
             let chartMRCurrent = new Chart(myChart, {
                 type: 'pie',
@@ -800,9 +799,9 @@
         function myChartMRtriwulan3() {
             let myChart = document.getElementById('chartMRtriwulan3').getContext('2d');
 
-            var t3_v = "{!! $t3_v !!}";
-            var t3_d = "{!! $t3_d !!}";
-            var t3_b = "{!! 293 - ($t3_d + $t3_v) !!}";
+            var t3_v = "<?php echo $t3_v; ?>";
+            var t3_d = "<?php echo $t3_d; ?>";
+            var t3_b = "<?php echo 293 - ($t3_d + $t3_v); ?>";
 
             let chartMRCurrent = new Chart(myChart, {
                 type: 'pie',
@@ -883,9 +882,9 @@
         function myChartMRtriwulan4() {
             let myChart = document.getElementById('chartMRtriwulan4').getContext('2d');
 
-            var t4_v = "{!! $t4_v !!}";
-            var t4_d = "{!! $t4_d !!}";
-            var t4_b = "{!! 293 - ($t4_d + $t4_v) !!}";
+            var t4_v = "<?php echo $t4_v; ?>";
+            var t4_d = "<?php echo $t4_d; ?>";
+            var t4_b = "<?php echo 293 - ($t4_d + $t4_v); ?>";
 
             let chartMRCurrent = new Chart(myChart, {
                 type: 'pie',
@@ -960,7 +959,7 @@
         }
     </script>
 
-    {{-- script PBJ --}}
+    
     <script>
         // script chart kumulatif pengadaan barang dan jasa
         $('#chartPBJKumulatif').html(myChartPBJKumulatif())
@@ -1264,7 +1263,7 @@
         }
     </script>
 
-    {{-- script zona integritas --}}
+    
     <script>
         $('#chartZILine').html(myChartZILine())
 
@@ -1420,7 +1419,7 @@
         }
     </script>
 
-    {{-- script Pengaduan --}}
+    
     <script>
         // script pengaduan tahunan
         $('#chartPengaduanTahun').html(myChartPengaduanTahun())
@@ -2003,7 +2002,7 @@
         }
     </script>
 
-    {{-- sop --}}
+    
     <script>
         $('#chartSOP').html(myChartSOP())
 
@@ -2134,4 +2133,6 @@
             return chartSOPCurrent;
         }
     </script>
-@endpush
+<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('Home.layouts.layouthome', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/pages/home.blade.php ENDPATH**/ ?>

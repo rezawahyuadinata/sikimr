@@ -1,0 +1,495 @@
+{
+    "main": {
+        "nama": "Data Utama",
+        "folder": false,
+        "aktif": true,
+        "menu": {
+            "pengguna-kategori": {
+                "nama": "Role User",
+                "deskripsi": "",
+                "ikon": "fa fa-users",
+                "aktif": true,
+                "validasi": true,
+                "route": "pengguna-kategori.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna-kategori.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "proyek-pembayaran.read",
+                        "policy": "read"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna-kategori.store",
+                        "policy": "create"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna-kategori.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna-kategori.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+
+            "pengguna": {
+                "nama": "Pengguna",
+                "deskripsi": "",
+                "ikon": "fa fa-users",
+                "validasi": true,
+                "aktif": true,
+                "route": "pengguna.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "proyek-pembayaran.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.destroy",
+                        "policy": "destroy"
+                    },
+                    "hak_akses": {
+                        "nama": "Hak Akses",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.hak_akses",
+                        "policy": "hak_akses"
+                    },
+                    "store_kategori": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.store_kategori",
+                        "policy": "create"
+                    },
+                    "destroy_kategori": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pengguna.destroy_kategori",
+                        "policy": "create"
+                    }
+                }
+            },
+
+            "faq": {
+                "nama": "FAQ",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "faq.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "faq.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+
+            "berita": {
+                "nama": "Berita",
+                "deskripsi": "",
+                "ikon": "fa fa-newspaper-o",
+                "aktif": true,
+                "validasi": true,
+                "route": "berita.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "berita.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+
+            "gallery": {
+                "nama": "Gallery",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "gallery.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "gallery.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+
+            "tutorial": {
+                "nama": "Tutorial",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "tutorial.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tutorial.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+
+            "hukum": {
+                "nama": "Hukum",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "hukum.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "hukum.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+
+            "sop": {
+                "nama": "Sop",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "sop.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Tambah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.store",
+                        "policy": "create"
+                    },
+                    "show": {
+                        "nama": "Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.show",
+                        "policy": "update"
+                    },
+                    "update": {
+                        "nama": "Simpan Ubah",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.update",
+                        "policy": "update"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "sop.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            }
+        }
+    }
+}

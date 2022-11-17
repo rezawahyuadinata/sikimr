@@ -34,7 +34,7 @@ class Homev2Controller extends Controller
         $pagu_terkontrak = 0;
         $pkt_terkontrak = 0;
         // $data['galleries'] = GalleryModel::all()->where('file_category', 'Gambar')->random(6);
-        $data['news'] = BeritaModel::all()->sortByDesc('id')->take(2);
+        $data['news'] = BeritaModel::all()->sortByDesc('id')->take(4);
 
         $data['sop'] = SopModel::all();
 

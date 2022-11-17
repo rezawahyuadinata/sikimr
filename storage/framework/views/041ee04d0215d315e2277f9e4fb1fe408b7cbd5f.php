@@ -1,4 +1,4 @@
-{{-- Header Tutorial --}}
+
 <script>
     var swiper = new Swiper(".tutorialheader", {
         spaceBetween: 30,
@@ -17,7 +17,7 @@
         },
     });
 </script>
-{{-- script PBJ --}}
+
 <script>
     var swiper = new Swiper(".pbjheader", {
         spaceBetween: 30,
@@ -32,7 +32,7 @@
         },
     });
 </script>
-{{-- script Zona Integritas --}}
+
 <script>
     var swiper = new Swiper(".ziheader", {
         spaceBetween: 30,
@@ -47,7 +47,7 @@
         },
     });
 </script>
-{{-- script Pengaduan --}}
+
 <script>
     var swiper = new Swiper(".pengaduanheader", {
         spaceBetween: 30,
@@ -66,7 +66,7 @@
         },
     });
 </script>
-{{-- script SOP --}}
+
 <script>
     var swiper = new Swiper(".sopheader", {
         spaceBetween: 30,
@@ -85,7 +85,7 @@
         },
     });
 </script>
-{{-- manajemen risiko button show hide --}}
+
 <script>
     $(function() {
         $('.showSingle').click(function() {
@@ -94,11 +94,11 @@
         });
     });
 </script>
-{{-- Aos Generate --}}
+
 <script>
     AOS.init();
 </script>
-{{-- Api Tawk To --}}
+
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
@@ -112,7 +112,7 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
-{{-- waktu di atas chart --}}
+
 <script>
     const toTop = document.querySelector(".to-top");
 
@@ -176,3 +176,4 @@
     tagPeng2.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagSop.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
 </script>
+<?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/components/script-js.blade.php ENDPATH**/ ?>

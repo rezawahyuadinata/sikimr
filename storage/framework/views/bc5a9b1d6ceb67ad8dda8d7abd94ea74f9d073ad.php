@@ -1,4 +1,4 @@
-{{-- navbar pertama --}}
+
 <nav class="navbar navbar-expand-sm bg-gradient-navbar-first">
     <div class="container">
         <a class="navbar-brand text-white" style="font-size: 15px" href="https://sda.pu.go.id/" rel="tooltip"
@@ -19,7 +19,7 @@
     </div>
 </nav>
 
-{{-- navbar kedua --}}
+
 <nav class="navbar navbar-expand-lg sticky-top bg-gradient-navbar-second"
     style="border-bottom: 5px solid rgb(255, 193, 59)">
     <div class="container">
@@ -80,10 +80,10 @@
                             Aplikasi
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{ url('/login') }}">Manajemen Risiko</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/login') }}">Zona Integritas</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/login') }}">Sikon</a></li>
-                            <li><a class="dropdown-item" href="{{ url('/login') }}">Pengaduan</a></li>
+                            <li><a class="dropdown-item" href="<?php echo e(url('/login')); ?>">Manajemen Risiko</a></li>
+                            <li><a class="dropdown-item" href="<?php echo e(url('/login')); ?>">Zona Integritas</a></li>
+                            <li><a class="dropdown-item" href="<?php echo e(url('/login')); ?>">Sikon</a></li>
+                            <li><a class="dropdown-item" href="<?php echo e(url('/login')); ?>">Pengaduan</a></li>
                         </ul>
                     </div>
                 </li>
@@ -91,3 +91,4 @@
         </div>
     </div>
 </nav>
+<?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/components/navbar.blade.php ENDPATH**/ ?>

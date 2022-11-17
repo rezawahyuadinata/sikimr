@@ -1,0 +1,402 @@
+{
+    "manajemen-resiko": {
+        "nama": "Manajemen Risiko",
+        "folder": true,
+        "aktif": true,
+        "ikon":"fa fa-tasks",
+        "menu": {
+            "komitmen-mr": {
+                "nama": "Buat Komitmen MR",
+                "deskripsi": "",
+                "ikon": "fa fa-users",
+                "validasi": true,
+                "aktif": true,
+                "route": "komitmen-mr.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "komitmen-mr.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "komitmen-mr.read",
+                        "policy": "read"
+                    },
+                    "sync": {
+                        "nama": "Sync Paket Pekerjaan",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "komitmen-mr.sync",
+                        "policy": "sync"
+                    },
+                    "create": {
+                        "nama": "Buat Manajemen Risiko",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "komitmen-mr.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Manajemen Risiko",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "komitmen-mr.store",
+                        "policy": "store"
+                    },
+                    "update": {
+                        "nama": "Ubah Manajemen Risiko",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "komitmen-mr.update",
+                        "policy": "update"
+                    },
+                    "get_data": {
+                        "nama": "Data Detail Manajemen Risiko",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "komitmen-mr.get_data",
+                        "policy": "get_data"
+                    },
+                    "delete_data": {
+                        "nama": "Hapus Detail Manajemen Risiko",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "komitmen-mr.delete_data",
+                        "policy": "delete_data"
+                    }
+                }
+            },
+            "formulir": {
+                "nama": "Daftar Formulir MR",
+                "deskripsi": "",
+                "ikon": "fa fa-edit",
+                "aktif": true,
+                "validasi": true,
+                "route": "formulir.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "formulir.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "formulir.read",
+                        "policy": "read"
+                    },
+                    "detail": {
+                        "nama": "Detail",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "formulir.detail",
+                        "policy": "detail"
+                    },
+                    "pemantauan": {
+                        "nama": "Detail",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "formulir.pemantauan",
+                        "policy": "pemantauan"
+                    },
+                    "destroy": {
+                        "nama": "Hapus",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "formulir.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "verifikasi": {
+                "nama": "Daftar Verifikasi Komitmen MR",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "verifikasi.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "verifikasi.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "verifikasi.read",
+                        "policy": "read"
+                    },
+                    "store": {
+                        "nama": "Simpan Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "verifikasi.store",
+                        "policy": "store"
+                    },
+                    "show": {
+                        "nama": "Detail",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "verifikasi.show",
+                        "policy": "show"
+                    },
+                    "detail": {
+                        "nama": "Detail",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "verifikasi.detail",
+                        "policy": "detail"
+                    },
+                    "destroy": {
+                        "nama": "Batalkan verifikasi",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "verifikasi.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "verifikasi-pemantauan": {
+                "nama": "Daftar Verifikasi Laporan Penerapan MR",
+                "deskripsi": "",
+                "ikon": "fa fa-home",
+                "aktif": true,
+                "validasi": true,
+                "route": "verifikasi-pemantauan.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "verifikasi-pemantauan.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "verifikasi-pemantauan.read",
+                        "policy": "read"
+                    },
+                    "store": {
+                        "nama": "Simpan Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "verifikasi-pemantauan.store",
+                        "policy": "store"
+                    },
+                    "detail": {
+                        "nama": "Detail",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "verifikasi-pemantauan.detail",
+                        "policy": "detail"
+                    },
+                    "show": {
+                        "nama": "Detail",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "verifikasi-pemantauan.show",
+                        "policy": "show"
+                    },
+                    "destroy": {
+                        "nama": "Batalkan verifikasi",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "verifikasi-pemantauan.destroy",
+                        "policy": "destroy"
+                    }
+                }
+            },
+            "pemantauan-mr": {
+                "nama": "Pemantauan Inovasi Pengendalian",
+                "deskripsi": "",
+                "ikon": "fa fa-users",
+                "validasi": true,
+                "aktif": true,
+                "route": "pemantauan-mr.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan-mr.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan-mr.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Buat Laporan",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan-mr.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-mr.store",
+                        "policy": "store"
+                    },
+                    "update": {
+                        "nama": "Ubah Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-mr.update",
+                        "policy": "update"
+                    },
+                    "get_data": {
+                        "nama": "Data Detail Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-mr.get_data",
+                        "policy": "get_data"
+                    },
+                    "delete_data": {
+                        "nama": "Hapus Detail Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-mr.delete_data",
+                        "policy": "delete_data"
+                    }
+                }
+            },
+            "tinjauan-mr": {
+                "nama": "Tinjauan Atas Risiko Baru",
+                "deskripsi": "",
+                "ikon": "fa fa-users",
+                "validasi": true,
+                "aktif": true,
+                "route": "tinjauan-mr.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tinjauan-mr.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tinjauan-mr.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Buat Laporan",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "tinjauan-mr.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "tinjauan-mr.store",
+                        "policy": "store"
+                    },
+                    "update": {
+                        "nama": "Ubah Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "tinjauan-mr.update",
+                        "policy": "update"
+                    },
+                    "get_data": {
+                        "nama": "Data Detail Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "tinjauan-mr.get_data",
+                        "policy": "get_data"
+                    },
+                    "delete_data": {
+                        "nama": "Hapus Detail Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "tinjauan-mr.delete_data",
+                        "policy": "delete_data"
+                    }
+                }
+            },
+            "pemantauan-resiko": {
+                "nama": "Daftar Pemantauan Level Risiko",
+                "deskripsi": "",
+                "ikon": "fa fa-users",
+                "validasi": true,
+                "aktif": true,
+                "route": "pemantauan-resiko.index",
+                "fitur": {
+                    "index": {
+                        "nama": "Halaman",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.index",
+                        "policy": "index"
+                    },
+                    "read": {
+                        "nama": "Data",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.read",
+                        "policy": "read"
+                    },
+                    "create": {
+                        "nama": "Buat Laporan",
+                        "validasi": true,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.create",
+                        "policy": "create"
+                    },
+                    "store": {
+                        "nama": "Simpan Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.store",
+                        "policy": "store"
+                    },
+                    "update": {
+                        "nama": "Ubah Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.update",
+                        "policy": "update"
+                    },
+                    "get_data": {
+                        "nama": "Data Detail Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.get_data",
+                        "policy": "get_data"
+                    },
+                    "delete_data": {
+                        "nama": "Hapus Detail Laporan",
+                        "validasi": false,
+                        "aktif": true,
+                        "route": "pemantauan-resiko.delete_data",
+                        "policy": "delete_data"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "master": {
+        "nama": "Master",
+        "ikon": "fa fa-database",
+        "aktif": true,
+        "route": "master.index",
+        "folder": "Master"
+    },
+    "formulir": {
+        "nama": "Manajemen Risiko",
+        "ikon": "fa fa-file",
+        "aktif": true,
+        "route": "formulir.index",
+        "folder": "Formulir"
+    },
+    "ki": {
+        "nama": "Kepatuhan Internal",
+        "ikon": "fa fa-file",
+        "aktif": true,
+        "route": "pengadaan-barang.index",
+        "folder": "Formulir"
+    },
+    "pengaturan": {
+        "nama": "Pengaturan",
+        "ikon": "fa fa-gears",
+        "aktif": true,
+        "route": "pengaturan.index",
+        "folder": "Pengaturan"
+    }
+}
