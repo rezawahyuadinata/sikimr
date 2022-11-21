@@ -96,6 +96,11 @@
 
 {{-- header style --}}
 <style>
+    .border-thumbnail {
+        border-bottom: 10px solid rgb(255, 193, 59);
+        border-radius: 10px 10px 30px 10px;
+    }
+
     .mask {
         /* width: 100%;
         height: 100%;

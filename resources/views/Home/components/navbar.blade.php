@@ -32,35 +32,36 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link animasi-bg navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="{{ route('Welcome') }}">
                         <span class="navbar-menu">
                             Beranda
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link animasi-bg navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="{{ Route('Berita') }}">
                         <span class="navbar-menu">
                             Berita
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link animasi-bg navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="{{ Route('Profil') }}">
                         <span class="navbar-menu">
                             Profile
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link animasi-bg navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style"
+                        href="https://sda.pu.go.id/produk/view_produk/SE_Dirjen_SDA_tentang_Tata_Cara_Pemantauan_RPSDA_WS_Kewenangan_Pusat">
                         <span class="navbar-menu">
                             Hukum
                         </span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link animasi-bg navbar-font-style" href="#">
+                    <a class="nav-link animasi-bg navbar-font-style" href="{{ Route('SOP') }}">
                         <span class="navbar-menu">
                             SOP
                         </span>
@@ -68,7 +69,8 @@
                 </li>
                 <li class="nav-item">
                     <div class="d-flex justify-content-between">
-                        <a class="btn btn-danger mb-0 me-1 mt-2 mx-2 mt-md-0 p-2 navbar-font-style">
+                        <a href="{{ Route('Tutorial') }}"
+                            class="btn btn-danger mb-0 me-1 mt-2 mx-2 mt-md-0 p-2 navbar-font-style">
                             Tutorial
                         </a>
                     </div>

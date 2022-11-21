@@ -4,7 +4,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-            delay: 10000,
+            delay: 5000,
             disableOnInteraction: true,
         },
         pagination: {
