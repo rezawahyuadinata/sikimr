@@ -110,7 +110,7 @@
                                         <td style="width: 25%">Nomor Dokumen Risiko</td>
                                         <td>{{ $data->komitmen_mr->mr_nomor }}</td>
                                     </tr>
-                                    {{-- <tr>
+                                    {{-- catatan: <tr>
                                     <td style="width: 25%">Tanggal Dokumen</td>
                                     <td>{{ $data->komitmen_mr->mr_tanggal }}</td>
                                 </tr> --}}
@@ -153,7 +153,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title" style="text-align: center;">Komitmen Manajemen Risiko</h3>
                     </div>
-                    {{-- <h3 style="text-align: center;">KOMITMEN MANAJEMEN RISIKO</h3> --}}
+                    {{-- catatan: <h3 style="text-align: center;">KOMITMEN MANAJEMEN RISIKO</h3> --}}
                     <!-- /.box-header -->
                     <div class="box-body">
                         <div id="komitmen">
@@ -245,7 +245,8 @@
                                                 @endforeach
                                                 <tr>
                                                     <td>{{ $data->komitmen_mr->level }}</td>
-                                                    <td {{ $row > 0 ? 'rowspan="' . $row . '"' : '' }}>{{ $item->SASARAN }}
+                                                    <td {{ $row > 0 ? 'rowspan="' . $row . '"' : '' }}>
+                                                        {{ $item->SASARAN }}
                                                     </td>
                                                     @foreach ($item->sasaran_list as $i)
                                                         @if ($loop->index == 0)
@@ -338,7 +339,7 @@
                                 <label for="">3. Tujuan Pelaksanaan Manajemen Risiko</label>
                             </div>
                             <div class="col-lg-12">
-                                {{-- <table class="display table table-bordered table-hover" width="100%">
+                                {{-- catatan: <table class="display table table-bordered table-hover" width="100%">
                                 <thead>
                                     <tr>
                                         <th data-orderable="false">No</th>
@@ -516,20 +517,20 @@
                                                 @if ($nilai == 11 || $nilai == 12 || $nilai == 14 || $nilai == 13)
                                                     <td style="width: 10%;height:5%;border: 2px solid black; border-bottom: 5px solid blue;font-weight:bold;text-align: center; text-align:right;
                         vertical-align:bottom;background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})"
-                                                        {{-- <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}
+                                                        {{-- catatan: <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}
                                                         id="{{ $val->nilai ? $val->nilai->nilai : '-' }}">
                                                         {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                                     @elseif ($nilai == 6 || $nilai == 8 || $nilai == 10 || $nilai == 9)
                                                     <td style="width: 10%;height:5%;font-weight:bold;border: 2px solid black;border-right: 5px solid blue;text-align: center; text-align:right;
                         vertical-align:bottom; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})"
-                                                        {{-- <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}
+                                                        {{-- catatan: <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}
                                                         id="{{ $val->nilai ? $val->nilai->nilai : '-' }}">
                                                         {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                                     </td>
                                                 @else
                                                     <td style="width: 10%;height:5%;border: 2px solid black;font-weight:bold;text-align: center; text-align:right;
                         vertical-align:bottom; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})"
-                                                        {{-- <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}
+                                                        {{-- catatan: <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}
                                                         id="{{ $val->nilai ? $val->nilai->nilai : '-' }}">
                                                         {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                                 @endif
@@ -603,12 +604,12 @@
                                 <table style="width:300px;heigth:100px;margin-top:20px;font-weight: bold;font-size:18px">
                                     <tr>
                                         <th colspan="{{ count($data->kriteria_dampak) + 2 }}" class="text-center">
-                                            {{-- <h2><b>PETA RISIKO</b></h2> --}}
+                                            {{-- catatan: <h2><b>PETA RISIKO</b></h2> --}}
                                         </th>
                                     </tr>
                                     <tr>
                                         <td style="text-align: -webkit-center;height:50px; width:100px;">
-                                            {{-- <div class="inherent">
+                                            {{-- catatan: <div class="inherent">
                                             </div> --}}
                                             <hr style="width:55px;border: 1px solid blue">
                                         </td>
@@ -818,7 +819,7 @@
                                                                 }
                                                             @endphp
 
-                                                            {{-- versi pertama --}}
+                                                            {{-- catatan: versi pertama --}}
                                                             @for ($i = 1; $i <= 4; $i++)
                                                                 @for ($j = 1; $j <= 3; $j++)
                                                                     @if ($row->jenis == 'inovasi')
@@ -955,7 +956,7 @@
                     document.body.appendChild(anchorTag);
                     // document.getElementById("previewImg").appendChild(canvas);
                     anchorTag.download = "jadwal-" + '{{ $data->komitmen_mr->mr_nomor }}' +
-                    ".jpg";
+                        ".jpg";
                     anchorTag.href = canvas.toDataURL();
                     anchorTag.target = '_blank';
                     anchorTag.click();

@@ -15,7 +15,7 @@
                             alt="Card image">
                     </div>
                 </div>
-                {{-- <table class=" table table-bordered">
+                {{-- catatan: <table class=" table table-bordered">
                             <tbody>
                                 <tr>
                                     <th rowspan="3">
@@ -61,13 +61,13 @@
                         </table> --}}
             </div>
             <!-- <div class="row">
-                                                                                                    <div class="container justify-content-center">
-                                                                                                        {{-- <div id="paper-hyperlinks"></div> --}}
-                                                                                                    </div>
-                                                                                                    {{-- <div id="main"></div> --}}
-                                                                                                </div> -->
+                                                                                                        <div class="container justify-content-center">
+                                                                                                            {{-- catatan: <div id="paper-hyperlinks"></div> --}}
+                                                                                                        </div>
+                                                                                                        {{-- catatan: <div id="main"></div> --}}
+                                                                                                    </div> -->
 
-            {{-- <div class="row">
+            {{-- catatan: <div class="row">
                 <div class="col-lg-9 offset-lg-2 px-3 mb-5">
                     <img src="{{ asset('storage/dashboard/fotoorganisasi.png') }}" alt="img-blur-shadow" width="100%"
                         class="img-fluid shadow border-radius-lg" loading="lazy">
@@ -231,8 +231,8 @@
         </div>
     </section>
 @endsection
-{{-- organization chart sop --}}
-{{-- @push('script-css')
+{{-- catatan: organization chart sop --}}
+{{-- catatan: @push('script-css')
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.4.4/joint.css" />
         <link rel="stylesheet" href="{{ asset('css/orgchart/css/org-chart.css') }}">
     @endpush
@@ -858,4 +858,4 @@
         </script>
     @endpush --}}
 
-{{-- Organization chart --}}
+{{-- catatan: Organization chart --}}

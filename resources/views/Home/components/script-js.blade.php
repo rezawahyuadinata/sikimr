@@ -1,4 +1,4 @@
-{{-- Header Tutorial --}}
+{{-- catatan:  Header Tutorial --}}
 <script>
     var swiper = new Swiper(".tutorialheader", {
         spaceBetween: 30,
@@ -17,7 +17,7 @@
         },
     });
 </script>
-{{-- script PBJ --}}
+{{-- catatan:  script PBJ --}}
 <script>
     var swiper = new Swiper(".pbjheader", {
         spaceBetween: 30,
@@ -32,7 +32,7 @@
         },
     });
 </script>
-{{-- script Zona Integritas --}}
+{{-- catatan:  script Zona Integritas --}}
 <script>
     var swiper = new Swiper(".ziheader", {
         spaceBetween: 30,
@@ -47,7 +47,7 @@
         },
     });
 </script>
-{{-- script Pengaduan --}}
+{{-- catatan:  script Pengaduan --}}
 <script>
     var swiper = new Swiper(".pengaduanheader", {
         spaceBetween: 30,
@@ -66,7 +66,7 @@
         },
     });
 </script>
-{{-- script SOP --}}
+{{-- catatan:  script SOP --}}
 <script>
     var swiper = new Swiper(".sopheader", {
         spaceBetween: 30,
@@ -85,7 +85,7 @@
         },
     });
 </script>
-{{-- manajemen risiko button show hide --}}
+{{-- catatan:  manajemen risiko button show hide --}}
 <script>
     $(function() {
         $('.showSingle').click(function() {
@@ -94,11 +94,11 @@
         });
     });
 </script>
-{{-- Aos Generate --}}
+{{-- catatan:  Aos Generate --}}
 <script>
     AOS.init();
 </script>
-{{-- Api Tawk To --}}
+{{-- catatan:  Api Tawk To --}}
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
@@ -112,7 +112,7 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
-{{-- waktu di atas chart --}}
+{{-- catatan:  waktu di atas chart --}}
 <script>
     const toTop = document.querySelector(".to-top");
 
@@ -175,4 +175,55 @@
     tagPeng1.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagPeng2.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagSop.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
+</script>
+{{-- catatan: catatan : Carousel di Home --}}
+{{-- catatan: catatan : Berita --}}
+<script>
+    var swiper = new Swiper(".berita-home-Swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50
+            }
+        }
+    });
+</script>
+{{-- catatan:  Berita --}}
+<script>
+    var swiper = new Swiper(".berita-home-Swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        },
+    });
 </script>

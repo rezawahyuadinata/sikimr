@@ -1,4 +1,4 @@
-{{-- Navbar waktu --}}
+{{-- catatan: Navbar waktu --}}
 <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info">
     <div class="container-fluid">
         <a class="navbar-brand text-white" href="https://pu.go.id/" rel="tooltip" data-placement="bottom" target="_blank">
@@ -21,7 +21,7 @@
         </div>
     </div>
 </nav>
-{{-- Navbar --}}
+{{-- catatan: Navbar --}}
 <nav class="navbar navbar-default sticky-top navbar-light bg-light shadow-md navbar-fixed-top navbar-expand-lg bg-gradient-white z-index-3 py-3 nav-pills nav-fill"
     id="myNavbar">
     <div class="container-fluid">
@@ -79,7 +79,7 @@
                     <a class="cursor-pointer btn btn-sm bg-gradient-info mb-0 me-1 mt-2 mt-md-0"
                         href="{{ url('/login') }}" style="font-weight: 500; font-size: 16px;">Aplikasi</a>
                 </li>
-                {{-- <li class="nav-item dropdown dropdown-hover mx-1">
+                {{-- catatan: <li class="nav-item dropdown dropdown-hover mx-1">
                     <a class="cursor-pointer btn btn-sm bg-gradient-info mb-0 me-1 mt-2 mt-md-0 id="dropdownMenuPages2"
                         data-bs-toggle="dropdown" aria-expanded="false">Aplikasi</a>
                     <ul class="dropdown-menu dropdown-menu-end px-2 py-3" aria-labelledby="dropdownMenuButton">
@@ -91,14 +91,14 @@
         </div>
     </div>
 </nav>
-{{-- Header --}}
+{{-- catatan: Header --}}
 <header>
     @if (\Route::currentRouteName() == 'Welcome')
         <div class="container-fluid justify-content-center " style="white-space: normal; height: 82vh; ">
             <div class="row">
-                {{-- Navigation chart --}}
+                {{-- catatan: Navigation chart --}}
                 <div class="col-md-8">
-                    {{-- Manajemen Risiko --}}
+                    {{-- catatan: Manajemen Risiko --}}
                     <div id="div1" class="targetDiv" style="display:block;">
                         <section class="my-4" id="menu1">
                             <div class="container">
@@ -260,7 +260,7 @@
                             </div>
                         </section>
                     </div>
-                    {{-- Pengadaan Barang dan Jasa --}}
+                    {{-- catatan: Pengadaan Barang dan Jasa --}}
                     <div id="div2" class="targetDiv" style="display:none;">
                         <section class="my-4" id="menu2">
                             <div class="container">
@@ -279,7 +279,7 @@
                                             <div class="swiper pengadaanSwiper">
                                                 <!-- Additional required wrapper -->
                                                 <div class="swiper-wrapper">
-                                                    {{-- Status Kumulatif Lelang --}}
+                                                    {{-- catatan: Status Kumulatif Lelang --}}
                                                     <div class="swiper-slide">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -292,7 +292,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- PBJ Kontraktual --}}
+                                                    {{-- catatan: PBJ Kontraktual --}}
                                                     <div class="swiper-slide">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -315,7 +315,7 @@
                                                                             <i class="fa fa-circle mr-5"
                                                                                 aria-hidden="true"></i>
                                                                             <span>Terkontrak : {!! number_format($pag_pbj[0]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -325,7 +325,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Persiapan Terkontrak :
                                                                                 {!! number_format($pag_pbj[1]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -335,7 +335,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Proses Lelang :
                                                                                 {!! number_format($pag_pbj[2]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -345,7 +345,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Belum Lelang :
                                                                                 {!! number_format($pag_pbj[3]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -355,7 +355,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Gagal Lelang :
                                                                                 {!! number_format($pag_pbj[4]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -364,7 +364,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- PBJ Kontraktual Rupiah --}}
+                                                    {{-- catatan: PBJ Kontraktual Rupiah --}}
                                                     <div class="swiper-slide">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -386,7 +386,7 @@
                                                                             <i class="fa fa-circle mr-5"
                                                                                 aria-hidden="true"></i>
                                                                             <span>Terkontrak : {!! number_format($pak_pbj[0]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -396,7 +396,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Persiapan Terkontrak :
                                                                                 {!! number_format($pak_pbj[1]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -406,7 +406,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Proses Lelang :
                                                                                 {!! number_format($pak_pbj[2]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -416,7 +416,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Belum Lelang :
                                                                                 {!! number_format($pak_pbj[3]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -426,7 +426,7 @@
                                                                                 aria-hidden="true"></i>
                                                                             <span>Gagal Lelang :
                                                                                 {!! number_format($pak_pbj[4]) !!}
-                                                                                {{-- <br>
+                                                                                {{-- catatan: <br>
                                                                                 Pagu :{!! number_format($pak_pbj[0]) !!} --}}
                                                                             </span>
                                                                         </div>
@@ -446,7 +446,7 @@
                             </div>
                         </section>
                     </div>
-                    {{-- Zona Integritas --}}
+                    {{-- catatan: Zona Integritas --}}
                     <div id="div3" class="targetDiv" style="display:none;">
                         <section class="my-4" id="menu3">
                             <div class="container">
@@ -478,7 +478,7 @@
                             </div>
                         </section>
                     </div>
-                    {{-- Pengaduan --}}
+                    {{-- catatan: Pengaduan --}}
                     <div id="div4" class="targetDiv" style="display:none;">
                         <section class="my-4" id="menu4">
                             <div class="container">
@@ -497,7 +497,7 @@
                                             <div class="swiper pengaduanSwiper">
                                                 <!-- Additional required wrapper -->
                                                 <div class="swiper-wrapper">
-                                                    {{-- Jumlah Pengaduan Tahunan --}}
+                                                    {{-- catatan: Jumlah Pengaduan Tahunan --}}
                                                     <div class="swiper-slide justify-content-center">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -511,7 +511,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- Pengaduan Berdasarkan Kategori --}}
+                                                    {{-- catatan: Pengaduan Berdasarkan Kategori --}}
                                                     <div class="swiper-slide justify-content-center">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -584,7 +584,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- Simpulan Hasil Telaah --}}
+                                                    {{-- catatan: Simpulan Hasil Telaah --}}
                                                     <div class="swiper-slide justify-content-center">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -620,7 +620,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- Jumlah Pengaduan Per BBWS/BWS --}}
+                                                    {{-- catatan: Jumlah Pengaduan Per BBWS/BWS --}}
                                                     <div class="swiper-slide justify-content-center">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -633,7 +633,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- Persentase Pengaduan Per Direktorat Pembina --}}
+                                                    {{-- catatan: Persentase Pengaduan Per Direktorat Pembina --}}
                                                     <div class="swiper-slide justify-content-center">
                                                         <div class="text-white text-center"
                                                             style=" font-weight: bold">
@@ -658,7 +658,7 @@
                             </div>
                         </section>
                     </div>
-                    {{-- SOP --}}
+                    {{-- catatan: SOP --}}
                     <div id="div5" class="targetDiv" style="display:none;">
                         <section class="my-4" id="menu5">
                             <div class="container">
@@ -697,7 +697,7 @@
                             </div>
                         </section>
                     </div>
-                    {{-- Navigation --}}
+                    {{-- catatan: Navigation --}}
                     <div class="container">
                         <a class="showSingle btn btn-dark" target="1">Manajemen
                             Risiko</a>
@@ -707,9 +707,9 @@
                         <a class="showSingle btn btn-dark" target="5">SOP</a>
                     </div>
                 </div>
-                {{-- Berita dan Tutorial --}}
+                {{-- catatan: Berita dan Tutorial --}}
                 <div class="col-md-4">
-                    {{-- Berita --}}
+                    {{-- catatan: Berita --}}
                     <section>
                         <div class="container">
                             <div class="row my-3">
@@ -751,7 +751,7 @@
                             </div>
                         </div>
                     </section>
-                    {{-- Tutorial --}}
+                    {{-- catatan: Tutorial --}}
                     <section>
                         <div class="container">
                             <div class="row">

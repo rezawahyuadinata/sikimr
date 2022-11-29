@@ -16,7 +16,7 @@
         media="all">
     <link rel="stylesheet" href="{{ asset('template') }}/adminlte/bower_components/select2/dist/css/select2.min.css"
         media="all">
-    {{-- <link rel="stylesheet" href="{{ asset('template') }}/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" media="all"> --}}
+    {{-- catatan: <link rel="stylesheet" href="{{ asset('template') }}/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" media="all"> --}}
     <link rel="stylesheet" href="{{ asset('template') }}/adminlte/plugins/sweetalert/lib/sweet-alert.css"
         media="all">
     <link rel="stylesheet" href="{{ asset('template') }}/adminlte/dist/css/AdminLTE.min.css" media="all">
@@ -266,7 +266,7 @@
     <script src="{{ asset('template') }}/adminlte/bower_components/moment/min/moment.min.js"></script>
     <script src="{{ asset('template') }}/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <script src="{{ asset('template') }}/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
-    {{-- <script src="{{ asset('template') }}/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    {{-- catatan: <script src="{{ asset('template') }}/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
         <script src="{{ asset('template') }}/adminlte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script> --}}
     <script src="{{ asset('template') }}/adminlte/plugins/jquery-validation/jquery.validate.min.js"></script>
     <script src="{{ asset('template') }}/adminlte/plugins/sweetalert/lib/sweet-alert.min.js"></script>

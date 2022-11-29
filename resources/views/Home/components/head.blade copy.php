@@ -1,5 +1,5 @@
-{{-- Contoh Pertama --}}
-{{-- <div class="container-fluid">
+{{-- catatan: Contoh Pertama --}}
+{{-- catatan: <div class="container-fluid">
     <div class="row pt-3 px-2 ">
         <div class="col-md-8">
             <div class="bg-secondary border border-2 rounded-2 ms-auto" style="min-height: 80vh">
@@ -82,12 +82,12 @@
     }
 </style>
 
-{{-- Contoh Kedua --}}
+{{-- catatan: Contoh Kedua --}}
 <div class="container-fluid">
     <div class="row pt-3 px-2 ">
         <div class="col-md-8">
             <div class=" ms-auto" style="min-height: 80vh">
-                {{-- manajemen Risiko --}}
+                {{-- catatan: manajemen Risiko --}}
                 <div class="container" style="min-height: 10vh; width: 50%">
                     <h3 class="text-center">Manajemen Risiko</h3>
                     <h5 class="text-center" style="font-size: 14px" id="status_dataMR""></h5>
@@ -95,7 +95,7 @@
                 <div class="container mt-1 mb-3" style="min-height: 58vh; width: 100%">
                     <div id="chartdiv"></div>
                 </div>
-                {{-- button Controls --}}
+                {{-- catatan: button Controls --}}
                 <div class="overflow-hidden">
                     <div class="container overflow-auto mt-4 d-flex px-5" style="width: 100%; ">
                         <a href=""
@@ -151,7 +151,7 @@
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
-                                    {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                                    {{-- catatan: <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
-                                    {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
+                                    {{-- catatan: <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
                                 </div>
                             </div>
                         </div>
@@ -200,8 +200,8 @@
     </div>
 </div>
 
-{{-- contoh Ketiga --}}
-{{-- <div class="swiper headerSwiper">
+{{-- catatan: contoh Ketiga --}}
+{{-- catatan: <div class="swiper headerSwiper">
     <div class="swiper-wrapper">
         <style>
             .size-background {
@@ -239,8 +239,8 @@
     </div>
 </div> --}}
 
-{{-- Contoh Keempat --}}
-{{-- <div class="container-fluid">
+{{-- catatan: Contoh Keempat --}}
+{{-- catatan: <div class="container-fluid">
     <div class="row pt-3 px-2 ">
         <div class="col-md-8">
             <div class="bg-secondary border border-2 rounded-2 ms-auto" style="min-height: 80vh">

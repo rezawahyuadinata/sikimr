@@ -28,7 +28,7 @@
     .video-container object,
     .video-container embed {
         position: fixed;
-        margin : 0;
+        margin: 0;
         top: 0;
         left: 0;
         width: 350px;
@@ -432,7 +432,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Perjanjian Kerja T1 Ditjen</h1>
-                            {{-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            {{-- catatan: <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> --}}
                         </div>
                     </div>
@@ -445,7 +445,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Sasaran Program T1 Ditjen</h1>
-                            {{-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            {{-- catatan: <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> --}}
                         </div>
                     </div>
@@ -458,7 +458,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Profil Risiko T1 Ditjen</h1>
-                            {{-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            {{-- catatan: <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> --}}
                         </div>
                     </div>
@@ -471,7 +471,7 @@
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Peta Risiko T1 Ditjen</h1>
-                            {{-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            {{-- catatan: <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                                 gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> --}}
                         </div>
                     </div>
@@ -596,14 +596,14 @@
                                         memadai
                                         tentang pencapaian tujuan organisasi
                                     </p>
-                                        <h4 class="featurette-heading">Video Pendukung :</h4>
+                                    <h4 class="featurette-heading">Video Pendukung :</h4>
                                     <div class=" col-md-12 thumb reveal ubh-0">
                                         <div class=" video-container">
                                             <iframe class="embed-responsive-item"
                                                 src="{{ asset('storage/dashboard/Pengenalan-MR.mp4') }}"
                                                 allowfullscreen></iframe>
                                         </div>
-                                        {{-- <img src="{{ asset('storage/dashboard/Pengenalan-MR.mp4') }}"
+                                        {{-- catatan: <img src="{{ asset('storage/dashboard/Pengenalan-MR.mp4') }}"
                                             class="zoom img-fluid " alt=""> --}}
                                     </div>
                                 </div>
@@ -1055,4 +1055,5 @@
 </body>
 
 </html>
+
 </html>

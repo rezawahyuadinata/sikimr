@@ -356,7 +356,7 @@
                         <tfoot class="table-mr-foot">
                             <tr>
                                 <td colspan="2">Total Jumlah</td>
-                                {{-- Komitmen MR --}}
+                                {{-- catatan: Komitmen MR --}}
                                 <td class="text-center" style="background-color: #048504; color: #fff">
                                     {{ $vr }}
                                 </td>
@@ -366,7 +366,7 @@
                                 <td class="text-center" style="background-color: #c50909; color: #fff">
                                     {{ $br }}
                                 </td>
-                                {{-- Triwulan 1 --}}
+                                {{-- catatan: Triwulan 1 --}}
                                 <td class="text-center" style="background-color: #048504; color: #fff">
                                     {{ $v1 }}
                                 </td>
@@ -376,7 +376,7 @@
                                 <td class="text-center" style="background-color: #c50909; color: #fff">
                                     {{ $b1 }}
                                 </td>
-                                {{-- Triwulan 2 --}}
+                                {{-- catatan: Triwulan 2 --}}
                                 <td class="text-center" style="background-color: #048504; color: #fff">
                                     {{ $v2 }}
                                 </td>
@@ -386,7 +386,7 @@
                                 <td class="text-center" style="background-color: #c50909; color: #fff">
                                     {{ $b2 }}
                                 </td>
-                                {{-- Triwulan 3 --}}
+                                {{-- catatan: Triwulan 3 --}}
                                 <td class="text-center" style="background-color: #048504; color: #fff">
                                     {{ $v3 }}
                                 </td>
@@ -396,7 +396,7 @@
                                 <td class="text-center" style="background-color: #c50909; color: #fff">
                                     {{ $b3 }}
                                 </td>
-                                {{-- Triwulan 4 --}}
+                                {{-- catatan: Triwulan 4 --}}
                                 <td class="text-center" style="background-color: #048504; color: #fff">
                                     {{ $v4 }}
                                 </td>

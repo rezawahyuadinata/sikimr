@@ -13,7 +13,7 @@
         <div class="form-group col-sm-2">
             <label>&nbsp;</label>
             <!-- <a href="#modal-data-2" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-data-2">Tambah
-                                                                                                                        Kategori</a> -->
+                                                                                                                            Kategori</a> -->
             <button type="button" class="btn btn-block btn-primary" onclick="tambahDataKategori()">
                 Tambah Kategori
             </button>
@@ -120,11 +120,11 @@
                                     <div class="form-row py-2 tambahan-container">
                                         <div>
                                             <input type="text" class="form-control" placeholder="Caption Gambar">
-                                            {{-- <button id="btn" name="btn" type="button"
+                                            {{-- catatan: <button id="btn" name="btn" type="button"
                                                 class="close ">x</button> --}}
                                         </div>
                                     </div>
-                                    {{-- <button class="btn-dependent">Add dependent</button> --}}
+                                    {{-- catatan: <button class="btn-dependent">Add dependent</button> --}}
                                 </div>
                                 <button class="btn-default btn add-container pt-2">Add Gambar</button>
                             </div>

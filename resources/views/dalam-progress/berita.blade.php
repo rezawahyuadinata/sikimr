@@ -204,7 +204,7 @@
 </style>
 
 <body>
-    {{-- <a href="{{ route('home') }}" class="navbar-brand my-0 mr-md-auto">
+    {{-- catatan: <a href="{{ route('home') }}" class="navbar-brand my-0 mr-md-auto">
             <img src="/img/login/logo_sikimr.png" class="img-fluid" alt="Responsive image"
                 style="display: block; margin-top: 2px; height: 70px;"></a>
 
@@ -332,7 +332,7 @@
             </div>
         </nav>
         <!-- Navbar -->
-        {{-- <!-- Jumbotron -->
+        {{-- catatan: <!-- Jumbotron -->
         <div class="text-center"
             style="background-image: url('http://www.anekabangunan.com/wp-content/uploads/2019/02/bendung.jpg');
                     background-repeat: no-repeat;
@@ -537,7 +537,7 @@
                                             style="text-decoration: none; color: black">(021)7221907</a>
                                     </li>
                                     <li><strong>Email</strong></li>
-                                    {{-- <li>gendhiswedding17@gmail.com</li> --}}
+                                    {{-- catatan: <li>gendhiswedding17@gmail.com</li> --}}
                                 </ul>
                             </div>
                         </div>

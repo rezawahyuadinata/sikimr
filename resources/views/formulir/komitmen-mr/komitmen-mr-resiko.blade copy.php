@@ -71,7 +71,7 @@
                         @endfor
                 </tr>
             </thead>
-            {{-- <tfoot>
+            {{-- catatan: <tfoot>
                 <tr>
                     <th rowspan="2" data-orderable="false">No</th>
                     <th rowspan="2" data-orderable="true" style="text-align: center;">Tujuan Kegiatan Utama</th>
@@ -120,7 +120,7 @@
             </tr>
             </tfoot> --}}
         </table>
-        {{-- tampilan sesuai profil risiko--}}
+        {{-- catatan: tampilan sesuai profil risiko--}}
         <table id="" class="display table table-bordered table-hover table-responsive" width="100%">
             <thead>
             </thead>
@@ -493,7 +493,7 @@
                         <div class="col-md-12">
                             <div class="box box-primary">
                                 <div class="box-header with-border">
-                                    {{-- <h3 class="box-title">Respon</h3> --}}
+                                    {{-- catatan: <h3 class="box-title">Respon</h3> --}}
                                     <div class="box-tools pull-right">
                                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                                     </div>

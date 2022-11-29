@@ -11,93 +11,225 @@
                 </div>
             </div>
             <div class="container py-2">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 my-2">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                focusable="false">
-                            </img>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="swiper berita-home-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card border-0">
+                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                                    class="card-img-top image-berita" alt="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="card-title">
+                                                <p class="text-start">Judul Berita</p>
+                                            </h5>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="flex-box-tgl">
+                                                <div class="hari-berita">
+                                                    <p class="text-center">28</p>
+                                                </div>
+                                                <div class="bulan-berita">
+                                                    <p class="text-center">dec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 p-0">
+                                            <div class="card-text">
+                                                <p
+                                                    style="
+                                                display:inline-block;
+                                                white-space: normal;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                max-height: 150px">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
+                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
+                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
+                                                    nostrum quos rem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary link-berita" href="">
+                                            <span><i></i></span>
+                                            Lihat Selengkapnya</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 my-2">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
-                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <div class="swiper-slide">
+                            <div class="card border-0">
+                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                                    class="card-img-top image-berita glightbox" alt="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="card-title">
+                                                <p class="text-start">Judul Berita</p>
+                                            </h5>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="flex-box-tgl">
+                                                <div class="hari-berita">
+                                                    <p class="text-center">28</p>
+                                                </div>
+                                                <div class="bulan-berita">
+                                                    <p class="text-center">dec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 p-0">
+                                            <div class="card-text">
+                                                <p
+                                                    style="
+                                                display:inline-block;
+                                                white-space: normal;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                max-height: 150px">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
+                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
+                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
+                                                    nostrum quos rem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary link-berita" href="">
+                                            <span><i></i></span>
+                                            Lihat Selengkapnya</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 my-2">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
-                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <div class="swiper-slide">
+                            <div class="card border-0">
+                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                                    class="card-img-top image-berita" alt="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="card-title">
+                                                <p class="text-start">Judul Berita</p>
+                                            </h5>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="flex-box-tgl">
+                                                <div class="hari-berita">
+                                                    <p class="text-center">28</p>
+                                                </div>
+                                                <div class="bulan-berita">
+                                                    <p class="text-center">dec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 p-0">
+                                            <div class="card-text">
+                                                <p
+                                                    style="
+                                                display:inline-block;
+                                                white-space: normal;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                max-height: 150px">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
+                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
+                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
+                                                    nostrum quos rem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary link-berita" href="">
+                                            <span><i></i></span>
+                                            Lihat Selengkapnya</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 my-2">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%"
-                                    y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to
-                                    additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        <div class="swiper-slide">
+                            <div class="card border-0">
+                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                                    class="card-img-top image-berita" alt="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="card-title">
+                                                <p class="text-start">Judul Berita</p>
+                                            </h5>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="flex-box-tgl">
+                                                <div class="hari-berita">
+                                                    <p class="text-center">28</p>
+                                                </div>
+                                                <div class="bulan-berita">
+                                                    <p class="text-center">dec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 p-0">
+                                            <div class="card-text">
+                                                <p
+                                                    style="
+                                                display:inline-block;
+                                                white-space: normal;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                max-height: 150px">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
+                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
+                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
+                                                    nostrum quos rem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary link-berita" href="">
+                                            <span><i></i></span>
+                                            Lihat Selengkapnya</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card border-0">
+                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                                    class="card-img-top image-berita" alt="">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h5 class="card-title">
+                                                <p class="text-start">Judul Berita</p>
+                                            </h5>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="flex-box-tgl">
+                                                <div class="hari-berita">
+                                                    <p class="text-center">28</p>
+                                                </div>
+                                                <div class="bulan-berita">
+                                                    <p class="text-center">dec</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 p-0">
+                                            <div class="card-text">
+                                                <p
+                                                    style="
+                                                display:inline-block;
+                                                white-space: normal;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                max-height: 150px">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
+                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
+                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
+                                                    nostrum quos rem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a class="btn btn-primary link-berita" href="">
+                                            <span><i></i></span>
+                                            Lihat Selengkapnya</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +242,7 @@
         <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
                 <div class="d-flex container-fluid justify-content-between">
-                    <h3 class="d-inline align-self-center">Profile KI & MR</h3>
+                    <h3 class="d-inline align-self-center">Profil KI & MR</h3>
                     <a href="" class="text-danger" style="text-decoration: none">
                         <p class="d-inline align-self-center">Lihat Selengkapnya</p>
                     </a>
@@ -118,7 +250,9 @@
             </div>
             <div class="container py-2">
                 <div class="row g-3">
-                    <div class="col-sm-4 bg-secondary" style="height: 405px"></div>
+                    <div class="col-sm-4 bg-secondary" style="height: 405px">
+                        <img src="" alt="">
+                    </div>
                     <div class="col-sm-8">
                         <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
                         <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
@@ -131,7 +265,9 @@
                         <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
                         <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
                     </div>
-                    <div class="col-sm-4 bg-secondary" style="height: 405px"></div>
+                    <div class="col-sm-4 bg-secondary" style="height: 405px">
+                        <img src="" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -154,28 +290,48 @@
                         <div class="container">
                             
                             <div class="row my-3">
-                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
-                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;">
+                                    <span><i class=""></i></span>
+                                </div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;">
+                                    <h4></h4>
+                                </div>
                             </div>
                             
                             <div class="row my-3">
-                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
-                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;">
+                                    <span><i class=""></i></span>
+                                </div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;">
+                                    <h4></h4>
+                                </div>
                             </div>
                             
                             <div class="row my-3">
-                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
-                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;">
+                                    <span><i class=""></i></span>
+                                </div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;">
+                                    <h4></h4>
+                                </div>
                             </div>
                             
                             <div class="row my-3">
-                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
-                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;">
+                                    <span><i class=""></i></span>
+                                </div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;">
+                                    <h4></h4>
+                                </div>
                             </div>
                             
                             <div class="row my-3">
-                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;"></div>
-                                <div class="col-md-9 bg-secondary" style=" height: 100px;"></div>
+                                <div class="col-md-2 mx-2 bg-secondary" style=" height: 100px;">
+                                    <span><i class=""></i></span>
+                                </div>
+                                <div class="col-md-9 bg-secondary" style=" height: 100px;">
+                                    <h4></h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,34 +352,34 @@
             <div class="container-fluid py-2">
                 <div class="row justify-content-center">
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
-
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
@@ -231,288 +387,324 @@
 
         
         <section class="my-5 rounded-2 border-2" style="width:100%;">
-            <div class="container mb-3">
-                <div class="d-flex container-fluid justify-content-between">
-                    <h3 class="d-inline align-self-center">FAQ</h3>
-                </div>
-            </div>
-            <div class="container py-2">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="accordionMR">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#accordion-collapseMR" aria-expanded="false"
-                                aria-controls="accordion-collapseMR">
-                                Manajemen Risiko
-                            </button>
-                        </h2>
-                        
-                        <div id="accordion-collapseMR" class="accordion-collapse collapse" aria-labelledby="accordionMR"
-                            data-bs-parent="#accordionFlushExample">
+            <div class="row">
+                <div class="col-8">
+                    <div class="container mb-3">
+                        <div class="d-flex container-fluid justify-content-between">
+                            <h3 class="d-inline align-self-center">FAQ</h3>
+                        </div>
+                    </div>
+                    <div class="container py-2">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
                             
-                            <div class="accordion-body">
-                                <div class="accordion" id="accordionPanelsStayOpenExample">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelOpen-headingMR1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelOpen-CollapseMR1" aria-expanded="false"
-                                                aria-controls="panelOpen-CollapseMR1">
-                                                Accordion Item #1
-                                            </button>
-                                        </h2>
-                                        <div id="panelOpen-CollapseMR1" class="accordion-collapse collapse"
-                                            aria-labelledby="panelOpen-headingMR1">
-                                            <div class="accordion-body">
-                                                <strong>This is the first item's accordion body.</strong> It is shown by
-                                                default, until the collapse plugin adds the appropriate classes that we use
-                                                to style each element. These classes control the overall appearance, as well
-                                                as the showing and hiding via CSS transitions. You can modify any of this
-                                                with custom CSS or overriding our default variables. It's also worth noting
-                                                that just about any HTML can go within the <code>.accordion-body</code>,
-                                                though the transition does limit overflow.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelOpen-headingMR2">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelOpen-CollapseMR2" aria-expanded="false"
-                                                aria-controls="panelOpen-CollapseMR2">
-                                                Accordion Item #1
-                                            </button>
-                                        </h2>
-                                        <div id="panelOpen-CollapseMR2" class="accordion-collapse collapse"
-                                            aria-labelledby="panelOpen-headingMR2">
-                                            <div class="accordion-body">
-                                                <strong>This is the first item's accordion body.</strong> It is shown by
-                                                default, until the collapse plugin adds the appropriate classes that we use
-                                                to style each element. These classes control the overall appearance, as well
-                                                as the showing and hiding via CSS transitions. You can modify any of this
-                                                with custom CSS or overriding our default variables. It's also worth noting
-                                                that just about any HTML can go within the <code>.accordion-body</code>,
-                                                though the transition does limit overflow.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelOpen-headingMR3">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelOpen-CollapseMR3" aria-expanded="false"
-                                                aria-controls="panelOpen-CollapseMR3">
-                                                Accordion Item #1
-                                            </button>
-                                        </h2>
-                                        <div id="panelOpen-CollapseMR3" class="accordion-collapse collapse"
-                                            aria-labelledby="panelOpen-headingMR3">
-                                            <div class="accordion-body">
-                                                <strong>This is the first item's accordion body.</strong> It is shown by
-                                                default, until the collapse plugin adds the appropriate classes that we use
-                                                to style each element. These classes control the overall appearance, as well
-                                                as the showing and hiding via CSS transitions. You can modify any of this
-                                                with custom CSS or overriding our default variables. It's also worth noting
-                                                that just about any HTML can go within the <code>.accordion-body</code>,
-                                                though the transition does limit overflow.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="accordionSOP">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#accordion-collapseSOP" aria-expanded="false"
-                                aria-controls="accordion-collapseSOP">
-                                SOP
-                            </button>
-                        </h2>
-                        
-                        <div id="accordion-collapseSOP" class="accordion-collapse collapse"
-                            aria-labelledby="accordionSOP" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="accordionMR">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordion-collapseMR" aria-expanded="false"
+                                        aria-controls="accordion-collapseMR">
+                                        <strong>Manajemen Risiko</strong>
+                                    </button>
+                                </h2>
                                 
-                                <div class="accordion-body">
-                                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelOpen-headingSOP1">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelOpen-CollapseSOP1" aria-expanded="false"
-                                                    aria-controls="panelOpen-CollapseSOP1">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="panelOpen-CollapseSOP1" class="accordion-collapse collapse"
-                                                aria-labelledby="panelOpen-headingSOP1">
-                                                <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by
-                                                    default, until the collapse plugin adds the appropriate classes that we
-                                                    use
-                                                    to style each element. These classes control the overall appearance, as
-                                                    well
-                                                    as the showing and hiding via CSS transitions. You can modify any of
-                                                    this
-                                                    with custom CSS or overriding our default variables. It's also worth
-                                                    noting
-                                                    that just about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                <div id="accordion-collapseMR" class="accordion-collapse collapse"
+                                    aria-labelledby="accordionMR" data-bs-parent="#accordionFlushExample">
+                                    
+                                    <div class="accordion-body">
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                                            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelOpen-headingMR1">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR1"
+                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR1">
+                                                        <strong>Apa tujuan penerapan Penilaian Risiko?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="panelOpen-CollapseMR1" class="accordion-collapse collapse"
+                                                    aria-labelledby="panelOpen-headingMR1">
+                                                    <div class="accordion-body">
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelOpen-headingSOP2">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelOpen-CollapseSOP2" aria-expanded="false"
-                                                    aria-controls="panelOpen-CollapseSOP2">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="panelOpen-CollapseSOP2" class="accordion-collapse collapse"
-                                                aria-labelledby="panelOpen-headingSOP2">
-                                                <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by
-                                                    default, until the collapse plugin adds the appropriate classes that we
-                                                    use
-                                                    to style each element. These classes control the overall appearance, as
-                                                    well
-                                                    as the showing and hiding via CSS transitions. You can modify any of
-                                                    this
-                                                    with custom CSS or overriding our default variables. It's also worth
-                                                    noting
-                                                    that just about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelOpen-headingMR2">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR2"
+                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR2">
+                                                        <strong>Apa manfaat dari penerapan Penilaian Risiko?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="panelOpen-CollapseMR2" class="accordion-collapse collapse"
+                                                    aria-labelledby="panelOpen-headingMR2">
+                                                    <div class="accordion-body">
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelOpen-headingSOP3">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelOpen-CollapseSOP3" aria-expanded="false"
-                                                    aria-controls="panelOpen-CollapseSOP3">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="panelOpen-CollapseSOP3" class="accordion-collapse collapse"
-                                                aria-labelledby="panelOpen-headingSOP3">
-                                                <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by
-                                                    default, until the collapse plugin adds the appropriate classes that we
-                                                    use
-                                                    to style each element. These classes control the overall appearance, as
-                                                    well
-                                                    as the showing and hiding via CSS transitions. You can modify any of
-                                                    this
-                                                    with custom CSS or overriding our default variables. It's also worth
-                                                    noting
-                                                    that just about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelOpen-headingMR3">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR3"
+                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR3">
+                                                        <strong>Apa yang dimaksud dengan risiko?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="panelOpen-CollapseMR3" class="accordion-collapse collapse"
+                                                    aria-labelledby="panelOpen-headingMR3">
+                                                    <div class="accordion-body">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelOpen-headingMR4">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR4"
+                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR4">
+                                                        <strong>Bagaimana cara melakukan Identifikasi Risiko?</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="panelOpen-CollapseMR4" class="accordion-collapse collapse"
+                                                    aria-labelledby="panelOpen-headingMR4">
+                                                    <div class="accordion-body">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelOpen-headingMR5">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR5"
+                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR5">
+                                                        <strong>Apa saja yang menjadi ruang lingkup penilaian
+                                                            risiko</strong>
+                                                    </button>
+                                                </h2>
+                                                <div id="panelOpen-CollapseMR5" class="accordion-collapse collapse"
+                                                    aria-labelledby="panelOpen-headingMR4">
+                                                    <div class="accordion-body">
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="accordionZI">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#accordion-collapseZI" aria-expanded="false"
-                                aria-controls="accordion-collapseZI">
-                                Zona Integritas
-                            </button>
-                        </h2>
-                        
-                        <div id="accordion-collapseZI" class="accordion-collapse collapse" aria-labelledby="accordionZI"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="accordionSOP">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordion-collapseSOP" aria-expanded="false"
+                                        aria-controls="accordion-collapseSOP">
+                                        <strong>SOP</strong>
+                                    </button>
+                                </h2>
                                 
-                                <div class="accordion-body">
-                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div id="accordion-collapseSOP" class="accordion-collapse collapse"
+                                    aria-labelledby="accordionSOP" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
                                         
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelOpen-headingZI1">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelOpen-CollapseZI1" aria-expanded="false"
-                                                    aria-controls="panelOpen-CollapseZI1">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="panelOpen-CollapseZI1" class="accordion-collapse collapse"
-                                                aria-labelledby="panelOpen-headingZI1">
-                                                <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by
-                                                    default, until the collapse plugin adds the appropriate classes that we
-                                                    use
-                                                    to style each element. These classes control the overall appearance, as
-                                                    well
-                                                    as the showing and hiding via CSS transitions. You can modify any of
-                                                    this
-                                                    with custom CSS or overriding our default variables. It's also worth
-                                                    noting
-                                                    that just about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingSOP1">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseSOP1" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseSOP1">
+                                                            <strong>Apa yang dimaksud dengan SOP ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseSOP1" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingSOP1">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingSOP2">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseSOP2" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseSOP2">
+                                                            <strong>Apa tujuan SOP di bentuk ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseSOP2" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingSOP2">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingSOP3">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseSOP3" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseSOP3">
+                                                            <strong>Mengapa kita membutuhkan SOP ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseSOP3" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingSOP3">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingSOP4">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseSOP4" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseSOP4">
+                                                            <strong>Informasi apa yang di butuhkan dalam pembuatan SOP
+                                                                ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseSOP4" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingSOP4">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingSOP5">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseSOP5" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseSOP5">
+                                                            <strong>Siapa yang berhak untuk merancang SOP ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseSOP5" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingSOP5">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="accordionZI">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordion-collapseZI" aria-expanded="false"
+                                        aria-controls="accordion-collapseZI">
+                                        <strong>Zona Integritas</strong>
+                                    </button>
+                                </h2>
+                                
+                                <div id="accordion-collapseZI" class="accordion-collapse collapse"
+                                    aria-labelledby="accordionZI" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
                                         
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelOpen-headingZI2">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelOpen-CollapseZI2" aria-expanded="false"
-                                                    aria-controls="panelOpen-CollapseZI2">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="panelOpen-CollapseZI2" class="accordion-collapse collapse"
-                                                aria-labelledby="panelOpen-headingZI2">
-                                                <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by
-                                                    default, until the collapse plugin adds the appropriate classes that we
-                                                    use
-                                                    to style each element. These classes control the overall appearance, as
-                                                    well
-                                                    as the showing and hiding via CSS transitions. You can modify any of
-                                                    this
-                                                    with custom CSS or overriding our default variables. It's also worth
-                                                    noting
-                                                    that just about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                        <div class="accordion-body">
+                                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingZI1">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseZI1" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseZI1">
+                                                            <strong>Apa yang dimaksud Zona Integritas ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseZI1" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingZI1">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="panelOpen-headingZI3">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#panelOpen-CollapseZI3" aria-expanded="false"
-                                                    aria-controls="panelOpen-CollapseZI3">
-                                                    Accordion Item #1
-                                                </button>
-                                            </h2>
-                                            <div id="panelOpen-CollapseZI3" class="accordion-collapse collapse"
-                                                aria-labelledby="panelOpen-headingZI3">
-                                                <div class="accordion-body">
-                                                    <strong>This is the first item's accordion body.</strong> It is shown by
-                                                    default, until the collapse plugin adds the appropriate classes that we
-                                                    use
-                                                    to style each element. These classes control the overall appearance, as
-                                                    well
-                                                    as the showing and hiding via CSS transitions. You can modify any of
-                                                    this
-                                                    with custom CSS or overriding our default variables. It's also worth
-                                                    noting
-                                                    that just about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingZI2">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseZI2" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseZI2">
+                                                            <strong>Apa tujuan Zona Integritas ?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseZI2" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingZI2">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingZI3">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseZI3" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseZI3">
+                                                            <strong>Apa saja yang menjadi area perubahan dalam zona
+                                                                integritas?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseZI3" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingZI3">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingZI4">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseZI4" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseZI4">
+                                                            <strong>Apa tahapan dari pembangunan Zona integritas?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseZI4" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingZI4">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="panelOpen-headingZI5">
+                                                        <button class="accordion-button" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#panelOpen-CollapseZI5" aria-expanded="false"
+                                                            aria-controls="panelOpen-CollapseZI5">
+                                                            <strong>Bagaimana keberhasilan pembangunan Zona integritas
+                                                                diukur?</strong>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="panelOpen-CollapseZI5" class="accordion-collapse collapse"
+                                                        aria-labelledby="panelOpen-headingZI5">
+                                                        <div class="accordion-body">
+
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -521,6 +713,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-4">
+                    <img class="faq-image" src="" width="100%" height="100%" alt="">
                 </div>
             </div>
         </section>
@@ -623,7 +818,6 @@
 
             return chartMRCurrent;
         }
-
 
         /*Komitmen Triwulan 1*/
         $('#chartMRtriwulan1').html(myChartMRtriwulan1())
@@ -1086,13 +1280,12 @@
                     },
                     indexAxis: 'y',
                     responsive: true,
-                    maintainAspectRatio: true,
+                    maintainAspectRatio: false,
                 },
                 plugins: [ChartDataLabels],
             });
             return chartPBJKumulatifCurrent;
         }
-
 
         //script status paket kontraktual pengadaan barang dan jasa
         $('#chartPBJKontraktualPKT').html(myChartPBJKontraktualPKT())
@@ -1129,6 +1322,15 @@
                         padding: 20
                     },
                     plugins: {
+                        title: {
+                            display: true,
+                            text: 'Paket Kontraktual PBJ',
+                            font: {
+                                weight: 'bold',
+                                size: 24,
+                            },
+                            color: 'black',
+                        },
                         legend: {
                             labels: {
                                 color: '#ffffff'
@@ -1216,6 +1418,15 @@
                         padding: 20
                     },
                     plugins: {
+                        title: {
+                            display: true,
+                            text: 'Pagu Kontraktual PBJ',
+                            font: {
+                                weight: 'bold',
+                                size: 24,
+                            },
+                            color: 'black',
+                        },
                         legend: {
                             labels: {
                                 color: '#ffffff'
@@ -1317,7 +1528,7 @@
                 },
                 options: {
                     layout: {
-                        padding: 60
+                        autoPadding: true
                     },
                     interaction: {
                         mode: 'nearest',
@@ -1409,6 +1620,7 @@
                         }
                     },
                     responsive: true,
+                    maintainAspectRatio: false,
                 },
 
             });
@@ -1481,15 +1693,6 @@
                         autoPadding: true
                     },
                     plugins: {
-                        title: {
-                            display: true,
-                            text: 'Jumlah Pengaduan Tahunan',
-                            font: {
-                                weight: 'bold',
-                                size: 24,
-                            },
-                            color: 'black',
-                        },
                         tooltip: {
                             enabled: true
                         },
@@ -1516,6 +1719,15 @@
                         },
                     },
                     plugins: {
+                        title: {
+                            display: true,
+                            text: 'Jumlah Pengaduan Tahunan',
+                            font: {
+                                weight: 'bold',
+                                size: 24,
+                            },
+                            color: 'black',
+                        },
                         legend: {
                             labels: {
                                 color: '#000000',
@@ -1605,6 +1817,15 @@
                         autoPadding: true
                     },
                     plugins: {
+                        title: {
+                            display: true,
+                            text: 'Jumlah Pengaduan Kategori',
+                            font: {
+                                weight: 'bold',
+                                size: 24,
+                            },
+                            color: 'black',
+                        },
                         legend: {
                             labels: {
                                 color: '#ffffff'
@@ -1678,6 +1899,15 @@
                         autoPadding: true
                     },
                     plugins: {
+                        title: {
+                            display: true,
+                            text: 'Jumlah Simpulan Telaah',
+                            font: {
+                                weight: 'bold',
+                                size: 24,
+                            },
+                            color: 'black',
+                        },
                         legend: {
                             labels: {
                                 color: '#ffffff'
@@ -2059,10 +2289,6 @@
                         padding: 0,
                     },
                     plugins: {
-                        title: {
-                            display: false,
-                            // text: 'Chart.js Bar Chart - Stacked'
-                        },
                         tooltip: {
                             enabled: true
                         },
@@ -2105,6 +2331,15 @@
                         }
                     },
                     plugins: {
+                        title: {
+                            display: true,
+                            text: 'Jumlah SOP Tahunan',
+                            font: {
+                                weight: 'bold',
+                                size: 24,
+                            },
+                            color: 'black',
+                        },
                         legend: {
                             labels: {
                                 color: '#000000',
@@ -2128,6 +2363,113 @@
                 plugins: [ChartDataLabels],
             });
             return chartSOPCurrent;
+        }
+    </script>
+
+    
+    <script>
+        $('#chartPercobaan').html(myChartPercobaan())
+
+        function myChartPercobaan() {
+            let myChart = document.getElementById('chartPercobaan').getContext('2d');
+            let pieLabelsLine = {
+                id = 'pieLabelsLine',
+                afterDraw(chart, args, options) {
+                    const {
+                        ctx,
+                        chartArea: {
+                            top,
+                            bottom,
+                            left,
+                            right,
+                            width,
+                            height
+                        }
+                    } = chart;
+                    chart.data.datasets.forEach((dataset, i) => {
+                        chart.getDatasetMeta(i).data.forEach((datapoint, index) => {
+                            const {
+                                x,
+                                y
+                            } = datapoint.tooltipPosition();
+                            console.log(x);
+                            const halfwidth = width / 2;
+                            const halfheight = height / 2;
+
+                            ctx.beginPath();
+                            ctx.moveTo(x, y);
+                            ctx.lineTo(x + 15, y + 15);
+                            ctx.strokeStyle = dataset.borderColor[index];
+
+                        })
+                    })
+                }
+            }
+            let chartPercobaanCurrent = new Chart(myChart, {
+                type: 'pie',
+                data: {
+                    labels: [
+                        'Terbukti',
+                        'Tidak Terbukti',
+                    ],
+                    datasets: [{
+                        label: 'My First Dataset',
+                        data: [44, 216],
+                        backgroundColor: [
+                            'rgb(252, 153, 24)',
+                            'rgb(0, 120, 170)',
+                        ],
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    layout: {
+                        autoPadding: true
+                    },
+                    plugins: {
+                        legend: {
+                            labels: {
+                                color: '#ffffff'
+                            },
+                            display: false,
+                            position: 'bottom',
+                        },
+                        datalabels: {
+                            color: 'black',
+                            font: {
+                                weight: 'bold',
+                                size: 15,
+                            },
+                            formatter: (value, context) => {
+                                let datapoints = context.chart.data.datasets[0].data;
+                                //console.log(value)
+                                //console.log(context.chart.data.datasets[0].data)
+                                function totalSum(total, datapoint) {
+                                    var angkatotal = parseInt(total);
+                                    var angkadatapoint = parseInt(datapoint);
+
+                                    return angkatotal + angkadatapoint;
+                                    //console.log(total)
+                                    //console.log(datapoint)
+                                }
+                                let totalvalue = datapoints.reduce(totalSum, 0);
+                                let percentageValue = (value / totalvalue * 100).toFixed(1);
+                                let totalPercentage = parseInt(percentageValue);
+                                //console.log(percentageValue)
+                                if (totalPercentage === 0) {
+                                    return ' ';
+                                } else {
+                                    return `${percentageValue}%`;
+                                }
+                            }
+                        },
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false,
+                },
+                plugins: [ChartDataLabels],
+            });
+            return chartPercobaanCurrent;
         }
     </script>
 <?php $__env->stopPush(); ?>

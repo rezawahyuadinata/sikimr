@@ -1,4 +1,4 @@
-{{-- scroll tutorial home --}}
+{{-- catatan: scroll tutorial home --}}
 <script>
     var swiper = new Swiper(".tutorialSwiper", {
         slidesPerView: 1,
@@ -10,7 +10,7 @@
     });
 </script>
 
-{{-- PBJ swiper --}}
+{{-- catatan: PBJ swiper --}}
 <script>
     var swiper = new Swiper(".pengadaanSwiper", {
         spaceBetween: 30,
@@ -30,7 +30,7 @@
     });
 </script>
 
-{{-- Pengaduan swiper --}}
+{{-- catatan: Pengaduan swiper --}}
 <script>
     var swiper = new Swiper(".pengaduanSwiper", {
         spaceBetween: 30,
@@ -49,7 +49,7 @@
         },
     });
 </script>
-{{-- manajemen risiko button show hide --}}
+{{-- catatan: manajemen risiko button show hide --}}
 
 <script>
     $(function() {
@@ -59,11 +59,11 @@
         });
     });
 </script>
-{{-- Aos Generate --}}
+{{-- catatan: Aos Generate --}}
 <script>
     AOS.init();
 </script>
-{{-- Api Tawk To --}}
+{{-- catatan: Api Tawk To --}}
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();

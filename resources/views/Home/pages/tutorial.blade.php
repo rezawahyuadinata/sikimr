@@ -8,7 +8,7 @@
                     <h2>Tutorial</h2>
                 </div>
             </div>
-            {{-- tab pane --}}
+            {{-- catatan: tab pane --}}
             <div class="row">
                 <div class="col-lg-4 mx-auto">
                     <div class="nav-wrapper position-sticky end-0">
@@ -31,11 +31,11 @@
             </div>
         </div>
         <div class="container">
-            {{-- tab pane page --}}
+            {{-- catatan: tab pane page --}}
             <div class="row">
                 <div class="col-md-12 py-3">
                     <div class="tab-content">
-                        {{-- pdf --}}
+                        {{-- catatan: pdf --}}
                         <div class="tab-pane active justify-content-center" id="profile-tabs-simple">
                             <div class="album py-5">
                                 <div class="container">
@@ -146,7 +146,7 @@
                             </div>
                         </div>
 
-                        {{-- videos --}}
+                        {{-- catatan: videos --}}
                         <div class="tab-pane justify-content-center" id="dashboard-tabs-simple">
                             <div class="album py-5">
                                 <div class="container">

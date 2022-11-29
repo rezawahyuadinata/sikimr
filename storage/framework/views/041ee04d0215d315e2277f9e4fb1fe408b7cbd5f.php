@@ -176,4 +176,55 @@
     tagPeng2.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagSop.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
 </script>
+
+
+<script>
+    var swiper = new Swiper(".berita-home-Swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50
+            }
+        }
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".berita-home-Swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
 <?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/components/script-js.blade.php ENDPATH**/ ?>

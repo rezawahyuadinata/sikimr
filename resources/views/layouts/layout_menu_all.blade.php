@@ -16,7 +16,7 @@
         media="all">
     <link rel="stylesheet" href="{{ asset('template') }}/adminlte/bower_components/select2/dist/css/select2.min.css"
         media="all">
-    {{-- <link rel="stylesheet" href="{{ asset('template') }}/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" media="all"> --}}
+    {{-- catatan: <link rel="stylesheet" href="{{ asset('template') }}/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" media="all"> --}}
     <link rel="stylesheet" href="{{ asset('template') }}/adminlte/plugins/sweetalert/lib/sweet-alert.css"
         media="all">
     <link rel="stylesheet" href="{{ asset('template') }}/adminlte/dist/css/AdminLTE.min.css" media="all">
@@ -112,12 +112,12 @@
                             margin-top: 2px;
                             height: 70px;">
                         </a>
-                        {{-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        {{-- catatan: <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>
                         </button> --}}
                     </div>
-                    {{-- <div class="navbar-custom-menu">
+                    {{-- catatan: <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -172,7 +172,7 @@
                             </li>
                         </ul>
                     </div> --}}
-                    {{-- <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
+                    {{-- catatan: <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li class="{{ $data->page->modul == 'home' ? 'active' : '' }}">
                                 <a href="{{ route('home') }}">
@@ -360,7 +360,7 @@
     <script src="{{ asset('template') }}/adminlte/bower_components/moment/min/moment.min.js"></script>
     <script src="{{ asset('template') }}/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <script src="{{ asset('template') }}/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
-    {{-- <script src="{{ asset('template') }}/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    {{-- catatan: <script src="{{ asset('template') }}/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
         <script src="{{ asset('template') }}/adminlte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script> --}}
     <script src="{{ asset('template') }}/adminlte/plugins/jquery-validation/jquery.validate.min.js"></script>
     <script src="{{ asset('template') }}/adminlte/plugins/sweetalert/lib/sweet-alert.min.js"></script>

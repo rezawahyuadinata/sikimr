@@ -1,4 +1,4 @@
-{{-- <div class="row">
+{{-- catatan: <div class="row">
     <div class="col-sm-10">
 
     </div>
@@ -20,7 +20,8 @@
 </div>
 
 
-<div class="modal fade" id="modal-tujuan" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal fade" id="modal-tujuan" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    data-backdrop="static">
     <div class="modal-dialog modal-lg">
         <form class="form" id="form-tujuan">
             <div class="modal-content">

@@ -143,7 +143,7 @@
                                                     @endforeach
                                                 </table>
                                             </td>
-                                            {{-- <td>
+                                            {{-- catatan: <td>
                                         @foreach ($data->ppk as $ppk)
                                         {{ $ppk->NAMA }}, {{ $ppk->KETUA }}, {{ $ppk->NIP }} <br>
                                         @endforeach
@@ -191,13 +191,13 @@
                         <div id="load-peta">
 
                         </div>
-                        {{-- @include('formulir.komitmen-mr.komitmen-mr-peta') --}}
+                        {{-- catatan: @include('formulir.komitmen-mr.komitmen-mr-peta') --}}
                     </div>
                     <div class="tab-pane" id="tab_f">
                         <div id="load-jadwal">
 
                         </div>
-                        {{-- @include('formulir.komitmen-mr.komitmen-mr-jadwal') --}}
+                        {{-- catatan: @include('formulir.komitmen-mr.komitmen-mr-jadwal') --}}
                     </div>
                     @if ($data->user->pengguna_kategori->pengguna_kategori_spesial != 'pengelola')
                         <div class="tab-pane" id="tab_g">
@@ -236,10 +236,10 @@
                                 </select>
                             </div>
                             <!-- <div class="form-group col-sm-12 form-hide">
-                                                                                                                <label for="mr_tanggal">Tanggal Dokumen</label>
-                                                                                                                <input type="date" name="mr_tanggal" id="mr_tanggal" class="form-control"
-                                                                                                                    value="{{ date('Y-m-d') }}" required>
-                                                                                                            </div> -->
+                                                                                                                    <label for="mr_tanggal">Tanggal Dokumen</label>
+                                                                                                                    <input type="date" name="mr_tanggal" id="mr_tanggal" class="form-control"
+                                                                                                                        value="{{ date('Y-m-d') }}" required>
+                                                                                                                </div> -->
                         </div>
                     </div>
                     <div class="modal-footer">

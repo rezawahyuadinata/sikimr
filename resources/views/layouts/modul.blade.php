@@ -103,7 +103,7 @@
                                     Faq
                                 </a>
                             </li>
-                            {{-- <li class="dropdown messages-menu">
+                            {{-- catatan: <li class="dropdown messages-menu">
                                 <a href="#" data-toggle="modal" data-target="#myModal">
                                     <i class="fa ion-ios-telephone"></i>
                                     Contact
@@ -249,7 +249,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
     </script>
 
-    {{-- sepherd --}}
+    {{-- catatan: sepherd --}}
     <link rel="stylesheet" href="{{ asset('js/plugins') }}/shepherd.css">
     <script src="{{ asset('js/plugins') }}/shepherd.js"></script>
 

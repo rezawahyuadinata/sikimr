@@ -4,7 +4,7 @@
     }
 </style>
 @php
-use App\Helpers\AppHelper;
+    use App\Helpers\AppHelper;
 @endphp
 <h3><b>6. Jadwal Pelaksanaan</b></h3>
 <div class="row">
@@ -66,7 +66,7 @@ use App\Helpers\AppHelper;
                                 <tr>
                                     <td>
                                         @if ($row->jenis == 'inovasi')
-                                            {{-- {{ $row->resiko_kode }} --}}
+                                            {{-- catatan: {{ $row->resiko_kode }} --}}
                                             {{ $item->urutan . '.' . $row->urutan }}
                                         @else
                                             {{ $item->urutan . '.' . $row->urutan }}
@@ -97,7 +97,7 @@ use App\Helpers\AppHelper;
                                         }
                                     @endphp
 
-                                    {{-- versi pertama --}}
+                                    {{-- catatan: versi pertama --}}
                                     @for ($i = 1; $i <= 4; $i++)
                                         @for ($j = 1; $j <= 3; $j++)
                                             @if ($row->jenis == 'inovasi')

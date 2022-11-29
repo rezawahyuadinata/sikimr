@@ -82,7 +82,7 @@
         </div>
     </nav>
     <header>
-        {{-- carousel --}}
+        {{-- catatan: carousel --}}
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="100">
             <div class="carousel-inner mb-4">
                 <div class="carousel-item">
@@ -134,7 +134,7 @@
                 </div>
             </div>
         </div>
-        {{-- page header --}}
+        {{-- catatan: page header --}}
         <div class="page-header min-vh-100" style="background-image: url(https://images.unsplash.com/photo-1520769945061-0a448c463865?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&);" loading="lazy">
             <span class="mask bg-gradient-dark opacity-4"></span>
             <div class="container">
@@ -152,7 +152,7 @@
             </div>
         </div>
     </header>
-    <!-- {{-- <div class="page-header min-vh-80"
+    <!-- {{-- catatan: <div class="page-header min-vh-80"
         style="background-image: url('https://images.unsplash.com/photo-1630752708689-02c8636b9141?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2490&q=80')">
         <span class="mask bg-gradient-dark opacity-6"></span>
         <div class="container">
@@ -167,7 +167,7 @@
         </div>
     </div> --}} -->
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
-        {{-- Berita --}}
+        {{-- catatan: Berita --}}
         <section class="py-3">
             <div class="container">
                 <div class="row my-5">
@@ -205,7 +205,7 @@
             </div>
         </section>
 
-        {{-- Profile --}}
+        {{-- catatan: Profile --}}
         <section class="py-3">
             <div class="container">
                 <div class="row my-5">
@@ -255,7 +255,7 @@
             </div>
         </section>
 
-        {{-- Produk Hukum --}}
+        {{-- catatan: Produk Hukum --}}
         <section class="py-3 pb-5 position-relative mx-n3">
             <div class="container">
                 <div class="row my-5">
@@ -357,7 +357,7 @@
             </div>
         </section>
 
-        {{-- Gallery --}}
+        {{-- catatan: Gallery --}}
         <section class="pt-5">
             <div class="container">
                 <div class="row my-5">
@@ -395,7 +395,7 @@
             </div>
         </section>
 
-        {{-- FAQ --}}
+        {{-- catatan: FAQ --}}
         <section class="py-3">
             <div class="accordion-1">
                 <div class="container">
@@ -526,7 +526,7 @@
             </div>
         </section>
     </div>
-    {{-- footer --}}
+    {{-- catatan: footer --}}
     <section>
         <footer class="footer-section bg-light pt-5 mt-5">
             <div class="container">

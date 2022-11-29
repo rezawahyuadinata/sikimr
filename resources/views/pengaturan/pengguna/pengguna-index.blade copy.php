@@ -129,7 +129,7 @@
     </div>
 </div>
 
-{{-- <div class="modal fade" id="modal-access" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+{{-- catatan: <div class="modal fade" id="modal-access" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <form class="form" id="form-access">
             <div class="modal-content">

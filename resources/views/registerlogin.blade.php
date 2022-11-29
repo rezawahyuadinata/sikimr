@@ -81,7 +81,7 @@
                                       class="form-control @error('username') is-invalid @enderror" name="username"
                                       value="{{ old('username') }}" autocomplete="username" autofocus>
                               </div>
-                              {{-- <div class="form-group mb-3">
+                              {{-- catatan: <div class="form-group mb-3">
                                     <i class="fas fa-envelope"></i> &nbsp<label class="label" for="email">Email</label>
                                     <input type="text" class="form-control" placeholder="Email" >
                                 </div> --}}
@@ -97,7 +97,7 @@
                                   <input id="password-confirm" type="password" class="form-control"
                                       name="password_confirmation" autocomplete="new-password">
                               </div>
-                              {{-- <div class="form-group mb-3">
+                              {{-- catatan: <div class="form-group mb-3">
                                     Select image to upload:
                                     <input type="file" name="fileToUpload" id="fileToUpload">
                                 </div> --}}
@@ -112,7 +112,7 @@
                                           <span class="checkmark"></span>
                                       </label>
                                   </div>
-                                  {{-- <div class="w-50 text-md-right">
+                                  {{-- catatan: <div class="w-50 text-md-right">
                                         <a href="register.php">Forgot Password</a>
                                     </div> --}}
                               </div>

@@ -79,14 +79,13 @@
         width: 100%;
         table-layout: fixed;
     }
-
 </style>
 <div class="row">
     <div class="col-lg-8">
         <table id="table-peta1" class="table table-bordered" width="50%">
             <tr>
                 <th colspan="{{ count($data->kriteria_dampak) + 2 }}">
-                    {{-- <th colspan="{{ count($data->kriteria_dampak) + 2 }}" class="text-center"> --}}
+                    {{-- catatan: <th colspan="{{ count($data->kriteria_dampak) + 2 }}" class="text-center"> --}}
                     <h3><b>5. Peta Risiko</b></h3>
                     <h3 style="margin-left: 50%;margin-bottom:25px;"><b>PETA RISIKO</b></h3>
                 </th>
@@ -113,7 +112,8 @@
                             $nilai = $val->nilai->nilai;
                         @endphp
                         @if ($nilai == 11 || $nilai == 12 || $nilai == 14 || $nilai == 13)
-                            <td style="width: 10%;height:5%;border: 2px solid black; border-bottom: 3px solid blue;font-weight:bold;text-align: center; text-align:right;
+                            <td
+                                style="width: 10%;height:5%;border: 2px solid black; border-bottom: 3px solid blue;font-weight:bold;text-align: center; text-align:right;
     vertical-align:top;background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})">
                                 {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                 <div class=" container-fluid" style="padding-left: 3px">
@@ -121,7 +121,8 @@
                                     </div>
                                 </div>
                             @elseif ($nilai == 6 || $nilai == 8 || $nilai == 10 || $nilai == 9)
-                            <td style="width: 10%;height:5%;font-weight:bold;border: 2px solid black;border-right: 3px solid blue;text-align: center; text-align:right;
+                            <td
+                                style="width: 10%;height:5%;font-weight:bold;border: 2px solid black;border-right: 3px solid blue;text-align: center; text-align:right;
     vertical-align:top; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})">
                                 {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                 <div class=" container-fluid" style="padding-left: 3px">
@@ -130,7 +131,8 @@
                                 </div>
                             </td>
                         @else
-                            <td style="width: 10%;height:5%;border: 2px solid black;font-weight:bold;text-align: center;  text-align:right;
+                            <td
+                                style="width: 10%;height:5%;border: 2px solid black;font-weight:bold;text-align: center;  text-align:right;
     vertical-align:top;background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})">
                                 {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                 <div class=" container-fluid" style="padding-left: 3px">
@@ -212,7 +214,7 @@
             </tr>
             <tr>
                 <td style="text-align: -webkit-center;height:50px; width:100px;">
-                    {{-- <div class="inherent">
+                    {{-- catatan: <div class="inherent">
                         </div> --}}
                     <hr style="width:50px;border: 1px solid blue">
                 </td>
@@ -282,10 +284,11 @@
                         @else
                             @php
                             $bgcolor = ''; @endphp
-                            @endif <th class="text-center">K</th>
-                            <th class="text-center">D</th>
-                            <th class="text-center">Nilai</th>
-                        @endfor
+                        @endif
+                        <th class="text-center">K</th>
+                        <th class="text-center">D</th>
+                        <th class="text-center">Nilai</th>
+                    @endfor
                 </tr>
             </thead>
             <tbody>

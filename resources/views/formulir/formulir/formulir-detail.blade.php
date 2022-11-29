@@ -134,7 +134,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title" style="text-align: center;">Komitmen Manajemen Risiko</h3>
                     </div>
-                    {{-- <h3 style="text-align: center;">KOMITMEN MANAJEMEN RISIKO</h3> --}}
+                    {{-- catatan: <h3 style="text-align: center;">KOMITMEN MANAJEMEN RISIKO</h3> --}}
                     <!-- /.box-header -->
                     <div class="box-body">
                         <div class="table-responsive">
@@ -370,7 +370,7 @@
                                 <label for="">3. Tujuan Pelaksanaan Manajemen Risiko</label>
                             </div>
                             <div class="col-lg-12">
-                                {{-- <table class="display table table-bordered table-hover" width="100%">
+                                {{-- catatan: <table class="display table table-bordered table-hover" width="100%">
                                 <thead>
                                     <tr>
                                         <th data-orderable="false">No</th>
@@ -525,7 +525,7 @@
                                     <tfoot>
                                         <tr>
                                             <td colspan="29">
-                                                {{-- <div class="col-sm-4 text-center pull-right">
+                                                {{-- catatan: <div class="col-sm-4 text-center pull-right">
                                                 Jakarta, <?php echo date('d M Y'); ?>
                                                 <br>
                                                 <br>
@@ -591,7 +591,7 @@
                                                     @if ($nilai == 11 || $nilai == 12 || $nilai == 14 || $nilai == 13)
                                                         <td style="width: 10%;height:5%;border: 2px solid black; border-bottom: 5px solid blue;font-weight:bold;text-align: center; text-align:right;
                                                                                                                                                                                                             vertical-align:top;background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})"
-                                                            {{-- <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}>
+                                                            {{-- catatan: <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}>
                                                             {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                                             <div class=" container-fluid" style="padding-left: 0px;">
                                                                 <div class=" row"
@@ -601,7 +601,7 @@
                                                         @elseif ($nilai == 6 || $nilai == 8 || $nilai == 10 || $nilai == 9)
                                                         <td style="width: 10%;height:5%;font-weight:bold;border: 2px solid black;border-right: 5px solid blue;text-align: center; text-align:right;
                                                                                                                                                                                                             vertical-align:top; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})"
-                                                            {{-- <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}>
+                                                            {{-- catatan: <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}>
                                                             {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                                             <div class=" container-fluid" style="padding-left: 0px;">
                                                                 <div class=" row"
@@ -612,7 +612,7 @@
                                                     @else
                                                         <td style="width: 10%;height:5%;border: 2px solid black;font-weight:bold;text-align: center; text-align:right;
                                                                                                                                                                                                             vertical-align:top; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})"
-                                                            {{-- <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}>
+                                                            {{-- catatan: <td style="width: 16%; background-color: rgb({{ $val->nilai->r . ',' . $val->nilai->g . ',' . $val->nilai->b }})" --}}>
                                                             {{ $val->nilai ? $val->nilai->nilai : '-' }}
                                                             <div class=" container-fluid" style="padding-left: 0px;">
                                                                 <div class=" row"
@@ -692,12 +692,12 @@
                                         style="width:300px;heigth:100px;margin-top:20px;font-weight: bold;font-size:18px;">
                                         <tr>
                                             <th colspan="{{ count($data->kriteria_dampak) + 2 }}" class="text-center">
-                                                {{-- <h2><b>PETA RISIKO</b></h2> --}} Keterangan
+                                                {{-- catatan: <h2><b>PETA RISIKO</b></h2> --}} Keterangan
                                             </th>
                                         </tr>
                                         <tr>
                                             <td style="text-align: -webkit-center;height:50px; width:100px;">
-                                                {{-- <div class="inherent">
+                                                {{-- catatan: <div class="inherent">
                                                 </div> --}}
                                                 <hr style="width:55px;border: 1px solid blue">
                                             </td>
@@ -893,7 +893,7 @@
                                                             <tr>
                                                                 <td>
                                                                     @if ($row->jenis == 'inovasi')
-                                                                        {{-- {{ $row->resiko_kode }} --}}
+                                                                        {{-- catatan: {{ $row->resiko_kode }} --}}
                                                                         {{ $item->urutan . '.' . $row->urutan }}
                                                                     @else
                                                                         {{ $item->urutan . '.' . $row->urutan }}
@@ -902,7 +902,7 @@
                                                                 <td>
                                                                     @if ($row->jenis == 'inovasi')
                                                                         {{ $row->resiko_kode }}
-                                                                        {{-- {{ $row->nama }} --}}
+                                                                        {{-- catatan: {{ $row->nama }} --}}
                                                                     @else
                                                                         <a class="btn-jadwal"
                                                                             data-year="{{ $keyyear }}"
@@ -926,7 +926,7 @@
                                                                     }
                                                                 @endphp
 
-                                                                {{-- versi pertama --}}
+                                                                {{-- catatan: versi pertama --}}
                                                                 @for ($i = 1; $i <= 4; $i++)
                                                                     @for ($j = 1; $j <= 3; $j++)
                                                                         @if ($row->jenis == 'inovasi')
@@ -1001,7 +1001,7 @@
             </div>
         </div>
     </div>
-    {{-- <div class="col-lg-12">
+    {{-- catatan: <div class="col-lg-12">
     <button class="btn btn-default pull-right" id="btn-simpan-pict-peta">Download Peta Resiko</button>
 </div> --}}
 @endsection

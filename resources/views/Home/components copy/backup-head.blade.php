@@ -1,4 +1,4 @@
-{{-- Navbar waktu --}}
+{{-- catatan: Navbar waktu --}}
 <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info z-index-3">
     <div class="container">
         <a class="navbar-brand text-white" href="https://pu.go.id/" rel="tooltip" data-placement="bottom" target="_blank">
@@ -33,7 +33,7 @@
         </div>
     </div>
 </nav>
-{{-- Navbar --}}
+{{-- catatan: Navbar --}}
 <nav class="navbar navbar-default sticky-top navbar-light bg-light shadow-md navbar-fixed-top navbar-expand-lg bg-gradient-white z-index-3 py-3 nav-pills nav-fill"
     id="myNavbar">
     <div class="container-lg    ">
@@ -112,15 +112,15 @@
         </div>
     </div>
 </nav>
-{{-- Header --}}
+{{-- catatan: Header --}}
 <header>
     @if (\Route::currentRouteName() == 'Welcome')
-        {{-- carousel --}}
+        {{-- catatan: carousel --}}
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner mb-4">
-                        {{-- Manajemen Risiko --}}
+                        {{-- catatan: Manajemen Risiko --}}
                         <div class="carousel-item active">
                             <div class="page-header min-vh-35 m-3 border-radius-xl"
                                 style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">
@@ -131,9 +131,9 @@
                                             <h4 class="text-white mb-2 fadeIn1 fadeInBottom text-center">
                                                 Laporan Manajemen Risiko
                                             </h4>
-                                            {{-- <h1 class="text-white fadeIn2 fadeInBottom"></h1>
+                                            {{-- catatan: <h1 class="text-white fadeIn2 fadeInBottom"></h1>
                                             <p class="lead text-white opacity-8 fadeIn3 fadeInBottom"></p> --}}
-                                            {{-- <a href="#"
+                                            {{-- catatan: <a href="#"
                                                 class="btn btn-outline-info hover:bg-gradient-info w-auto me-2 mb-0">
                                                 <h6 class="text-white">Baca Selengkapnya</h6>
                                             </a> --}}
@@ -203,7 +203,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Laporan Pengadaan Barang dan Jasa --}}
+                        {{-- catatan: Laporan Pengadaan Barang dan Jasa --}}
                         <div class="carousel-item">
                             <div class="page-header min-vh-35 m-3 border-radius-xl"
                                 style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">
@@ -225,7 +225,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Laporan SIPTL --}}
+                        {{-- catatan: Laporan SIPTL --}}
                         <div class="carousel-item">
                             <div class="page-header min-vh-35 m-3 border-radius-xl"
                                 style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">
@@ -246,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Laporan Zona Integritas --}}
+                        {{-- catatan: Laporan Zona Integritas --}}
                         <div class="carousel-item">
                             <div class="page-header min-vh-35 m-3 border-radius-xl"
                                 style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">
@@ -267,7 +267,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Laporan Tender --}}
+                        {{-- catatan: Laporan Tender --}}
                         <div class="carousel-item">
                             <div class="page-header min-vh-35 m-3 border-radius-xl"
                                 style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">
@@ -288,7 +288,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- SOP --}}
+                        {{-- catatan: SOP --}}
                         <div class="carousel-item">
                             <div class="page-header min-vh-35 m-3 border-radius-xl"
                                 style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">

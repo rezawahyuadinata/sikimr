@@ -34,7 +34,7 @@
                                             </option>
                                         @endforeach
                                     </select>
-                                    {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                                    {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                                 </div>
                             </div>
                             <div class="row">

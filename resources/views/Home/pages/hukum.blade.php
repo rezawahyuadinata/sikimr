@@ -37,7 +37,7 @@
                                             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                                                 <div class="col">
                                                     <div class="card shadow-sm">
-                                                        {{-- <svg class="bd-placeholder-img card-img-top" width="100%"
+                                                        {{-- catatan: <svg class="bd-placeholder-img card-img-top" width="100%"
                                                             height="225" xmlns="http://www.w3.org/2000/svg" role="img"
                                                             aria-label="Placeholder: Thumbnail"
                                                             preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -76,7 +76,7 @@
             </div>
         </div>
     </section>
-    {{-- <section class="py-3 position-relative mx-n3">
+    {{-- catatan: <section class="py-3 position-relative mx-n3">
         <div class="container">
             <div class="row my-5">
                 <div class="col-md-12 text-center mx-auto">

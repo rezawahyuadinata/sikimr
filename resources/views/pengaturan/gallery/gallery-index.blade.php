@@ -148,7 +148,7 @@
                                 </select>
                             </div>
 
-                            {{-- <div class="form-group col-sm-12">
+                            {{-- catatan: <div class="form-group col-sm-12">
                                 <label class="control-label">Kategori</label>
                                 <select name="category" id="category" class="form-control select2">
                                     <option value="">- Pilih -</option>
@@ -175,7 +175,7 @@
                                 <label for="Link Youtube">Url</label>
                                 <input type="url" required class="form-control" id="file_name" name="file_name">
                             </div> --}}
-                            {{-- <div class="form-group col-lg-12 form-hide">
+                            {{-- catatan: <div class="form-group col-lg-12 form-hide">
                                 <div id="yesQuestion" style="display:none;"><br />
                                     <label for="file_name">File</label>
                                     <input type="file" required class="form-control" id="file_name" name="file_name"
@@ -190,8 +190,8 @@
 
 
                             <!-- <div class="form-group col-sm-12">
-                                                                                                                                                                                                                                                </select>
-                                                                                                                                                                                                                                        </div> -->
+                                                                                                                                                                                                                                                    </select>
+                                                                                                                                                                                                                                            </div> -->
                         </div>
                     </div>
                     <div class="modal-footer">

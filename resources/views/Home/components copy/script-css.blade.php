@@ -198,7 +198,7 @@
     }
 </style>
 
-{{-- script animasi --}}
+{{-- catatan: script animasi --}}
 <style>
     .fadeDown {
         opacity: 1;
@@ -329,7 +329,7 @@
     }
 </style>
 
-{{-- script css timeline --}}
+{{-- catatan: script css timeline --}}
 <style>
     .cd-horizontal-timeline ol,
     .cd-horizontal-timeline ul {
@@ -824,16 +824,16 @@
     }
 </style>
 
-{{-- script carousel MR --}}
+{{-- catatan: script carousel MR --}}
 
-{{-- script carousel PBJ --}}
+{{-- catatan: script carousel PBJ --}}
 
-{{-- script carousel SIPTL --}}
+{{-- catatan: script carousel SIPTL --}}
 
-{{-- script carousel ZI --}}
+{{-- catatan: script carousel ZI --}}
 
-{{-- script carousel pengaduan1 --}}
+{{-- catatan: script carousel pengaduan1 --}}
 
-{{-- script carousel pengaduan2 --}}
+{{-- catatan: script carousel pengaduan2 --}}
 
-{{-- script carousel SOP --}}
+{{-- catatan: script carousel SOP --}}

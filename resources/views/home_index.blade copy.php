@@ -89,7 +89,7 @@
             background-color: black;
         }
     </style>
-    {{-- <div class="row">
+    {{-- catatan: <div class="row">
         @foreach ($data->modul as $key => $value)
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <a href="{{ Route::has($value->route) ? route($value->route) : "#" }}" class="small-box-footer">
@@ -141,7 +141,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
                     <canvas id="mr-chart" style="max-height: 300px; width:100%"></canvas>
@@ -175,7 +175,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
                     <canvas id="mr1-chart" style="max-height: 300px; width:100%"></canvas>
@@ -209,7 +209,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
                     <canvas id="mr2-chart" style="max-height: 300px; width:100%"></canvas>
@@ -243,7 +243,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
                     <canvas id="mr3-chart" style="max-height: 300px; width:100%"></canvas>
@@ -277,7 +277,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
                     <canvas id="mr4-chart" style="max-height: 300px; width:100%"></canvas>
@@ -357,7 +357,7 @@
                                             <option value="{{ $tgl->tgl_backup }}">{{ $tgl->tgl_backup }}</option>
                                         @endforeach
                                     </select>
-                                    {{-- <div class='input-group date' id='datetimepicker-pengadaan-banding1'>
+                                    {{-- catatan: <div class='input-group date' id='datetimepicker-pengadaan-banding1'>
                                         <input type='text' id="pengadaan-banding1" class="form-control" value="{{now()->format("Y-m-d")}}"/>
                                         <span class="input-group-addon">
                                         <span class="glyphicon glyphicon-calendar"></span>
@@ -560,7 +560,7 @@
                                 @endforeach
                             </select>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <div class='input-group date' id='datetimepicker-status-paket-belum-lelang-start'>
                                 <input type='text' id="status-paket-belum-lelang-start" class="form-control" value="{{now()->firstOfMonth()->format("Y-m-d")}}"/>
                                 <span class="input-group-addon">
@@ -577,7 +577,7 @@
                              </div>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <table style="width: 100%; font-size:40px; border-color:white; border-width:thick;" class="text-center text-bold table-status text-white">
@@ -633,7 +633,7 @@
                                 </tr>
                             </table>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <table style="width: 100%; font-size:40px; border-color:white; border-width:thick;" class="text-center text-bold table-status text-white">
                                 <tr>
                                     <td class="border-white bg-color-black">
@@ -847,7 +847,7 @@
                                             <option value="{{ $tgl->tanggal_backup }}">{{ $tgl->tanggal_backup }}</option>
                                         @endforeach
                                     </select>
-                                    {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                                    {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                                 </div>
                             </div>
                             <div class="row">
@@ -920,7 +920,7 @@
                                             <option value="{{ $tgl->tanggal_backup }}">{{ $tgl->tanggal_backup }}</option>
                                         @endforeach
                                     </select>
-                                    {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                                    {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                                 </div>
                             </div>
                             <div class="row">
@@ -1007,7 +1007,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                         <div class="col-sm-6">
                             <label for="perijinan-upt">UPT</label>
@@ -1019,12 +1019,12 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perijinan-chart" style="max-height: 300px; width:100%"anvas>
                 </div>
             </div>
         </div>
-        {{-- <div class="col-sm-6">
+        {{-- catatan: <div class="col-sm-6">
             <div class="box">
                 <div class="box-header with-border">
                     <h3 class="box-title">Jumlah Perizinan Berdasarkan Tujuan</h3>
@@ -1100,7 +1100,7 @@
                                 <th data-orderable="true">Nama Perusahaan</th>
                                 <th data-orderable="true">UPT</th>
                                 <th data-orderable="true">Sumber Air</th>
-                                {{-- <th data-orderable="false">Verifikasi</th> --}}
+                                {{-- catatan: <th data-orderable="false">Verifikasi</th> --}}
                                 <th data-orderable="false">Batas Waktu Penerbitan Izin *)</th>
                             </tr>
                         </thead>
@@ -1143,7 +1143,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perijinan-batas-waktu-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1184,10 +1184,10 @@
                                     </select>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perizinan-monev-chart" style="max-height: 300px; width:100%"anvas>
                 </div>
             </div>
@@ -1283,7 +1283,7 @@
                                 </span>
                              </div>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <label for="perijinan-batas-waktu-upt">UPT</label>
                             <select name="perijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1293,7 +1293,7 @@
                             </select>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pengaduan-upt-chart"style="max-height: 300px; width:100%"></canvas>
                 </div> -->
             </div>
@@ -1358,7 +1358,7 @@
                                 </span>
                              </div>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <label for="perijinan-batas-waktu-upt">UPT</label>
                             <select name="perijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1368,7 +1368,7 @@
                             </select>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="balai-pengaduan-terbanyak-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div> 
@@ -1397,7 +1397,7 @@
                                 </span>
                              </div>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <label for="perijinan-batas-waktu-upt">UPT</label>
                             <select name="perijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1407,7 +1407,7 @@
                             </select>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pengaduan-kategori-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1437,7 +1437,7 @@
                                 </span>
                              </div>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <label for="sperijinan-batas-waktu-upt">UPT</label>
                             <select name="sperijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1447,7 +1447,7 @@
                             </select>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="spengaduan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1487,7 +1487,7 @@
                             </select>
                         </div> 
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="integritas-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1527,7 +1527,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perencanaan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1567,7 +1567,7 @@
                             </select>
                         </div> 
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pembebasan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1607,7 +1607,7 @@
                             </select>
                         </div> 
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="tender-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1647,7 +1647,7 @@
                             </select>
                         </div> 
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pelaksanaan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1687,7 +1687,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pemanfaatan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1851,7 +1851,7 @@
                              </div>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="status-verifikasi-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1881,7 +1881,7 @@
                              </div>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="persentase-itjen-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1914,7 +1914,7 @@
                                      </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                         <div class="col-sm-6">
                             <label for="pengaduan-upt">UPT</label>
@@ -1926,7 +1926,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pengaduan-chart" style="max-height: 300px; width:100%"></anvas>
                 </div>
             </div>
@@ -1956,7 +1956,7 @@
                              </div>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <div class="row">
                         <div class="col-sm-12">
                             <table>

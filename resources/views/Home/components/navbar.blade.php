@@ -1,4 +1,4 @@
-{{-- navbar pertama --}}
+{{-- catatan: navbar pertama --}}
 <nav class="navbar navbar-expand-sm bg-gradient-navbar-first">
     <div class="container">
         <a class="navbar-brand text-white" style="font-size: 15px" href="https://sda.pu.go.id/" rel="tooltip"
@@ -19,7 +19,7 @@
     </div>
 </nav>
 
-{{-- navbar kedua --}}
+{{-- catatan: navbar kedua --}}
 <nav class="navbar navbar-expand-lg sticky-top bg-gradient-navbar-second"
     style="border-bottom: 5px solid rgb(255, 193, 59)">
     <div class="container">

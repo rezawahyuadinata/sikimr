@@ -3,8 +3,18 @@
 <style>
     /* variabel */
     :root {
+        /* dasar font dan penggunaan font */
         --title-color: #009AFF;
         --sub-title-color: #377EC2;
+        --font-weight-title: 500;
+        --font-weight-subtitle: 200;
+        --font-weight-text: 300;
+        --font-size-title: 24px;
+        --font-size-subtitle: 18px;
+        --font-size-text: 14px;
+        --font-family: 'OpenSans', 'sans-serif';
+        /* chart */
+        --tinggi-dalam-chart: 550px;
     }
 
     /* html */
@@ -96,6 +106,91 @@
 
 
 <style>
+    .responsive-chart-box {
+        width: calc(33.33% -2%);
+        margin: 2% 1%;
+        background-color: white;
+        box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+        border-radius: 5px;
+    }
+
+    @media  only screen and(max-width:1200px) {
+        .responsive-chart-box {
+            width: calc(50% -2%);
+        }
+    }
+
+    @media  only screen and(max-width:767px) {
+        .responsive-chart-box {
+            width: calc(100% -2%);
+        }
+    }
+
+    .responsive-box-status {}
+
+    .responsive-chart-body {
+        box-sizing: border-box;
+        padding: 1.5rem;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+
+
+    /* MR Sizing Chart */
+    .responsive-chart-body:has(.mr-total) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .size-table-mr {
+        --total-tinggi: calc(var(--tinggi-dalam-chart) - 55px);
+        min-height: var(--total-tinggi);
+    }
+
+    /* PBJ Sizing chart */
+    .responsive-chart-body:has(.pbj-kontraktual) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .responsive-chart-body:has(.pbj-kontraktual-rp) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .responsive-chart-body:has(.pbj-kontraktual-pkt) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    /* ZI Sizing Chart */
+    .responsive-chart-body:has(.zi-tahunan) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    /* PENGADUAN Sizing Chart */
+    .responsive-chart-body:has(.pengaduan-tahunan) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .responsive-chart-body:has(.pengaduan-kategori) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .responsive-chart-body:has(.pengaduan-telaah) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .responsive-chart-body:has(.pengaduan-bbws) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    .responsive-chart-body:has(.pengaduan-dirpembina) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
+    /* SOP Sizing Chart */
+    .responsive-chart-body:has(.sop-tahunan) {
+        min-height: var(--tinggi-dalam-chart);
+    }
+
     .border-thumbnail {
         border-bottom: 10px solid rgb(255, 193, 59);
         border-radius: 10px 10px 30px 10px;
@@ -261,80 +356,57 @@
 
 
 <style>
-    .berita {
-        display: inline;
-        align position: relative;
-        width: 75%;
-        height: auto;
-    }
 
-    .berita:has(.titleberita) {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        font-style: normal;
-        color: var(--title-color)
-    }
 
-    .berita:has(.titleselengkapnya) {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        font-style: normal;
-        color: var(--sub-title-color)
-    }
-
-    .text-control-button {
-        color: var(--title-color);
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    .text-control-button:hover {
-        color: white;
-        background-color: var(--sub-title-color);
-    }
-
-    /* tambahan animasi */
-    .start-page {}
-
-    /* tombol */
-    .btn-manajemen {}
-
-    .btn-pengadaan {}
-
-    .btn-integritas {}
-
-    .btn-pengaduan {}
-
-    .btn-sop {}
-
-    /* tutorial */
-    .start-page:has(.tutorial) {}
-
-    /* berita */
-    .start-page:has(.berita) {}
-
-    /* Manajemen Risiko */
-    .start-page:has(.manajemen) {}
-
-    /* Pengadaan Barang dan Jasa */
-    .start-page:has(.pengadaan) {}
-
-    /* Zona Integritas */
-    .start-page:has(.zona-integritas) {}
-
-    /* Pengaduan */
-    .start-page:has(.pengaduan) {}
-
-    /* standard operator procedure */
-    .start-page:has(.sop) {}
 </style>
 
 
 <style>
+    .image-berita {
+        border-bottom: 5px solid rgb(255, 193, 59);
+        border-radius: 5px 5px 50px 5px;
+    }
 
+    .flex-box-tgl {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        left: 0;
+        top: 0;
+        margin-right: 1rem;
+        margin-bottom: .5rem;
+        align-content: center;
+    }
+
+    .flex-box-tgl .hari-berita {
+        width: 100%;
+        height: 40px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding-top: 5px;
+        padding-bottom: -5px;
+        font-family: var(--font-family);
+        font-size: var(--font-size-title);
+        font-weight: 700;
+        background: #fff;
+        text-transform: uppercase;
+        color: var(--sub-title-color);
+        justify-content: center;
+    }
+
+    .flex-box-tgl .bulan-berita {
+        width: 100%;
+        height: 40px;
+        padding-top: 10px;
+        padding-bottom: -5px;
+        font-size: var(--font-size-text);
+        font-weight: 600;
+        background: var(--sub-title-color);
+        background-size: cover;
+        text-transform: uppercase;
+        color: #fff;
+        justify-content: center;
+    }
 </style>
 <?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/Home/components/script-css.blade.php ENDPATH**/ ?>

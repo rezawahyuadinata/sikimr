@@ -107,7 +107,7 @@
             background-color: black;
         }
     </style>
-    {{-- <div class="row">
+    {{-- catatan: <div class="row">
         @foreach ($data->modul as $key => $value)
             <div class="col-lg-3 col-md-4 col-sm-6">
                 <a href="{{ Route::has($value->route) ? route($value->route) : "#" }}" class="small-box-footer">
@@ -143,7 +143,7 @@
                             <h3 class="box-title">Penyampaian Formulir Komitmen Manajemen Risiko</h3>
                         </div>
                         <div class="col-xs-2 text-right">
-                            {{-- <a href='#' class="btn btn-warning">Detail</a> --}}
+                            {{-- catatan: <a href='#' class="btn btn-warning">Detail</a> --}}
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                {{-- <th class="text-center" style="vertical-align:middle; border:1px solid white;">JUMLAH</th>
+                                {{-- catatan: <th class="text-center" style="vertical-align:middle; border:1px solid white;">JUMLAH</th>
                                 <th class="text-center" style="vertical-align:middle; border:1px solid white;">SUDAH</th>
                                 <th class="text-center" style="vertical-align:middle; border:1px solid white;">BELUM</th> --}}
                                 <th class="text-center" style="vertical-align:middle; border:1px solid white; width:5%">V
@@ -240,8 +240,8 @@
                                             {{ $item['unit'] }}
                                         </a>
                                     </td>
-                                    {{-- <td>0</td> --}}
-                                    {{-- <td>0</td> --}}
+                                    {{-- catatan: <td>0</td> --}}
+                                    {{-- catatan: <td>0</td> --}}
                                     <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
@@ -265,8 +265,8 @@
                             <tr>
                                 <td colspan="3">Total Jumlah</td>
                                 <td>0</td>
-                                {{-- <td>0</td> --}}
-                                {{-- <td>0</td> --}}
+                                {{-- catatan: <td>0</td> --}}
+                                {{-- catatan: <td>0</td> --}}
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>
@@ -369,8 +369,8 @@
             </div>
         </div>
 
-        {{-- <!-- MR Old --> --}}
-        {{-- <div class="col-sm-12">
+        {{-- catatan: <!-- MR Old --> --}}
+        {{-- catatan: <div class="col-sm-12">
                 <div class="box">
                     <div class="box-header with-border">
                         <h3 class="box-title">Penyampaian Formulir Komitmen Manajemen Risiko</h3>
@@ -535,7 +535,7 @@
                     </div>
                 </div>
             </div> --}}
-        {{-- <!-- MR Old End --> --}}
+        {{-- catatan: <!-- MR Old End --> --}}
         <!--pengadaan barang dan jasa (Label)-->
         <div class="col-sm-12">
             <div class="box">
@@ -594,7 +594,7 @@
                                     <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
                             </div>
-                            {{-- <label for="status">Status sampai dengan</label>
+                            {{-- catatan: <label for="status">Status sampai dengan</label>
                             <div class='input-group date' id='datetimepicker-kemajuan'>
                                 <input type='text' id="kemajuan" class="form-control" value="{{now()->format("Y-m-d")}}"/>
                                 <span class="input-group-addon">
@@ -939,7 +939,7 @@
                                 </tr>
                             </table>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <table style="width: 100%; font-size:40px; border-color:white; border-width:thick;" class="text-center text-bold table-status text-white">
                                 <tr>
                                     <td class="border-white bg-color-black">
@@ -1077,62 +1077,62 @@
                                     <table style="width: 100%" class="text-center">
                                         <tr class="text-bold" style="background-color: black">
                                             <th class="text-center text-white">Nilai Kontrak</th>
-                                            {{-- <th class="text-center text-white">AU</th> --}}
+                                            {{-- catatan: <th class="text-center text-white">AU</th> --}}
                                             <th class="text-center text-white">Pengadaan Barang</th>
                                             <th class="text-center text-white">Pekerjaan Konstruksi</th>
                                             <th class="text-center text-white">Jasa Konsultansi (Badan Usaha)</th>
                                             <th class="text-center text-white">Jasa Konsultansi (Orang)</th>
                                             <th class="text-center text-white">Jasa Lainnya</th>
-                                            {{-- <th class="text-center text-white">Cadangan</th> --}}
+                                            {{-- catatan: <th class="text-center text-white">Cadangan</th> --}}
                                             <th class="text-center text-white">Jumlah Paket</th>
                                             <th class="text-center text-white">Persentase</th>
                                         </tr>
                                         <tr style="background-color: rgba(224, 224, 224, 1)">
                                             <td>
                                                 < 60% </td>
-                                                    {{-- <td class="text-right" id="kontrak-hps-au60"></td> --}}
+                                                    {{-- catatan: <td class="text-right" id="kontrak-hps-au60"></td> --}}
                                             <td class="text-right" id="kontrak-hps-pengadaan60"></td>
                                             <td class="text-right" id="kontrak-hps-konstruksi60"></td>
                                             <td class="text-right" id="kontrak-hps-konsultansi-bu60"></td>
                                             <td class="text-right" id="kontrak-hps-konsultansi-orang60"></td>
                                             <td class="text-right" id="kontrak-hps-lainnya60"></td>
-                                            {{-- <td class="text-right" id="kontrak-hps-cadangan60"></td> --}}
+                                            {{-- catatan: <td class="text-right" id="kontrak-hps-cadangan60"></td> --}}
                                             <td class="text-right" id="kontrak-hps-jumlah60"></td>
                                             <td class="text-right" id="kontrak-hps-persentase60"></td>
                                         </tr>
                                         <tr style="background-color: rgba(255, 255, 0, 1)">
                                             <td>>= 60% dan < 70%</td>
-                                                    {{-- <td class="text-right" id="kontrak-hps-au6070"></td> --}}
+                                                    {{-- catatan: <td class="text-right" id="kontrak-hps-au6070"></td> --}}
                                             <td class="text-right" id="kontrak-hps-pengadaan6070"></td>
                                             <td class="text-right" id="kontrak-hps-konstruksi6070"></td>
                                             <td class="text-right" id="kontrak-hps-konsultansi-bu6070"></td>
                                             <td class="text-right" id="kontrak-hps-konsultansi-orang6070"></td>
                                             <td class="text-right" id="kontrak-hps-lainnya6070"></td>
-                                            {{-- <td class="text-right" id="kontrak-hps-cadangan6070"></td> --}}
+                                            {{-- catatan: <td class="text-right" id="kontrak-hps-cadangan6070"></td> --}}
                                             <td class="text-right" id="kontrak-hps-jumlah6070"></td>
                                             <td class="text-right" id="kontrak-hps-persentase6070"></td>
                                         </tr>
                                         <tr style="background-color: rgba(255, 153, 51)">
                                             <td>>= 70% dan < 80%</td>
-                                                    {{-- <td class="text-right" id="kontrak-hps-au7080"></td> --}}
+                                                    {{-- catatan: <td class="text-right" id="kontrak-hps-au7080"></td> --}}
                                             <td class="text-right" id="kontrak-hps-pengadaan7080"></td>
                                             <td class="text-right" id="kontrak-hps-konstruksi7080"></td>
                                             <td class="text-right" id="kontrak-hps-konsultansi-bu7080"></td>
                                             <td class="text-right" id="kontrak-hps-konsultansi-orang7080"></td>
                                             <td class="text-right" id="kontrak-hps-lainnya7080"></td>
-                                            {{-- <td class="text-right" id="kontrak-hps-cadangan7080"></td> --}}
+                                            {{-- catatan: <td class="text-right" id="kontrak-hps-cadangan7080"></td> --}}
                                             <td class="text-right" id="kontrak-hps-jumlah7080"></td>
                                             <td class="text-right" id="kontrak-hps-persentase7080"></td>
                                         </tr>
                                         <tr class="text-bold text-white" style="background-color: black">
                                             <th class="text-center">Total</th>
-                                            {{-- <th class="text-right" id="kontrak-hps-au-total"></th> --}}
+                                            {{-- catatan: <th class="text-right" id="kontrak-hps-au-total"></th> --}}
                                             <th class="text-right" id="kontrak-hps-pengadaan-total"></th>
                                             <th class="text-right" id="kontrak-hps-konstruksi-total"></th>
                                             <th class="text-right" id="kontrak-hps-konsultansi-bu-total"></th>
                                             <th class="text-right" id="kontrak-hps-konsultansi-orang-total"></th>
                                             <th class="text-right" id="kontrak-hps-lainnya-total"></th>
-                                            {{-- <th class="text-right" id="kontrak-hps-cadangan-total"></th> --}}
+                                            {{-- catatan: <th class="text-right" id="kontrak-hps-cadangan-total"></th> --}}
                                             <th class="text-right" id="kontrak-hps-jumlah-total"></th>
                                             <th class="text-right" id="kontrak-hps-persentase-total"></th>
                                         </tr>
@@ -1189,7 +1189,7 @@
                                             </option>
                                         @endforeach
                                     </select>
-                                    {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                                    {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                                 </div>
                             </div>
                             <div class="row">
@@ -1277,7 +1277,7 @@
                                             </option>
                                         @endforeach
                                     </select>
-                                    {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                                    {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                                 </div>
                             </div>
                             <div class="row">
@@ -1403,7 +1403,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                         <div class="col-sm-6">
                             <label for="perijinan-upt">UPT</label>
@@ -1415,12 +1415,12 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perijinan-chart" style="max-height: 300px; width:100%"anvas>
                 </div>
             </div>
         </div>
-        {{-- <div class="col-sm-6">
+        {{-- catatan: <div class="col-sm-6">
             <div class="box">
                 <div class="box-header with-border">
                     <h3 class="box-title">Jumlah Perizinan Berdasarkan Tujuan</h3>
@@ -1503,7 +1503,7 @@
                                 <!--<th data-orderable="true">Jenis Permohonan</th>-->
                                 <!--<th data-orderable="true">Tujuan Penggunaan Air Daya Air</th>-->
                                 <!--<th data-orderable="true">Tujuan Penggunaan Sumber Air</th>-->
-                                {{-- <th data-orderable="false">Verifikasi</th> --}}
+                                {{-- catatan: <th data-orderable="false">Verifikasi</th> --}}
                                 <th data-orderable="false">Batas Waktu Penerbitan Izin *)</th>
                             </tr>
                         </thead>
@@ -1554,7 +1554,7 @@
                                     </select>
                                 </div>
                             </div>
-                            {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                            {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                             <canvas id="perijinan-batas-waktu-chart"style="max-height: 300px; width:100%"></canvas>
                         </div>
                     </div>
@@ -1662,10 +1662,10 @@
                                     </select>
                                 </div>
                             </div>
-                            {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
+                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perizinan-monev-chart" style="max-height: 300px; width:100%"anvas>
                 </div>
             </div>
@@ -1748,28 +1748,28 @@
                                 </table>
                             </div>
                             <!-- <div class="box-header">
-                                                                                <h3 class="box-title">Pengaduan UPT</h3>
-                                                                            </div>
-                                                                            <div class="box">
-                                                                                <label for="status">Tahun Anggaran</label>
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class='input-group date' id='datetimepicker-pengaduan-upt-start'>
-                                                                                            <input type='text' id="pengaduan-upt-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
-                                                                                            <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                            </span>
-                                                                                         </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class='input-group date' id='datetimepicker-pengaduan-upt-end'>
-                                                                                            <input type='text' id="pengaduan-upt-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
-                                                                                            <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                            </span>
-                                                                                         </div>
-                                                                                    </div>
-                                                                                    {{-- <div class="col-sm-6">
+                                                                                    <h3 class="box-title">Pengaduan UPT</h3>
+                                                                                </div>
+                                                                                <div class="box">
+                                                                                    <label for="status">Tahun Anggaran</label>
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class='input-group date' id='datetimepicker-pengaduan-upt-start'>
+                                                                                                <input type='text' id="pengaduan-upt-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
+                                                                                                <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                </span>
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class='input-group date' id='datetimepicker-pengaduan-upt-end'>
+                                                                                                <input type='text' id="pengaduan-upt-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
+                                                                                                <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                </span>
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        {{-- catatan: <div class="col-sm-6">
                             <label for="perijinan-batas-waktu-upt">UPT</label>
                             <select name="perijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1778,10 +1778,10 @@
                                 @endforeach
                             </select>
                         </div> --}}
-                                                                                </div>
-                                                                                {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
-                                                                                <canvas id="pengaduan-upt-chart"style="max-height: 300px; width:100%"></canvas>
-                                                                            </div> -->
+                                                                                    </div>
+                                                                                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                                                                                    <canvas id="pengaduan-upt-chart"style="max-height: 300px; width:100%"></canvas>
+                                                                                </div> -->
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -1849,7 +1849,7 @@
                                 </span>
                             </div>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <label for="perijinan-batas-waktu-upt">UPT</label>
                             <select name="perijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1859,37 +1859,37 @@
                             </select>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="balai-pengaduan-terbanyak-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
         </div>
         <!--
-                                                                    <div class="col-sm-6 col-xs-12">
-                                                                        <div class="box">
-                                                                            <div class="box-header with-border">
-                                                                                <h3 class="box-title">Grafik Bidang Pengaduan</h3>
-                                                                            </div>
-                                                                            <div class="box-body">
-                                                                                <label for="status">Tahun Anggaran</label>
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class='input-group date' id='datetimepicker-pengaduan-kategori-start'>
-                                                                                            <input type='text' id="pengaduan-kategori-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
-                                                                                            <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                            </span>
-                                                                                         </div>
-                                                                                    </div>
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class='input-group date' id='datetimepicker-pengaduan-kategori-end'>
-                                                                                            <input type='text' id="pengaduan-kategori-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
-                                                                                            <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                            </span>
-                                                                                         </div>
-                                                                                    </div>
-                                                                                    {{-- <div class="col-sm-6">
+                                                                        <div class="col-sm-6 col-xs-12">
+                                                                            <div class="box">
+                                                                                <div class="box-header with-border">
+                                                                                    <h3 class="box-title">Grafik Bidang Pengaduan</h3>
+                                                                                </div>
+                                                                                <div class="box-body">
+                                                                                    <label for="status">Tahun Anggaran</label>
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class='input-group date' id='datetimepicker-pengaduan-kategori-start'>
+                                                                                                <input type='text' id="pengaduan-kategori-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
+                                                                                                <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                </span>
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class='input-group date' id='datetimepicker-pengaduan-kategori-end'>
+                                                                                                <input type='text' id="pengaduan-kategori-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
+                                                                                                <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                </span>
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        {{-- catatan: <div class="col-sm-6">
                             <label for="perijinan-batas-waktu-upt">UPT</label>
                             <select name="perijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1898,12 +1898,12 @@
                                 @endforeach
                             </select>
                         </div> --}}
+                                                                                    </div>
+                                                                                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                                                                                    <canvas id="pengaduan-kategori-chart"style="max-height: 300px; width:100%"></canvas>
                                                                                 </div>
-                                                                                {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
-                                                                                <canvas id="pengaduan-kategori-chart"style="max-height: 300px; width:100%"></canvas>
                                                                             </div>
-                                                                        </div>
-                                                                    </div> -->
+                                                                        </div> -->
         <!--Grafik Bidang Pengaduan-->
         <div class="col-sm-6 col-xs-12">
             <div class="box">
@@ -1931,7 +1931,7 @@
                                 </span>
                             </div>
                         </div>
-                        {{-- <div class="col-sm-6">
+                        {{-- catatan: <div class="col-sm-6">
                             <label for="sperijinan-batas-waktu-upt">UPT</label>
                             <select name="sperijinan-batas-waktu-upt" id="perijinan-batas-waktu-upt" class="form-control select2">
                                 <option value="">ALL</option>
@@ -1941,7 +1941,7 @@
                             </select>
                         </div> --}}
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="spengaduan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -1985,7 +1985,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="integritas-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2029,7 +2029,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="perencanaan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2073,7 +2073,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pembebasan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2117,7 +2117,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="tender-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2161,7 +2161,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pelaksanaan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2205,7 +2205,7 @@
                             </select>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="pemanfaatan-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2281,7 +2281,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="status-verifikasi-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
@@ -2315,172 +2315,172 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
                     <canvas id="persentase-itjen-chart"style="max-height: 300px; width:100%"></canvas>
                 </div>
             </div>
         </div>
         <!-- /.col-md-6 -->
         <!-- <div class="col-xs-12">
-                                                                        <div class="box">
-                                                                            <div class="box-header with-border">
-                                                                                <h3 class="box-title">Jumlah Pengaduan</h3>
-                                                                            </div>
-                                                                            <div class="box-body">
-                                                                                <div class="row">
-                                                                                    <div class="form-group col-lg-12 form-hide">
-                                                                                        <label for="status">Tahun Anggaran</label>
-                                                                                        <div class="row">
-                                                                                            <div class="col-sm-6">
-                                                                                                <div class='input-group date' id='datetimepicker-pengaduan-start'>
-                                                                                                    <input type='text' id="pengaduan-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
-                                                                                                    <span class="input-group-addon">
-                                                                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                                                                    </span>
-                                                                                                 </div>
+                                                                            <div class="box">
+                                                                                <div class="box-header with-border">
+                                                                                    <h3 class="box-title">Jumlah Pengaduan</h3>
+                                                                                </div>
+                                                                                <div class="box-body">
+                                                                                    <div class="row">
+                                                                                        <div class="form-group col-lg-12 form-hide">
+                                                                                            <label for="status">Tahun Anggaran</label>
+                                                                                            <div class="row">
+                                                                                                <div class="col-sm-6">
+                                                                                                    <div class='input-group date' id='datetimepicker-pengaduan-start'>
+                                                                                                        <input type='text' id="pengaduan-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
+                                                                                                        <span class="input-group-addon">
+                                                                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                        </span>
+                                                                                                     </div>
+                                                                                                </div>
+                                                                                                <div class="col-sm-6">
+                                                                                                    <div class='input-group date' id='datetimepicker-pengaduan-end'>
+                                                                                                        <input type='text' id="pengaduan-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
+                                                                                                        <span class="input-group-addon">
+                                                                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                        </span>
+                                                                                                     </div>
+                                                                                                </div>
                                                                                             </div>
-                                                                                            <div class="col-sm-6">
-                                                                                                <div class='input-group date' id='datetimepicker-pengaduan-end'>
-                                                                                                    <input type='text' id="pengaduan-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
-                                                                                                    <span class="input-group-addon">
-                                                                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                                                                    </span>
-                                                                                                 </div>
-                                                                                            </div>
+                                                                                            {{-- catatan: <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
                                                                                         </div>
-                                                                                        {{-- <input type="text" class="form-control" name="status" id="status" value="{{date("Y-m-d")}}"> --}}
-                                                                                    </div>
-                                                                                    <div class="col-sm-6">
-                                                                                        <label for="pengaduan-upt">UPT</label>
-                                                                                        <select name="pengaduan-upt" id="pengaduan-upt" class="form-control select2">
-                                                                                            <option value="">ALL</option>
-                                                                                            @foreach ($data->upt_pengaduan as $upt)
+                                                                                        <div class="col-sm-6">
+                                                                                            <label for="pengaduan-upt">UPT</label>
+                                                                                            <select name="pengaduan-upt" id="pengaduan-upt" class="form-control select2">
+                                                                                                <option value="">ALL</option>
+                                                                                                @foreach ($data->upt_pengaduan as $upt)
     <option>{{ $upt->pemilik_resiko_bws }}</option>
     @endforeach
-                                                                                        </select>
+                                                                                            </select>
+                                                                                        </div>
                                                                                     </div>
+                                                                                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                                                                                    <canvas id="pengaduan-chart" style="max-height: 300px; width:100%"></anvas>
                                                                                 </div>
-                                                                                {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
-                                                                                <canvas id="pengaduan-chart" style="max-height: 300px; width:100%"></anvas>
                                                                             </div>
-                                                                        </div>
-                                                                    </div> -->
+                                                                        </div> -->
         <!-- <div class="col-sm-12">
-                                                                        <div class="box">
-                                                                            <div class="box-header with-border">
-                                                                                <h3 class="box-title">Rencana Lelang dan Rencana Kontrak</h3>
-                                                                            </div>
-                                                                            <div class="box-body">
-                                                                                <label for="status">Tahun Anggaran</label>
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class='input-group date' id='datetimepicker-rencana-lelang-kontrak-start'>
-                                                                                            <input type='text' id="rencana-lelang-kontrak-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
-                                                                                            <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                            </span>
-                                                                                         </div>
+                                                                            <div class="box">
+                                                                                <div class="box-header with-border">
+                                                                                    <h3 class="box-title">Rencana Lelang dan Rencana Kontrak</h3>
+                                                                                </div>
+                                                                                <div class="box-body">
+                                                                                    <label for="status">Tahun Anggaran</label>
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class='input-group date' id='datetimepicker-rencana-lelang-kontrak-start'>
+                                                                                                <input type='text' id="rencana-lelang-kontrak-start" class="form-control" value="{{ now()->firstOfMonth()->format('Y-m-d') }}"/>
+                                                                                                <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                </span>
+                                                                                             </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class='input-group date' id='datetimepicker-rencana-lelang-kontrak-end'>
+                                                                                                <input type='text' id="rencana-lelang-kontrak-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
+                                                                                                <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                                </span>
+                                                                                             </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                    <div class="col-sm-6">
-                                                                                        <div class='input-group date' id='datetimepicker-rencana-lelang-kontrak-end'>
-                                                                                            <input type='text' id="rencana-lelang-kontrak-end" class="form-control" value="{{ now()->format('Y-m-d') }}"/>
-                                                                                            <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                            </span>
-                                                                                         </div>
+                                                                                    {{-- catatan: <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-12">
+                                                                                            <table>
+                                                                                                <thead>
+                                                                                                    <tr>
+                                                                                                        <th rowspan="2" class="bg-blue-3">No</th>
+                                                                                                        <th rowspan="2" class="bg-blue-3">Kategori</th>
+                                                                                                        <th rowspan="2" class="bg-blue-3">Jumlah Paket</th>
+                                                                                                        <th rowspan="2" class="bg-blue-3">Pagu DIPA (Rp Ribu)</th>
+                                                                                                        <th colspan="3" class="bg-yellow-1">Rencana Lelang</th>
+                                                                                                        <th colspan="3" class="bg-green-1">Rencana Kontrak</th>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <th class="bg-yellow-1">Drop</th>
+                                                                                                        <th class="bg-yellow-1">s/d Juli</th>
+                                                                                                        <th class="bg-yellow-1">>>Juli</th>
+                                                                                                        <th class="bg-green-1">s/d Juli</th>
+                                                                                                        <th class="bg-green-1">>> Juli</th>
+                                                                                                        <th class="bg-green-1">Belum ada Penjadwalan</th>
+                                                                                                    </tr>
+                                                                                                </thead>
+                                                                                                <tbody>
+                                                                                                    <tr class="bg-blue-4">
+                                                                                                        <td>1</td>
+                                                                                                        <td>Belum Lelang</td>
+                                                                                                        <td>41</td>
+                                                                                                        <td>298.123.552</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>28</td>
+                                                                                                        <td>13</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>41</td>
+                                                                                                        <td></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td>SYC</td>
+                                                                                                        <td>12</td>
+                                                                                                        <td>298.123.552</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>28</td>
+                                                                                                        <td>13</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>41</td>
+                                                                                                        <td></td>
+                                                                                                    </tr>
+                                                                                                    <tr>
+                                                                                                        <td></td>
+                                                                                                        <td>- RPM</td>
+                                                                                                        <td>12</td>
+                                                                                                        <td>298.123.552</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>28</td>
+                                                                                                        <td>13</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>41</td>
+                                                                                                        <td></td>
+                                                                                                    </tr>
+                                                                                                    <tr class="bg-blue-4">
+                                                                                                        <td>2</td>
+                                                                                                        <td>Proses Lelang</td>
+                                                                                                        <td>124</td>
+                                                                                                        <td>298.123.552</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>28</td>
+                                                                                                        <td>13</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>41</td>
+                                                                                                        <td></td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                                <tfoot>
+                                                                                                    <tr>
+                                                                                                        <td colspan="2">Jumlah 1+2</td>
+                                                                                                        <td>164</td>
+                                                                                                        <td>1.321.512.321</td>
+                                                                                                        <td>0</td>
+                                                                                                        <td>28</td>
+                                                                                                        <td>13</td>
+                                                                                                        <td>43</td>
+                                                                                                        <td>112</td>
+                                                                                                        <td>10</td>
+                                                                                                    </tr>
+                                                                                                </tfoot>
+                                                                                            </table>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                {{-- <div id="mr-chart" height="200" style="height: 380px;"></div> --}}
-                                                                                <div class="row">
-                                                                                    <div class="col-sm-12">
-                                                                                        <table>
-                                                                                            <thead>
-                                                                                                <tr>
-                                                                                                    <th rowspan="2" class="bg-blue-3">No</th>
-                                                                                                    <th rowspan="2" class="bg-blue-3">Kategori</th>
-                                                                                                    <th rowspan="2" class="bg-blue-3">Jumlah Paket</th>
-                                                                                                    <th rowspan="2" class="bg-blue-3">Pagu DIPA (Rp Ribu)</th>
-                                                                                                    <th colspan="3" class="bg-yellow-1">Rencana Lelang</th>
-                                                                                                    <th colspan="3" class="bg-green-1">Rencana Kontrak</th>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <th class="bg-yellow-1">Drop</th>
-                                                                                                    <th class="bg-yellow-1">s/d Juli</th>
-                                                                                                    <th class="bg-yellow-1">>>Juli</th>
-                                                                                                    <th class="bg-green-1">s/d Juli</th>
-                                                                                                    <th class="bg-green-1">>> Juli</th>
-                                                                                                    <th class="bg-green-1">Belum ada Penjadwalan</th>
-                                                                                                </tr>
-                                                                                            </thead>
-                                                                                            <tbody>
-                                                                                                <tr class="bg-blue-4">
-                                                                                                    <td>1</td>
-                                                                                                    <td>Belum Lelang</td>
-                                                                                                    <td>41</td>
-                                                                                                    <td>298.123.552</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>28</td>
-                                                                                                    <td>13</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>41</td>
-                                                                                                    <td></td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td></td>
-                                                                                                    <td>SYC</td>
-                                                                                                    <td>12</td>
-                                                                                                    <td>298.123.552</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>28</td>
-                                                                                                    <td>13</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>41</td>
-                                                                                                    <td></td>
-                                                                                                </tr>
-                                                                                                <tr>
-                                                                                                    <td></td>
-                                                                                                    <td>- RPM</td>
-                                                                                                    <td>12</td>
-                                                                                                    <td>298.123.552</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>28</td>
-                                                                                                    <td>13</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>41</td>
-                                                                                                    <td></td>
-                                                                                                </tr>
-                                                                                                <tr class="bg-blue-4">
-                                                                                                    <td>2</td>
-                                                                                                    <td>Proses Lelang</td>
-                                                                                                    <td>124</td>
-                                                                                                    <td>298.123.552</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>28</td>
-                                                                                                    <td>13</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>41</td>
-                                                                                                    <td></td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                            <tfoot>
-                                                                                                <tr>
-                                                                                                    <td colspan="2">Jumlah 1+2</td>
-                                                                                                    <td>164</td>
-                                                                                                    <td>1.321.512.321</td>
-                                                                                                    <td>0</td>
-                                                                                                    <td>28</td>
-                                                                                                    <td>13</td>
-                                                                                                    <td>43</td>
-                                                                                                    <td>112</td>
-                                                                                                    <td>10</td>
-                                                                                                </tr>
-                                                                                            </tfoot>
-                                                                                        </table>
-                                                                                    </div>
-                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                    </div> -->
+                                                                        </div> -->
     </div>
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>

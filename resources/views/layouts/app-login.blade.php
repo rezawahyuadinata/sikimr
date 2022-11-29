@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +20,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fontawesome-free/css/all.css') }}" rel="stylesheet">
-        <style>
+    <style>
         #bgimage {
-            background-image: url('{{asset('img/login/bg_login.png')}}');
+            background-image: url('{{ asset('img/login/bg_login.png') }}');
             background-repeat: repeat;
             /* position: fixed; */
             width: 100%;
@@ -30,6 +31,7 @@
         }
     </style>
 </head>
+
 <body id="bgimage">
     <div id="app">
 
@@ -37,11 +39,12 @@
             @yield('content')
         </main>
     </div>
-<script src="{{ asset('js') }}/global.js"></script>
-<script src="{{ asset('js/register-index.js') }}"></script>
-<script>
-    var urlRegister = '{{ route("registers.store") }}';
+    <script src="{{ asset('js') }}/global.js"></script>
+    <script src="{{ asset('js/register-index.js') }}"></script>
+    <script>
+        var urlRegister = '{{ route('registers.store') }}';
     </script>
 </body>
-    {{-- <script src="{{ asset('js') }}/register-index.js"></script> --}}
+{{-- catatan: <script src="{{ asset('js') }}/register-index.js"></script> --}}
+
 </html>

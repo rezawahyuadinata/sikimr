@@ -4,10 +4,10 @@
     <section class="ftco-section">
         <div class="container">
             <!-- <div class="row justify-content-center">
-                        <div class="col-md-6 text-center mb-5">
-                            <h2 class="heading-section"></h2>
-                        </div>
-                    </div> -->
+                            <div class="col-md-6 text-center mb-5">
+                                <h2 class="heading-section"></h2>
+                            </div>
+                        </div> -->
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-10">
                     <div class="wrap d-md-flex" style="opacity: 0.9;">
@@ -69,13 +69,13 @@
                                         required autocomplete="current-password" placeholder="Password">
                                 </div>
                                 <!-- <div class="form-group mb-3">
-                                            <i class="fas fa-user"></i> &nbsp<label class="label" for="name">Username</label>
-                                             <input id="username" type="username" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
-                                        </div>
-                                        <div class="form-group mb-3">
-                                            <i class="fas fa-key"></i> &nbsp<label class="label" for="password">Password</label>
-                                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                                        </div> -->
+                                                <i class="fas fa-user"></i> &nbsp<label class="label" for="name">Username</label>
+                                                 <input id="username" type="username" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <i class="fas fa-key"></i> &nbsp<label class="label" for="password">Password</label>
+                                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                            </div> -->
                                 <div class="form-group">
                                     <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
                                         In</button>
@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                             </form>
-                            {{-- <p class="text-center">Belum Punya Akun? <a href="{{route('registers')}}">Sign Up</a></p> --}}
+                            {{-- catatan: <p class="text-center">Belum Punya Akun? <a href="{{route('registers')}}">Sign Up</a></p> --}}
                         </div>
                     </div>
                 </div>
@@ -105,5 +105,5 @@
     <script src="style/js/bootstrap.min.js"></script>
     <script src="style/js/main.js"></script>
 
-    {{-- </body> --}}
+    {{-- catatan: </body> --}}
 @endsection

@@ -107,7 +107,7 @@
                                 <select name="paket_id" id="paket_id" class="form-control select2"
                                     onchange="TujuanKegiatan()">
                                     <option value="">- Pilih -</option>
-                                    {{-- @foreach ($data->paket_pekerjaan as $item)
+                                    {{-- catatan: @foreach ($data->paket_pekerjaan as $item)
                                     <option value=" {{ $item->id }}">{{ $item->nmpaket }}</option>
                                     @endforeach --}}
                                 </select>

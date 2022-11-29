@@ -1,6 +1,6 @@
-{{-- Navbar waktu --}}
-{{-- Revisian --}}
-{{-- <nav class="py-2 bg-gradient-info border-bottom navbar-expand-sm">
+{{-- catatan: Navbar waktu --}}
+{{-- catatan: Revisian --}}
+{{-- catatan: <nav class="py-2 bg-gradient-info border-bottom navbar-expand-sm">
     <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
             <li class="nav-item"><a href="https://pu.go.id/" class="nav-link link-light px-2 active" aria-current="page">
@@ -19,8 +19,8 @@
     </div>
 </nav> --}}
 
-{{-- rancangan pertama --}}
-{{-- <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info z-index-3">
+{{-- catatan: rancangan pertama --}}
+{{-- catatan: <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info z-index-3">
     <div class="container-fluid">
         <a class="navbar-brand text-white" href="https://pu.go.id/" rel="tooltip" data-placement="bottom" target="_blank">
             <i class="fa fa-home"></i> PUPR | <span id="time"></span><span id="txt"></span>
@@ -43,9 +43,9 @@
     </div>
 </nav> --}}
 
-{{-- Navbar --}}
-{{-- Revisian --}}
-{{-- <nav class="navbar sticky-top py-4 navbar-expand-lg bg-light" aria-label="Eleventh navbar example">
+{{-- catatan: Navbar --}}
+{{-- catatan: Revisian --}}
+{{-- catatan: <nav class="navbar sticky-top py-4 navbar-expand-lg bg-light" aria-label="Eleventh navbar example">
     <div class="container d-flex flex-wrap justify-content-start">
 
         <a href="{{ route('Welcome') }}" class="img mb-3 mb-sm-0">
@@ -93,8 +93,8 @@
     </div>
 </nav> --}}
 
-{{-- rancangan pertama --}}
-{{-- <nav class="navbar navbar-default sticky-top navbar-light bg-light shadow-md navbar-fixed-top navbar-expand-lg bg-gradient-white z-index-3 py-3 nav-pills nav-fill"
+{{-- catatan: rancangan pertama --}}
+{{-- catatan: <nav class="navbar navbar-default sticky-top navbar-light bg-light shadow-md navbar-fixed-top navbar-expand-lg bg-gradient-white z-index-3 py-3 nav-pills nav-fill"
     id="myNavbar">
     <div class="container-fluid">
         <a href="{{ route('Welcome') }}" class="navbar-brand my-0 mr-md-auto">
@@ -151,9 +151,9 @@
 </div>
 </nav> --}}
 
-{{-- Header --}}
+{{-- catatan: Header --}}
 <!-- <header>
-    {{-- navbar waktu --}}
+    {{-- catatan: navbar waktu --}}
     <nav class="py-2 bg-gradient-info border-bottom navbar-expand-sm">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
@@ -173,7 +173,7 @@
             </ul>
         </div>
     </nav>
-    {{-- navbar menu --}}
+    {{-- catatan: navbar menu --}}
     <nav class="navbar sticky-top py-4 navbar-expand-lg bg-light" aria-label="Eleventh navbar example">
         <div class="container d-flex flex-wrap justify-content-start">
 
@@ -222,7 +222,7 @@
         </div>
     </nav>
     @if (\Route::currentRouteName() == 'Welcome')
-{{-- carousel perbaikan dari pertama --}}
+{{-- catatan: carousel perbaikan dari pertama --}}
         <div class="row">
             <div class="col-md-12 mx-auto">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
@@ -236,7 +236,7 @@
                         <li data-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
                     </ol>
                     <div class="carousel-inner">
-                        {{-- Manajemen Risiko --}}
+                        {{-- catatan: Manajemen Risiko --}}
                         <div class="carouselMR">
                             <div class="carousel-item active">
                                 <div class="page-header min-vh-100"
@@ -271,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Pengaduan Barang Dan Jasa --}}
+                        {{-- catatan: Pengaduan Barang Dan Jasa --}}
                         <div class="carouselPBJ">
                             <div class="carousel-item">
                                 <div class="page-header min-vh-100"
@@ -298,7 +298,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Zona Integritas --}}
+                        {{-- catatan: Zona Integritas --}}
                         <div class="carouselZI">
                             <div class="carousel-item">
                                 <div class="page-header min-vh-100"
@@ -317,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Pengaduan 1 --}}
+                        {{-- catatan: Pengaduan 1 --}}
                         <div class="carouselPeng1">
                             <div class="carousel-item">
                                 <div class="page-header min-vh-100"
@@ -344,7 +344,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- Pengaduan 2 --}}
+                        {{-- catatan: Pengaduan 2 --}}
                         <div class="carouselPeng1">
                             <div class="carousel-item">
                                 <div class="page-header min-vh-100"
@@ -367,7 +367,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- SOP --}}
+                        {{-- catatan: SOP --}}
                         <div class="carouselSOP">
                             <div class="carousel-item">
                                 <div class="page-header min-vh-100"
@@ -408,12 +408,12 @@
             </div>
         </div>
 
-        {{-- carousel pertama --}}
+        {{-- catatan: carousel pertama --}}
         <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="100000">
             <div class="carousel-inner mb-4">
 
-                {{-- Manajemen Risiko --}}
-                {{-- <div class="carousel-item carousel-mr active">
+                {{-- catatan: Manajemen Risiko --}}
+                {{-- catatan: <div class="carousel-item carousel-mr active">
                     <div class="page-header "
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
                         <span class="mask bg-gradient-dark"></span>
@@ -537,7 +537,7 @@
                     </div>
                 </div> --}}
 
-                {{-- Laporan Pengadaan Barang dan Jasa --}}
+                {{-- catatan: Laporan Pengadaan Barang dan Jasa --}}
                 <div class="carousel-item carouselPBJ">
                     <div class="page-header min-vh-75"
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
@@ -656,7 +656,7 @@
                     </div>
                 </div>
 
-                {{-- Laporan SIPTL --}}
+                {{-- catatan: Laporan SIPTL --}}
                 <div class="carousel-item">
                     <div class="page-header min-vh-75"
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
@@ -763,7 +763,7 @@
                     </div>
                 </div>
 
-                {{-- Laporan Zona Integritas --}}
+                {{-- catatan: Laporan Zona Integritas --}}
                 <div class="carousel-item carouselZI">
                     <div class="page-header min-vh-75"
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
@@ -786,7 +786,7 @@
                     </div>
                 </div>
 
-                {{-- Laporan Pengaduan --}}
+                {{-- catatan: Laporan Pengaduan --}}
                 <div class="carousel-item carouselPeng1">
                     <div class="page-header min-vh-75"
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
@@ -887,7 +887,7 @@
                     </div>
                 </div>
 
-                {{-- Laporan Pengaduan 2 --}}
+                {{-- catatan: Laporan Pengaduan 2 --}}
                 <div class="carousel-item carouselPeng2">
                     <div class="page-header min-vh-75"
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
@@ -925,7 +925,7 @@
                     </div>
                 </div>
 
-                {{-- SOP --}}
+                {{-- catatan: SOP --}}
                 <div class="carousel-item carouselSOP">
                     <div class="page-header min-vh-75"
                         style="background-image: url('{{ asset('/storage/dashboard/latar_carousel.png') }}')">
@@ -960,7 +960,7 @@
                     </div>
                 </div>
 
-                {{-- ganti slide --}}
+                {{-- catatan: ganti slide --}}
                 <div class="min-vh-70 position-absolute w-100 top-0">
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                         data-bs-slide="prev">
