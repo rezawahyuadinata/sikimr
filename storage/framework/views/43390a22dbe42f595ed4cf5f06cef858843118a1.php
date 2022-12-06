@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +20,7 @@
     <!-- Styles -->
     <link href="<?php echo e(asset('css/style.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/fontawesome-free/css/all.css')); ?>" rel="stylesheet">
-        <style>
+    <style>
         #bgimage {
             background-image: url('<?php echo e(asset('img/login/bg_login.png')); ?>');
             background-repeat: repeat;
@@ -30,6 +31,7 @@
         }
     </style>
 </head>
+
 <body id="bgimage">
     <div id="app">
 
@@ -37,12 +39,13 @@
             <?php echo $__env->yieldContent('content'); ?>
         </main>
     </div>
-<script src="<?php echo e(asset('js')); ?>/global.js"></script>
-<script src="<?php echo e(asset('js/register-index.js')); ?>"></script>
-<script>
-    var urlRegister = '<?php echo e(route("registers.store")); ?>';
+    <script src="<?php echo e(asset('js')); ?>/global.js"></script>
+    <script src="<?php echo e(asset('js/register-index.js')); ?>"></script>
+    <script>
+        var urlRegister = '<?php echo e(route('registers.store')); ?>';
     </script>
 </body>
-    
+
+
 </html>
 <?php /**PATH D:\Codes\Programs\Backend\Laravel\projek-sikimr-personal\resources\views/layouts/app-login.blade.php ENDPATH**/ ?>

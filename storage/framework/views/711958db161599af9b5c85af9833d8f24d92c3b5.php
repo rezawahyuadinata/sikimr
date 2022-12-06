@@ -13,7 +13,7 @@
         <div class="form-group col-sm-2">
             <label>&nbsp;</label>
             <!-- <a href="#modal-data-2" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-data-2">Tambah
-                                                                                                                        Kategori</a> -->
+                                                                                                                            Kategori</a> -->
             <button type="button" class="btn btn-block btn-primary" onclick="tambahDataKategori()">
                 Tambah Kategori
             </button>

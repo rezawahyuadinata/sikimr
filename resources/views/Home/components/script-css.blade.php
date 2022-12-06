@@ -102,15 +102,110 @@
         width: 5;
         height: 5%;
     }
+
+    .truncate-header {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .truncate-title-berita-terkini {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .truncate-title-berita {
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .truncate-body-berita {
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .truncate-body-berita>p {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
 </style>
 
 {{-- catatan: header style --}}
 <style>
+    /* tutorial box */
+    .responsive-tutorial-box {
+        width: calc(33.33% -2%);
+        margin: 2% 1%;
+        /* background-color: white;
+        box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15); */
+        border-radius: 5px;
+    }
+
+    @media only screen and(max-width:1200px) {
+        .responsive-tutorial-box {
+            width: calc(50% -2%);
+        }
+    }
+
+    @media only screen and(max-width:767px) {
+        .responsive-tutorial-box {
+            width: calc(100% -2%);
+        }
+    }
+
+    .responsive-tutorial-body {
+        box-sizing: border-box;
+        padding: 1.5rem;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    /* berita box */
+    .responsive-berita-box {
+        width: calc(33.33% -2%);
+        margin: 2% 1%;
+        /* background-color: white; */
+        /* box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15); */
+        border-radius: 5px;
+    }
+
+    @media only screen and(max-width:1200px) {
+        .responsive-berita-box {
+            width: calc(50% -2%);
+        }
+    }
+
+    @media only screen and(max-width:767px) {
+        .responsive-berita-box {
+            width: calc(100% -2%);
+        }
+    }
+
+    .responsive-berita-body {
+        box-sizing: border-box;
+        padding: .5rem;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    /* chart box */
     .responsive-chart-box {
         width: calc(33.33% -2%);
         margin: 2% 1%;
-        background-color: white;
-        box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+        /* background-color: white;
+        box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15); */
         border-radius: 5px;
     }
 
@@ -125,8 +220,6 @@
             width: calc(100% -2%);
         }
     }
-
-    .responsive-box-status {}
 
     .responsive-chart-body {
         box-sizing: border-box;
@@ -355,57 +448,7 @@
 </style>
 
 {{-- catatan: Home --}}
-<style>
-
-
-</style>
-
 {{-- catatan: berita --}}
 <style>
-    .image-berita {
-        border-bottom: 5px solid rgb(255, 193, 59);
-        border-radius: 5px 5px 50px 5px;
-    }
 
-    .flex-box-tgl {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        left: 0;
-        top: 0;
-        margin-right: 1rem;
-        margin-bottom: .5rem;
-        align-content: center;
-    }
-
-    .flex-box-tgl .hari-berita {
-        width: 100%;
-        height: 40px;
-        border-top: 1px solid black;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        padding-top: 5px;
-        padding-bottom: -5px;
-        font-family: var(--font-family);
-        font-size: var(--font-size-title);
-        font-weight: 700;
-        background: #fff;
-        text-transform: uppercase;
-        color: var(--sub-title-color);
-        justify-content: center;
-    }
-
-    .flex-box-tgl .bulan-berita {
-        width: 100%;
-        height: 40px;
-        padding-top: 10px;
-        padding-bottom: -5px;
-        font-size: var(--font-size-text);
-        font-weight: 600;
-        background: var(--sub-title-color);
-        background-size: cover;
-        text-transform: uppercase;
-        color: #fff;
-        justify-content: center;
-    }
 </style>

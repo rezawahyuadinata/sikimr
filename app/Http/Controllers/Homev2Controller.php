@@ -35,9 +35,8 @@ class Homev2Controller extends Controller
         $pkt_terkontrak = 0;
         // $data['galleries'] = GalleryModel::all()->where('file_category', 'Gambar')->random(6);
         $data['news'] = BeritaModel::all()->sortByDesc('id')->take(4);
-
         $data['sop'] = SopModel::all();
-
+        $data['category_berita'] = BeritaModel::join('tbl_berita_categories', 'tbl_berita_categories.id', 'tbl_beritas.category')->select('tbl_beritas.*', 'tbl_berita_categories.name')->get();
         $data['siptl'] = SiptlModel::all();
         $data['tllha'] = TllhaModel::all();
 

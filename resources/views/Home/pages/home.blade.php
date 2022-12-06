@@ -1,284 +1,131 @@
 @extends('Home.layouts.layouthome')
 @section('section')
+    {{-- catatan:  Berita --}}
     <div class="container-fluid">
-        {{-- catatan:  Berita --}}
         <section class="my-5 rounded-2 border-2" style="width:100%; height: auto">
             <div class="container mb-3">
-                <div class="d-flex container-fluid justify-content-between">
+                <div class="d-flex container-fluid justify-content-between" style="border-left: 5px solid blue; background">
                     <h3 class="d-inline align-self-center">Berita</h3>
-                    <a href="" class="text-danger" style="text-decoration: none">
-                        <p class="d-inline align-self-center">Lihat Selengkapnya</p>
+                    <a href="" class="d-inline align-self-center text-danger" style="text-decoration: none;">Lihat
+                        Selengkapnya
                     </a>
                 </div>
             </div>
             <div class="container py-2">
                 <div class="swiper berita-home-Swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card border-0">
-                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
-                                    class="card-img-top image-berita" alt="">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="card-title">
-                                                <p class="text-start">Judul Berita</p>
-                                            </h5>
+                        @foreach ($category_berita->sortByDesc('created_at') as $key => $item)
+                            <div class="swiper-slide">
+                                @php
+                                    $thumbnailBerita = explode('|', $item->thumbnail);
+                                    $orgDate = $item->created_at;
+                                    $newDate = date('d-m-Y', strtotime($orgDate));
+                                    $subjectTgl = substr($newDate, 0, 11);
+                                @endphp
+                                <div class="position-relative mb-3">
+                                    <a href="{{ url('/news/' . $item->slug) }}">
+                                        <img class="img-fluid w-100 zoom-effect"
+                                            src="{{ url('storage/uploads/berita/' . $thumbnailBerita[0]) }}" alt="">
+                                    </a>
+                                    <div class="bg-white border border-top-0 p-4">
+                                        <div class="mb-2">
+                                            <span class="badge text-bg-primary font-weight-normal p-2 mr-4"
+                                                style="text-decoration: none;">{{ !$item->category ? '-' : $item->name }}</span>
+                                            <span class="text-body text-decoration-none ml-3"><small
+                                                    style="color: black; font-weight: 500;">{{ $subjectTgl }}</small></span>
                                         </div>
-                                        <div class="col-4 p-0">
-                                            <div class="flex-box-tgl">
-                                                <div class="hari-berita">
-                                                    <p class="text-center">28</p>
-                                                </div>
-                                                <div class="bulan-berita">
-                                                    <p class="text-center">dec</p>
-                                                </div>
-                                            </div>
+                                        <a class="h5 d-block mb-3 text-decoration-none text-secondary text-uppercase text-dark font-weight-bold"
+                                            style="--garis-clamp: 2" href="{{ url('/news/' . $item->slug) }}">
+                                            <p class="truncate-title-berita">{{ $item->subject }}</p>
+                                        </a>
+                                        <div class="truncate-body-berita">
+                                            <script>
+                                                $("p").replaceWith("{{ $item->description }}");
+                                            </script>
+                                            <span style="--garis-clamp:5"
+                                                class="removeParent">{!! $item->description !!}</span>
                                         </div>
-                                        <div class="col-8 p-0">
-                                            <div class="card-text">
-                                                <p
-                                                    style="
-                                                display:inline-block;
-                                                white-space: normal;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                max-height: 150px">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
-                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
-                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
-                                                    nostrum quos rem.
-                                                </p>
-                                            </div>
+                                    </div>
+                                    <div
+                                        class="d-flex
+                                        justify-content-between bg-white border border-top-0 p-4">
+                                        <div class="d-flex align-items-center">
+                                            <small class="ml-3">
+                                                <a class="text-decoration-none" href="{{ url('/news/' . $item->slug) }}">
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                    Lihat Selengkapnya </a>
+                                            </small>
                                         </div>
-                                        <a class="btn btn-primary link-berita" href="">
-                                            <span><i></i></span>
-                                            Lihat Selengkapnya</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border-0">
-                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
-                                    class="card-img-top image-berita glightbox" alt="">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="card-title">
-                                                <p class="text-start">Judul Berita</p>
-                                            </h5>
-                                        </div>
-                                        <div class="col-4 p-0">
-                                            <div class="flex-box-tgl">
-                                                <div class="hari-berita">
-                                                    <p class="text-center">28</p>
-                                                </div>
-                                                <div class="bulan-berita">
-                                                    <p class="text-center">dec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-8 p-0">
-                                            <div class="card-text">
-                                                <p
-                                                    style="
-                                                display:inline-block;
-                                                white-space: normal;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                max-height: 150px">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
-                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
-                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
-                                                    nostrum quos rem.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a class="btn btn-primary link-berita" href="">
-                                            <span><i></i></span>
-                                            Lihat Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border-0">
-                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
-                                    class="card-img-top image-berita" alt="">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="card-title">
-                                                <p class="text-start">Judul Berita</p>
-                                            </h5>
-                                        </div>
-                                        <div class="col-4 p-0">
-                                            <div class="flex-box-tgl">
-                                                <div class="hari-berita">
-                                                    <p class="text-center">28</p>
-                                                </div>
-                                                <div class="bulan-berita">
-                                                    <p class="text-center">dec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-8 p-0">
-                                            <div class="card-text">
-                                                <p
-                                                    style="
-                                                display:inline-block;
-                                                white-space: normal;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                max-height: 150px">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
-                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
-                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
-                                                    nostrum quos rem.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a class="btn btn-primary link-berita" href="">
-                                            <span><i></i></span>
-                                            Lihat Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border-0">
-                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
-                                    class="card-img-top image-berita" alt="">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="card-title">
-                                                <p class="text-start">Judul Berita</p>
-                                            </h5>
-                                        </div>
-                                        <div class="col-4 p-0">
-                                            <div class="flex-box-tgl">
-                                                <div class="hari-berita">
-                                                    <p class="text-center">28</p>
-                                                </div>
-                                                <div class="bulan-berita">
-                                                    <p class="text-center">dec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-8 p-0">
-                                            <div class="card-text">
-                                                <p
-                                                    style="
-                                                display:inline-block;
-                                                white-space: normal;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                max-height: 150px">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
-                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
-                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
-                                                    nostrum quos rem.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a class="btn btn-primary link-berita" href="">
-                                            <span><i></i></span>
-                                            Lihat Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card border-0">
-                                <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
-                                    class="card-img-top image-berita" alt="">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="card-title">
-                                                <p class="text-start">Judul Berita</p>
-                                            </h5>
-                                        </div>
-                                        <div class="col-4 p-0">
-                                            <div class="flex-box-tgl">
-                                                <div class="hari-berita">
-                                                    <p class="text-center">28</p>
-                                                </div>
-                                                <div class="bulan-berita">
-                                                    <p class="text-center">dec</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-8 p-0">
-                                            <div class="card-text">
-                                                <p
-                                                    style="
-                                                display:inline-block;
-                                                white-space: normal;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                max-height: 150px">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sequi
-                                                    voluptatem repellendus, recusandae ut exercitationem minima quod ex
-                                                    inventore alias, sint officia eveniet facere. Officia cumque ullam
-                                                    nostrum quos rem.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <a class="btn btn-primary link-berita" href="">
-                                            <span><i></i></span>
-                                            Lihat Selengkapnya</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    {{-- catatan:  Profile --}}
     <div class="container-fluid">
-        {{-- catatan:  Profile --}}
         <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
-                <div class="d-flex container-fluid justify-content-between">
+                <div class="d-flex container-fluid justify-content-between" style="border-left: 5px solid blue; background">
                     <h3 class="d-inline align-self-center">Profil KI & MR</h3>
-                    <a href="" class="text-danger" style="text-decoration: none">
-                        <p class="d-inline align-self-center">Lihat Selengkapnya</p>
+                    <a href="" class="d-inline align-self-center text-danger" style="text-decoration: none;">Lihat
+                        Selengkapnya
                     </a>
                 </div>
             </div>
             <div class="container py-2">
-                <div class="row g-3">
-                    <div class="col-sm-4 bg-secondary" style="height: 405px">
-                        <img src="" alt="">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
-                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../../storage/app/public/template/Profil-1.jpg" class="img-fluid rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container py-2">
-                <div class="row g-3">
-                    <div class="col-sm-8">
-                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
-                        <div class="container py-2 bg-secondary mb-2" style="height: 200px"></div>
-                    </div>
-                    <div class="col-sm-4 bg-secondary" style="height: 405px">
-                        <img src="" alt="">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="..." class="img-fluid rounded-start" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    {{-- catatan:  Dasar Pembentukan Hukum --}}
     <div class="container-fluid">
-        {{-- catatan:  Dasar Pembentukan Hukum --}}
         <section class="my-5 rounded-2 border-2" style="width:100%; height: auto">
             <div class="container mb-3">
-                <div class="d-flex container-fluid justify-content-between">
+                <div class="d-flex container-fluid justify-content-between" style="border-left: 5px solid blue; background">
                     <h3 class="d-inline align-self-center">Dasar Pembentukan Hukum</h3>
                 </div>
             </div>
@@ -345,15 +192,19 @@
             </div>
         </section>
     </div>
+    {{-- catatan:  Album Kegiatan --}}
     <div class="container-fluid">
-        {{-- catatan:  Album Kegiatan --}}
         <section class="my-5 rounded-2 border-2" style="width:100%;">
             <div class="container mb-3">
-                <div class="d-flex container-fluid justify-content-between">
-                    <h3 class="d-inline align-self-center">Kegiatan KI & MR</h3>
+                <div class="d-flex container-fluid justify-content-between"
+                    style="border-left: 5px solid blue; background">
+                    <h3 class="d-inline align-self-center">Galeri KI & MR</h3>
+                    <a href="" class="d-inline align-self-center text-danger" style="text-decoration: none;">Lihat
+                        Selengkapnya
+                    </a>
                 </div>
             </div>
-            <div class="container-fluid py-2">
+            <div class="container py-2">
                 <div class="row justify-content-center">
                     <div class="col-md-2 bg-secondary rounded rounded-3 my-3 mx-3" style="height: 200px">
                         <img src="" alt="">
@@ -389,338 +240,322 @@
             </div>
         </section>
     </div>
+    {{-- catatan:  FAQ --}}
     <div class="container-fluid">
-        {{-- catatan:  Faq --}}
         <section class="my-5 rounded-2 border-2" style="width:100%;">
-            <div class="row">
-                <div class="col-8">
-                    <div class="container mb-3">
-                        <div class="d-flex container-fluid justify-content-between">
-                            <h3 class="d-inline align-self-center">FAQ</h3>
-                        </div>
-                    </div>
-                    <div class="container py-2">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            {{-- catatan:  Manajemen Risiko --}}
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="accordionMR">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#accordion-collapseMR" aria-expanded="false"
-                                        aria-controls="accordion-collapseMR">
-                                        <strong>Manajemen Risiko</strong>
-                                    </button>
-                                </h2>
-                                {{-- catatan:  Manajemen Risiko Collapse --}}
-                                <div id="accordion-collapseMR" class="accordion-collapse collapse"
-                                    aria-labelledby="accordionMR" data-bs-parent="#accordionFlushExample">
-                                    {{-- catatan:  Acordion Body MR --}}
-                                    <div class="accordion-body">
-                                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                                            {{-- catatan:  Faq Manajemen Risiko 1 --}}
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelOpen-headingMR1">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR1"
-                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR1">
-                                                        <strong>Apa tujuan penerapan Penilaian Risiko?</strong>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelOpen-CollapseMR1" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelOpen-headingMR1">
-                                                    <div class="accordion-body">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {{-- catatan:  Faq Manajemen Risiko 2 --}}
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelOpen-headingMR2">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR2"
-                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR2">
-                                                        <strong>Apa manfaat dari penerapan Penilaian Risiko?</strong>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelOpen-CollapseMR2" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelOpen-headingMR2">
-                                                    <div class="accordion-body">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {{-- catatan:  Faq Manajemen Risiko 3 --}}
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelOpen-headingMR3">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR3"
-                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR3">
-                                                        <strong>Apa yang dimaksud dengan risiko?</strong>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelOpen-CollapseMR3" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelOpen-headingMR3">
-                                                    <div class="accordion-body">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {{-- catatan:  Faq Manajemen Risiko 4 --}}
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelOpen-headingMR4">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR4"
-                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR4">
-                                                        <strong>Bagaimana cara melakukan Identifikasi Risiko?</strong>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelOpen-CollapseMR4" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelOpen-headingMR4">
-                                                    <div class="accordion-body">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {{-- catatan:  Faq Manajemen Risiko 5 --}}
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="panelOpen-headingMR5">
-                                                    <button class="accordion-button" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#panelOpen-CollapseMR5"
-                                                        aria-expanded="false" aria-controls="panelOpen-CollapseMR5">
-                                                        <strong>Apa saja yang menjadi ruang lingkup penilaian
-                                                            risiko</strong>
-                                                    </button>
-                                                </h2>
-                                                <div id="panelOpen-CollapseMR5" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelOpen-headingMR4">
-                                                    <div class="accordion-body">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {{-- catatan:  SOP --}}
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="accordionSOP">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#accordion-collapseSOP" aria-expanded="false"
-                                        aria-controls="accordion-collapseSOP">
-                                        <strong>SOP</strong>
-                                    </button>
-                                </h2>
-                                {{-- catatan:  SOP Collapse --}}
-                                <div id="accordion-collapseSOP" class="accordion-collapse collapse"
-                                    aria-labelledby="accordionSOP" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        {{-- catatan:  accordion body SOP --}}
-                                        <div class="accordion-body">
-                                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                                {{-- catatan:  Faq SOP 1 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingSOP1">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseSOP1" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseSOP1">
-                                                            <strong>Apa yang dimaksud dengan SOP ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseSOP1" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingSOP1">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan:  Faq SOP 2 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingSOP2">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseSOP2" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseSOP2">
-                                                            <strong>Apa tujuan SOP di bentuk ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseSOP2" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingSOP2">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan:  Faq SOP 3 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingSOP3">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseSOP3" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseSOP3">
-                                                            <strong>Mengapa kita membutuhkan SOP ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseSOP3" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingSOP3">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan: Faq SOP 4 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingSOP4">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseSOP4" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseSOP4">
-                                                            <strong>Informasi apa yang di butuhkan dalam pembuatan SOP
-                                                                ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseSOP4" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingSOP4">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan: Faq SOP 5 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingSOP5">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseSOP5" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseSOP5">
-                                                            <strong>Siapa yang berhak untuk merancang SOP ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseSOP5" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingSOP5">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {{-- catatan:  Zona Integritas --}}
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="accordionZI">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#accordion-collapseZI" aria-expanded="false"
-                                        aria-controls="accordion-collapseZI">
-                                        <strong>Zona Integritas</strong>
-                                    </button>
-                                </h2>
-                                {{-- catatan:  Zona Integritas Collapse --}}
-                                <div id="accordion-collapseZI" class="accordion-collapse collapse"
-                                    aria-labelledby="accordionZI" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                        {{-- catatan:  Accordion Body Zona Integritas --}}
-                                        <div class="accordion-body">
-                                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                                {{-- catatan:  Faq Zona Integritas 1 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingZI1">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseZI1" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseZI1">
-                                                            <strong>Apa yang dimaksud Zona Integritas ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseZI1" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingZI1">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan:  Faq Zona Integritas 2 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingZI2">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseZI2" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseZI2">
-                                                            <strong>Apa tujuan Zona Integritas ?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseZI2" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingZI2">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan:  Faq Zona Integritas 3 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingZI3">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseZI3" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseZI3">
-                                                            <strong>Apa saja yang menjadi area perubahan dalam zona
-                                                                integritas?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseZI3" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingZI3">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan:  Faq Zona Integritas 4 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingZI4">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseZI4" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseZI4">
-                                                            <strong>Apa tahapan dari pembangunan Zona integritas?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseZI4" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingZI4">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {{-- catatan:  Faq Zona Integritas 5 --}}
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="panelOpen-headingZI5">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#panelOpen-CollapseZI5" aria-expanded="false"
-                                                            aria-controls="panelOpen-CollapseZI5">
-                                                            <strong>Bagaimana keberhasilan pembangunan Zona integritas
-                                                                diukur?</strong>
-                                                        </button>
-                                                    </h2>
-                                                    <div id="panelOpen-CollapseZI5" class="accordion-collapse collapse"
-                                                        aria-labelledby="panelOpen-headingZI5">
-                                                        <div class="accordion-body">
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container mb-3">
+                <div class="d-flex container-fluid justify-content-between"
+                    style="border-left: 5px solid blue; background">
+                    <h3 class="d-inline align-self-center">FAQ</h3>
                 </div>
-                <div class="col-4">
-                    <img class="faq-image" src="" width="100%" height="100%" alt="">
+            </div>
+            <div class="container py-2">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    {{-- catatan:  Manajemen Risiko --}}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionMR">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-collapseMR" aria-expanded="false"
+                                aria-controls="accordion-collapseMR">
+                                <strong>Manajemen Risiko</strong>
+                            </button>
+                        </h2>
+                        {{-- catatan:  Manajemen Risiko Collapse --}}
+                        <div id="accordion-collapseMR" class="accordion-collapse collapse" aria-labelledby="accordionMR"
+                            data-bs-parent="#accordionFlushExample">
+                            {{-- catatan:  Acordion Body MR --}}
+                            <div class="accordion-body">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    {{-- catatan:  Faq Manajemen Risiko 1 --}}
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR1" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR1">
+                                                <strong>Apa tujuan penerapan Penilaian Risiko?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR1" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR1">
+                                            <div class="accordion-body">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- catatan:  Faq Manajemen Risiko 2 --}}
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR2">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR2" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR2">
+                                                <strong>Apa manfaat dari penerapan Penilaian Risiko?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR2" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR2">
+                                            <div class="accordion-body">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- catatan:  Faq Manajemen Risiko 3 --}}
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR3">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR3" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR3">
+                                                <strong>Apa yang dimaksud dengan risiko?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR3" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR3">
+                                            <div class="accordion-body">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- catatan:  Faq Manajemen Risiko 4 --}}
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR4">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR4" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR4">
+                                                <strong>Bagaimana cara melakukan Identifikasi Risiko?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR4" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR4">
+                                            <div class="accordion-body">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {{-- catatan:  Faq Manajemen Risiko 5 --}}
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="panelOpen-headingMR5">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelOpen-CollapseMR5" aria-expanded="false"
+                                                aria-controls="panelOpen-CollapseMR5">
+                                                <strong>Apa saja yang menjadi ruang lingkup penilaian
+                                                    risiko</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="panelOpen-CollapseMR5" class="accordion-collapse collapse"
+                                            aria-labelledby="panelOpen-headingMR4">
+                                            <div class="accordion-body">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- catatan:  SOP --}}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionSOP">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-collapseSOP" aria-expanded="false"
+                                aria-controls="accordion-collapseSOP">
+                                <strong>SOP</strong>
+                            </button>
+                        </h2>
+                        {{-- catatan:  SOP Collapse --}}
+                        <div id="accordion-collapseSOP" class="accordion-collapse collapse"
+                            aria-labelledby="accordionSOP" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                {{-- catatan:  accordion body SOP --}}
+                                <div class="accordion-body">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        {{-- catatan:  Faq SOP 1 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP1" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP1">
+                                                    <strong>Apa yang dimaksud dengan SOP ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP1" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP1">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan:  Faq SOP 2 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP2">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP2" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP2">
+                                                    <strong>Apa tujuan SOP di bentuk ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP2" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP2">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan:  Faq SOP 3 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP3">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP3" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP3">
+                                                    <strong>Mengapa kita membutuhkan SOP ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP3" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP3">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan: Faq SOP 4 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP4">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP4" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP4">
+                                                    <strong>Informasi apa yang di butuhkan dalam pembuatan SOP
+                                                        ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP4" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP4">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan: Faq SOP 5 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingSOP5">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseSOP5" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseSOP5">
+                                                    <strong>Siapa yang berhak untuk merancang SOP ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseSOP5" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingSOP5">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- catatan:  Zona Integritas --}}
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordionZI">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-collapseZI" aria-expanded="false"
+                                aria-controls="accordion-collapseZI">
+                                <strong>Zona Integritas</strong>
+                            </button>
+                        </h2>
+                        {{-- catatan:  Zona Integritas Collapse --}}
+                        <div id="accordion-collapseZI" class="accordion-collapse collapse" aria-labelledby="accordionZI"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                {{-- catatan:  Accordion Body Zona Integritas --}}
+                                <div class="accordion-body">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        {{-- catatan:  Faq Zona Integritas 1 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI1" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI1">
+                                                    <strong>Apa yang dimaksud Zona Integritas ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI1" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI1">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan:  Faq Zona Integritas 2 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI2">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI2" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI2">
+                                                    <strong>Apa tujuan Zona Integritas ?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI2" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI2">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan:  Faq Zona Integritas 3 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI3">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI3" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI3">
+                                                    <strong>Apa saja yang menjadi area perubahan dalam zona
+                                                        integritas?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI3" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI3">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan:  Faq Zona Integritas 4 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI4">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI4" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI4">
+                                                    <strong>Apa tahapan dari pembangunan Zona integritas?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI4" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI4">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{-- catatan:  Faq Zona Integritas 5 --}}
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelOpen-headingZI5">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelOpen-CollapseZI5" aria-expanded="false"
+                                                    aria-controls="panelOpen-CollapseZI5">
+                                                    <strong>Bagaimana keberhasilan pembangunan Zona integritas
+                                                        diukur?</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="panelOpen-CollapseZI5" class="accordion-collapse collapse"
+                                                aria-labelledby="panelOpen-headingZI5">
+                                                <div class="accordion-body">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -176,8 +176,8 @@
     tagPeng2.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
     tagSop.innerHTML = tanggal + ' ; ' + hours + ':00:00 WIB'
 </script>
-{{-- catatan: catatan : Carousel di Home --}}
-{{-- catatan: catatan : Berita --}}
+{{-- catatan: Carousel di Home --}}
+{{-- catatan: Berita --}}
 <script>
     var swiper = new Swiper(".berita-home-Swiper", {
         slidesPerView: 1,
