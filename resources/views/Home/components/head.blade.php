@@ -84,7 +84,7 @@
             {{-- catatan:  carousel --}}
             <div class="col-md-8">
                 {{-- catatan:  Manajemen Risiko --}}
-                <section id="div1" class="targetDiv" style="display: block;">
+                {{-- <section id="div1" class="targetDiv" style="display: block;">
                     <div class="container-fluid" style="min-height: 10vh; width: 80%">
                         <h3 class="text-center">Manajemen Risiko {{ date('Y') }}</h3>
                         <h5 class="text-center" style="font-size: 14px" id="status_dataMR"></h5>
@@ -245,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> --}}
                 {{-- catatan:  PBJ --}}
                 <section id="div2" class="targetDiv" style="display: none;">
                     <div class="container-fluid" style="min-height: 10vh; width: 80%">
@@ -727,14 +727,14 @@
             </div>
             {{-- catatan:  sidebar --}}
             <div class="col-md-4">
-                <div class="container mb-3">
+                <div class="container mb-auto">
                     <div class="d-flex container-fluid justify-content-between"
                         style="border-left: 5px solid blue; background">
                         <h3 class="d-inline align-self-center">Berita Terkini</h3>
                     </div>
                 </div>
-                {{-- catatan:  Berita Terupdate --}}
-                <div class="container mb-3  ">
+                {{-- catatan:  Berita --}}
+                <div class="container">
                     <div class="responsive-berita-box">
                         <div class="responsive-berita-body">
                             <div class="row">
@@ -765,7 +765,7 @@
                     </div>
                 </div>
                 {{-- catatan:  Tutorial --}}
-                <div class="container mb-3">
+                <div class="container mb-auto">
                     <div class="d-flex container-fluid justify-content-between"
                         style="border-left: 5px solid blue; background">
                         <h3 class="d-inline align-self-center">Tutorial</h3>
